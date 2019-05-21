@@ -9,6 +9,7 @@ collections:
   - name: "speakers"
     label: "Speakers"
     create: true
+    folder: "src/pages/speakers"
     slug: "speakers/{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "speaker"}
