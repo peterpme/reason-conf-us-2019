@@ -6,6 +6,21 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: "speakers"
+    label: "Speakers"
+    create: true
+    slug: "speakers/{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "speaker"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "github", name: "github", widget: "string"}
+      - {label: "twitter", name: "twitter", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Company", name: "company", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "bio", name: "bio", widget: "text"}
+      - {label: "Profile Image", name: "image", widget: image}
+
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
