@@ -1,6 +1,6 @@
 ---
 templateKey: speaker
-name: Peter
+name: Peter Piekarczyk
 github: peterpme
 twitter: peterpme
 title: CoFounder
