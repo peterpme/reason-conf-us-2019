@@ -6,42 +6,60 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: "schedule"
+    label: "Schedule"
+    description: "Conference schedule"
+    folder: "src/pages/schedule"
+    create: true
+    fields:
+      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "schedule" }
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: Schedule,
+          name: schedule,
+          required: true,
+          widget: list,
+          fields:
+            [
+              { label: "Publish Date", name: "date", widget: "datetime" },
+              { label: Name, name: name, required: true, widget: string },
+              {
+                label: Presentation Title,
+                name: presentationTitle,
+                required: false,
+                widget: string,
+              },
+              {
+                label: Image,
+                name: image,
+                required: false,
+                hint: "If an image isn't specified, a default headshot placeholder image will be used",
+                widget: image,
+              },
+              { label: Text, name: text, required: true, widget: text },
+            ],
+        }
   - name: "speakers"
-    label: "Speakers"
+    label: "Speaker"
     create: true
     folder: "src/pages/speakers"
     slug: "speakers/{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "speaker"}
       - {label: "Name", name: "name", widget: "string"}
-      - {label: "github", name: "github", widget: "string"}
-      - {label: "twitter", name: "twitter", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Company", name: "company", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "bio", name: "bio", widget: "text"}
+      - {label: "Github", name: "github", widget: "string"}
+      - {label: "Twitter", name: "twitter", widget: "string"}
+      - {label: "Discord", name: "discord", widget: "string"}
       - {label: "Profile Image", name: "image", widget: image}
-
-  - name: "blog"
-    label: "Blog"
-    folder: "src/pages/blog"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
-      - {label: "Featured Image", name: "featuredimage", widget: image}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
-
   - name: "pages"
     label: "Pages"
     files:
       - file: "src/pages/index.md"
-        label: "Landing Page"
+        label: "Home Page"
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
@@ -53,6 +71,13 @@ collections:
           - {label: Description, name: description, widget: string}
           - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
           - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
+      - file: "src/pages/code-of-conduct/index.md"
+        label: "Code of Conduct"
+        name: "code-of-conduct"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "coc-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
@@ -60,17 +85,3 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/products/index.md"
-        label: "Products Page"
-        name: "products"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Description, name: description, widget: string}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
-          - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
-          - {label: Full_image, name: full_image, widget: image}
-          - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
