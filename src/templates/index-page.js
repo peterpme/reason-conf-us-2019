@@ -1,10 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+import {Helmet} from "react-helmet"
 
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+
+import NavBar from '../components/NavBar.bs.js'
 
 export const IndexPageTemplate = ({
   image,
@@ -16,6 +19,10 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
+    <Helmet>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    </Helmet>
+    <NavBar />
     <div
       className="full-width-image margin-top-0"
       style={{
