@@ -1,0 +1,16 @@
+.TicketsButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DD4B39;
+    width: 130px;
+    height: 50px;
+    border: none;
+}
+
+.TicketsButton-label {
+    font-size: 13px;
+    font-family: "Montserrat" , sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+}
