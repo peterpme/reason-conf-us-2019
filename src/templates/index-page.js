@@ -22,7 +22,7 @@ export const IndexPageTemplate = ({
     <Helmet>
       <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
     </Helmet>
-    <NavBar />
+    <NavBar className="temp"/>
     <div
       className="full-width-image margin-top-0"
       style={{

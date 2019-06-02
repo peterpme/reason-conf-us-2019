@@ -26,8 +26,8 @@ module TicketsButton = {
 
 [@genType]
 [@react.component]
-let default = (~className=?) => {
-  <nav className={("NavBar " ++ className)->React.string}>
+let default = (~className) => {
+  <nav className={"NavBar " ++ className}>
     <NavItem label="Workshops" />
     <NavItem label="Speakers" />
     <NavItem label="Sponsors" />
