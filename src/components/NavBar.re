@@ -3,24 +3,26 @@
 module NavItem = {
   [@genType]
   [@react.component]
-  let make = (~label) => {
-    <span className="Navbar-linkLabel"> label->React.string </span>;
+  let make = (~label, ~to_) => {
+    <Link
+      className="Navbar-linkLabel"
+      labelClassName="Navbar-linkLabel"
+      label
+      to_
+    />;
   };
-};
-
-[@genType]
-[@react.component]
-let default = () => {
-  <nav> <NavItem label="Test" /> </nav>;
 };
 
 module TicketsButton = {
   [@genType]
   [@react.component]
   let make = () => {
-    <button className="TicketsButton">
-      <span className="TicketsButton-label"> "Tickets"->React.string </span>
-    </button>;
+    <Link
+      className="TicketsButton"
+      labelClassName="TicketsButton-label"
+      label="Tickets"
+      to_="/"
+    />;
   };
 };
 
@@ -28,12 +30,11 @@ module TicketsButton = {
 [@react.component]
 let default = (~className) => {
   <nav className={"NavBar " ++ className}>
-    <NavItem label="Workshops" />
-    <NavItem label="Speakers" />
-    <NavItem label="Sponsors" />
-    <NavItem label="Schedule" />
-    <NavItem label="Your Visit" />
-    <NavItem label="Contact" />
+    <NavItem label="Workshops" to_="/" />
+    <NavItem label="Speakers" to_="/" />
+    <NavItem label="Sponsors" to_="/" />
+    <NavItem label="Schedule" to_="/" />
+    <NavItem label="Contact" to_="/" />
     <TicketsButton />
   </nav>;
 };
