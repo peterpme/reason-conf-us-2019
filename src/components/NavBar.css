@@ -11,6 +11,7 @@
     color: #ffffff;
     font-size: 13px;
     font-family: "Montserrat";
+    font-weight: bold;
 }
 
 .TicketsButton {
@@ -26,5 +27,6 @@
 .TicketsButton-label {
     font-size: 13px;
     font-family: "Montserrat";
+    font-weight: bold;
     color: #ffffff;
 }
