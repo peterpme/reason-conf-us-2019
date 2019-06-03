@@ -13,19 +13,6 @@ module NavItem = {
   };
 };
 
-module TicketsButton = {
-  [@genType]
-  [@react.component]
-  let make = () => {
-    <Link
-      className="TicketsButton"
-      labelClassName="TicketsButton-label"
-      label="Tickets"
-      to_="/"
-    />;
-  };
-};
-
 [@genType]
 [@react.component]
 let default = (~className) => {

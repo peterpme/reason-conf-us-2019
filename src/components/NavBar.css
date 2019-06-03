@@ -12,3 +12,9 @@
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
 }
+
+.Navbar-linkLabel:hover,
+.Navbar-linkLabel:active,
+.Navbar-linkLabel:focus{
+    color: #eee;
+}
