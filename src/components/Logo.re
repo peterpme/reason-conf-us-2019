@@ -1,9 +1,9 @@
 [@genType]
 [@react.component]
-let make = (~width=200, ~height=103) => {
+let make = (~width="200", ~height="103") => {
   <svg
-    width={width->string_of_int}
-    height={height->string_of_int}
+    width
+    height
     viewBox="0 0 200 103"
     fill="none"
     xmlns="http://www.w3.org/2000/svg">
