@@ -15,7 +15,7 @@ module NavItem = {
 
 [@genType]
 [@react.component]
-let default = (~className) => {
+let make = (~className) => {
   <nav className={"NavBar " ++ className}>
     <NavItem label="Workshops" to_="/" />
     <NavItem label="Speakers" to_="/" />
