@@ -6,6 +6,8 @@ import {Helmet} from "react-helmet"
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import Logo from '../components/Logo.bs.js'
+
 
 import NavBar from '../components/NavBar.bs.js'
 
@@ -19,9 +21,12 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    <Helmet>
-      <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
-    </Helmet>
+      <Helmet>
+          <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+      </Helmet>
+    <div>
+      <Logo width={400} height={400}/>
+    </div>
     <NavBar className="temp"/>
     <div
       className="full-width-image margin-top-0"
