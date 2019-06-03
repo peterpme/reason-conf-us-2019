@@ -1,4 +1,3 @@
-[@genType]
 [@react.component]
 let make = (~width="200", ~height="103") => {
   <svg

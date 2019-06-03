@@ -2,8 +2,8 @@ import React from 'react'
 import {Helmet} from "react-helmet"
 
 import Layout from '../components/Layout'
-import { make as Logo } from '../components/Logo.gen'
-import { make as NavBar } from '../components/NavBar.gen'
+import { make as Logo } from '../components/Logo.bs'
+import { make as NavBar } from '../components/NavBar.bs'
 
 export const IndexPageTemplate = () => (
   <div>

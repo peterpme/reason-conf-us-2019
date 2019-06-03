@@ -1,7 +1,6 @@
 [%bs.raw {|require('./NavBar.css')|}];
 
 module NavItem = {
-  [@genType]
   [@react.component]
   let make = (~label, ~to_) => {
     <Link
@@ -13,7 +12,6 @@ module NavItem = {
   };
 };
 
-[@genType]
 [@react.component]
 let make = (~className) => {
   <nav className={"NavBar " ++ className}>
