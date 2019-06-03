@@ -1,6 +1,6 @@
 [@genType]
 [@react.component]
-let default = (~width=200, ~height=103) => {
+let make = (~width=200, ~height=103) => {
   <svg
     width={width->string_of_int}
     height={height->string_of_int}
