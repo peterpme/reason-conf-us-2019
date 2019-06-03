@@ -6,7 +6,7 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 import Logo from '../components/Logo.bs.js'
-import './index.css'
+
 
 export const IndexPageTemplate = ({
   image,
@@ -18,7 +18,7 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    <div className="TestingDiv">
+    <div>
       <Logo width={400} height={400}/>
     </div>
   </div>
