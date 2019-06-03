@@ -9,3 +9,13 @@ static/admin/*.bundle.*
 yarn-error.log
 .merlin
 lib
+/build
+
+.merlin
+.bsb.lock
+lib
+*.bs.js
+*.gen.js
+
+.vscode
+.idea/
