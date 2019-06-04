@@ -1,0 +1,38 @@
+.SpeakerCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SpeakerCard-avatar {
+    width: 354px;
+    height: 354px;
+}
+
+.SpeakerCard-name {
+    font-family: "Montserrat", sans-serif ;
+    font-weight: bold;
+    font-size: 36px;
+    color: #DD4B39;
+}
+
+.SpeakerCard-infoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-left: 5px solid #DD4B39;
+}
+
+.SpeakerCard-title {
+    font-family: "Montserrat", sans-serif ;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.SpeakerCard-bio {
+    font-family: "Montserrat", sans-serif ;
+    font-weight: normal;
+    font-size: 14px;
+    color: #ffffff;
+}
