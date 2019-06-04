@@ -13,7 +13,7 @@ export const IndexPageTemplate = () => (
     </Helmet>
     <Logo width="400" height="400"/>
     <NavBar className="temp"/>
-    <Header heading="Heading about talks and speakers"/>
+    <Header heading="Heading about talks and speakers" cta={true}/>
   </div>
 )
 

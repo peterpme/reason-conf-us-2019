@@ -1,11 +1,33 @@
 .Header-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .Heading {
+    color: #ffffff;
+}
+
+.CTAButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DD4B39;
+    width: 130px;
+    height: 50px;
+    border: none;
+    text-decoration: none;
+}
+
+.CTAButton-label {
+    font-size: 13px;
     font-family: "Montserrat" , sans-serif;
     font-weight: bold;
     color: #ffffff;
+}
+
+.CTAButton-label:hover,
+.CTAButton-label:active,
+.CTAButton-label:focus{
+    color: #eee;
 }
