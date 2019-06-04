@@ -1,9 +1,9 @@
-.Header-container {
+.SectionHeading-container {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.Heading {
+.SectionHeading {
     color: #ffffff;
 }

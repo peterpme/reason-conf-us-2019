@@ -4,7 +4,8 @@ external make:
     ~className: string=?,
     ~labelClassName: string=?,
     ~to_: string=?,
-    ~label: string=?
+    ~label: string=?,
+    ~style: ReactDOMRe.style=?
   ) =>
   React.element =
   "default";
