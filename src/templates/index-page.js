@@ -4,6 +4,7 @@ import {Helmet} from "react-helmet"
 import Layout from '../components/Layout'
 import { make as Logo } from '../components/Logo.bs'
 import { make as NavBar } from '../components/NavBar.bs'
+import { make as HeroGraphic } from '../components/HeroGraphic.bs'
 
 export const IndexPageTemplate = () => (
   <div>
@@ -12,6 +13,7 @@ export const IndexPageTemplate = () => (
     </Helmet>
     <Logo width="400" height="400"/>
     <NavBar className="temp"/>
+    <HeroGraphic />
   </div>
 )
 
