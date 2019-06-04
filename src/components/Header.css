@@ -1,0 +1,11 @@
+.Header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Heading {
+    font-family: "Montserrat" , sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+}
