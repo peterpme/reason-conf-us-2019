@@ -15,7 +15,7 @@ export const IndexPageTemplate = () => (
     <Logo width="400" height="400"/>
     <NavBar className="temp"/>
     <HeroGraphic />
-    <SpeakerCard imageUrl="https://images.unsplash.com/photo-1559489744-3492970a72f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" speakerName="Fuck Off" title="Software Engineer" company="Draftbit" bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu imperdiet risus. Nullam ac elit id metus tempor porttitor. Curabitur aliquam, lacus non varius ultrices, tortor diam mollis quam, ornare ultricies tortor leo id libero."/>
+    <SpeakerCard imageUrl="https://images.unsplash.com/photo-1559489744-3492970a72f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" speakerName={"Fuck" + "\n" +"Off"} title="Software Engineer" company="Draftbit" bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu imperdiet risus. Nullam ac elit id metus tempor porttitor. Curabitur aliquam, lacus non varius ultrices, tortor diam mollis quam, ornare ultricies tortor leo id libero."/>
   </div>
 )
 
