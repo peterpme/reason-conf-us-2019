@@ -1,26 +1,47 @@
 .SpeakerCard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative;
+    width: 300px;
+    z-index: 0;
+}
+
+.SpeakerCard:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 310px;
+    background-image: linear-gradient(
+     rgba(56, 121, 213,.5) 0%,
+     rgb(0, 0, 0) 100%
+    )
 }
 
 .SpeakerCard-avatar {
-    width: 354px;
-    height: 354px;
+    width: 300px;
+    height: 300px;
 }
 
+
 .SpeakerCard-name {
+    display: block;
     font-family: "Montserrat", sans-serif ;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 24px;
     color: #DD4B39;
+    margin-top:-30px;
+    margin-left:20px;
+    position: absolute;
+    z-index: 2;
 }
+
 
 .SpeakerCard-infoContainer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     border-left: 5px solid #DD4B39;
+    padding-left: 15px;
+    margin-top: 10px;
 }
 
 .SpeakerCard-title {
@@ -28,6 +49,7 @@
     font-weight: bold;
     font-size: 14px;
     color: #ffffff;
+    margin-bottom: 10px;
 }
 
 .SpeakerCard-bio {
