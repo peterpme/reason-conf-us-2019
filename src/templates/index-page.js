@@ -1,9 +1,11 @@
 import React from 'react'
-import {Helmet} from "react-helmet"
+import {Helmet} from 'react-helmet'
 
 import Layout from '../components/Layout'
 import { make as Logo } from '../components/Logo.bs'
 import { make as NavBar } from '../components/NavBar.bs'
+import {make as SectionHeading } from '../components/SectionHeading.bs'
+import {make as CTAButton } from '../components/CTAButton.bs'
 import { make as SpeakerCard } from '../components/SpeakerCard.bs'
 import { make as HeroGraphic } from '../components/HeroGraphic.bs'
 import { make as HeroHeader } from '../components/HeroHeader.bs'
