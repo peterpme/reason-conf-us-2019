@@ -50,3 +50,24 @@
     animation: blink 3s infinite;
     animation-delay: 5s;
 }
+
+.HeroGraphic-starCenterLeft {
+    animation: blink 3s infinite;
+    animation-delay: 3s;
+}
+
+.HeroGraphic-wave{
+    animation: wave 3s infinite;
+}
+
+@keyframes wave {
+    0% {
+        transform: skewX(1deg);
+    }
+    50% {
+        transform: skewX(0deg);
+    }
+    100% {
+        transform: skewX(1deg);
+    }
+}
