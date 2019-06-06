@@ -1,0 +1,9 @@
+[%bs.raw {|require('./Hero.css')|}];
+
+[@react.component]
+let make = (~title, ~subtitle, ~bio, ~ctaLabel, ~href, ~children) => {
+  <div className="Hero">
+    <HeroHeader title subtitle bio ctaLabel href> children </HeroHeader>
+    <HeroGraphic />
+  </div>;
+};

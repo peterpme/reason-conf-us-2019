@@ -1,0 +1,73 @@
+.HeroGraphic-cloudLeft {
+    animation: rightToLeft 5s infinite;
+}
+
+@keyframes rightToLeft {
+    0% {
+        transform: translateX(0px)
+    }
+    50% {
+        transform: translateX(5px)
+    }
+    100% {
+        transform: translateX(0px)
+    }
+}
+
+.HeroGraphic-cloudRight {
+    animation: leftToRight 4s infinite;
+}
+
+@keyframes leftToRight {
+    0% {
+        transform: translateX(0px)
+    }
+    50% {
+        transform: translateX(-10px)
+    }
+    100% {
+        transform: translateX(0px)
+    }
+}
+
+.HeroGraphic-starCenter {
+    animation: blink 5s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+.HeroGraphic-starRight {
+    animation: blink 3s infinite;
+    animation-delay: 5s;
+}
+
+.HeroGraphic-starCenterLeft {
+    animation: blink 3s infinite;
+    animation-delay: 3s;
+}
+
+.HeroGraphic-wave{
+    animation: wave 3s infinite;
+}
+
+@keyframes wave {
+    0% {
+        transform: skewX(1deg);
+    }
+    50% {
+        transform: skewX(0deg);
+    }
+    100% {
+        transform: skewX(1deg);
+    }
+}

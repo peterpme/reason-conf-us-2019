@@ -1,0 +1,7 @@
+.Hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+}
