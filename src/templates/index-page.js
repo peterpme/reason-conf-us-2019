@@ -10,7 +10,7 @@ import { make as HeroHeader } from '../components/HeroHeader.bs'
 import { make as Hero } from '../components/Hero.bs'
 
 export const IndexPageTemplate = () => (
-  <div>
+  <div style={{backgroundColor:"#000000"}}>
     <Helmet>
       <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
     </Helmet>
