@@ -11,6 +11,7 @@ import { make as HeroGraphic } from '../components/HeroGraphic.bs'
 import { make as SpeakerGrid } from '../components/SpeakerGrid.bs'
 import { make as HeroHeader } from '../components/HeroHeader.bs'
 import { make as Hero } from '../components/Hero.bs'
+import { make as PageHeader } from '../components/PageHeader.bs'
 
 const speakers = [
     {
@@ -40,8 +41,7 @@ export const IndexPageTemplate = () => (
     <Helmet>
       <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
     </Helmet>
-    <Logo width="400" height="400"/>
-    <NavBar className="temp"/>
+    <PageHeader />
     <SpeakerGrid speakers={speakers} />
     <Hero title="Chicago, IL" subtitle="October 7-9, 2019" bio="A hands-on two-day conference with workshops and talks on React Native from Expo and Software Mansion." ctaLabel="Tickets" href="/tickets">
         <a style={{color:"#ffffff", textDecoration:"underline", fontWeight: "bold", maxWidth:"160px"}}>Because Peter Complains When I Don't use children</a>
@@ -52,10 +52,8 @@ export const IndexPageTemplate = () => (
 
 const IndexPage = () => {
   return (
-    <Layout>
       <IndexPageTemplate
       />
-    </Layout>
   )
 }
 
