@@ -3,13 +3,13 @@
     align-items: center;
     justify-content: center;
     background-color: #DD4B39;
-    padding: 10px 20px 10px 10px;
 }
 
 .CTAButton-label {
     font-size: 13px;
     font-family: "Montserrat" , sans-serif;
     font-weight: bold;
+    text-align: center;
     color: #ffffff;
 }
 

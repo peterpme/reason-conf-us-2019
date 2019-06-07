@@ -1,6 +1,7 @@
 .SpeakerCard {
     position: relative;
     width: 300px;
+    margin-right: 50px;
     z-index: 0;
 }
 

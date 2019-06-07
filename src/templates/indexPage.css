@@ -1,0 +1,28 @@
+.Landing-HeroContainer {
+    margin-top: 50px;
+}
+
+.Landing-SpeakerContainer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 50px;
+    padding-left: 50px;
+}
+
+.Landing-SpeakersCTA {
+    width: 200px;
+    height: 40px;
+}
+
+.Landing-SpeakerGrid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.Landing-SponsorContainer {
+    margin-top: 50px;
+    padding-left: 50px;
+}

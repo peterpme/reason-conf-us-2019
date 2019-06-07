@@ -1,8 +1,8 @@
 [%bs.raw {|require('./SpeakerGrid.css')|}];
 
 [@react.component]
-let make = (~speakers) => {
-  <div className="SpeakerGrid">
+let make = (~className, ~speakers) => {
+  <div className={"SpeakerGrid " ++ className}>
     {speakers
      ->Belt.Array.map(s =>
          <SpeakerCard
