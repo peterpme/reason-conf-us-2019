@@ -26,6 +26,7 @@
     border-left: 2px solid #DD4B39;
     padding-left: 10px;
     margin-top: 30px;
+    white-space: pre-wrap;
 }
 
 .HeroHeader-linkSection{

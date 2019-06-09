@@ -4,45 +4,43 @@ import { make as Layout } from "../../components/Layout.bs"
 import { make as PageContainer } from "../../components/PageContainer.bs"
 import { make as SectionHeading } from "../../components/SectionHeading.bs"
 import { make as CTAButton } from "../../components/CTAButton.bs"
-import { make as SpeakerCard } from "../../components/SpeakerCard.bs"
-import { make as HeroGraphic } from "../../components/HeroGraphic.bs"
-import { make as SpeakerGrid } from "../../components/SpeakerGrid.bs"
+import { make as HotelGrid } from "../../components/HotelGrid.bs"
 import { make as Hero } from "../../components/Hero.bs"
-import { make as PageHeader } from "../../components/PageHeader.bs"
 
 import "./visitIndexPage.css"
 
-const speakers = [
+const hotels = [
   {
-    speakerName: "Fuck" + "\n" + "Off",
-    title: "Software Engineer",
-    company: "Facebook",
-    bio:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu imperdiet risus. Nullam ac elit id metus tempor porttitor. Curabitur aliquam, lacus non varius ultrices, tortor diam mollis quam, ornare ultricies tortor leo id libero.",
+    hotelName: "Fairmont Chicago -" + "\n" + "Millennium Park",
+    address: "200 North Columbus Drive, 60601, Chicago",
+    description:
+      "The Fairmont Chicago, Millennium Park is a sophisticated high-rise that combines classic and contemporary styles, with sweeping views of downtown Chicago",
+    bookingLink: "bookingLinkTemp.com",
     imageUrl:
-      "https://images.unsplash.com/photo-1559697242-07e90b48b9fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+      "https://images.unsplash.com/photo-1517840901100-8179e982acb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
   },
   {
-    speakerName: "Fuck" + "\n" + "Off",
-    title: "Software Engineer",
-    company: "Facebook",
-    bio:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu imperdiet risus. Nullam ac elit id metus tempor porttitor. Curabitur aliquam, lacus non varius ultrices, tortor diam mollis quam, ornare ultricies tortor leo id libero.",
+    hotelName: "Fairmont Chicago -" + "\n" + "Millennium Park",
+    address: "200 North Columbus Drive, 60601, Chicago",
+    description:
+      "The Fairmont Chicago, Millennium Park is a sophisticated high-rise that combines classic and contemporary styles, with sweeping views of downtown Chicago",
+    bookingLink: "bookingLinkTemp.com",
     imageUrl:
-      "https://images.unsplash.com/photo-1559697242-07e90b48b9fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+      "https://images.unsplash.com/photo-1517840901100-8179e982acb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
   },
   {
-    speakerName: "Fuck" + "\n" + "Off",
-    title: "Software Engineer",
-    company: "Facebook",
-    bio:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu imperdiet risus. Nullam ac elit id metus tempor porttitor. Curabitur aliquam, lacus non varius ultrices, tortor diam mollis quam, ornare ultricies tortor leo id libero.",
+    hotelName: "Fairmont Chicago -" + "\n" + "Millennium Park",
+    address: "200 North Columbus Drive, 60601, Chicago",
+    description:
+      "The Fairmont Chicago, Millennium Park is a sophisticated high-rise that combines classic and contemporary styles, with sweeping views of downtown Chicago",
+    bookingLink: "bookingLinkTemp.com",
     imageUrl:
-      "https://images.unsplash.com/photo-1559697242-07e90b48b9fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+      "https://images.unsplash.com/photo-1517840901100-8179e982acb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
   }
 ]
 
 const VisitIndexPage = () => {
+  console.log("visitPage-hotels: ", hotels)
   return (
     <Layout>
       <PageContainer className="Visit-HeroContainer">
@@ -62,7 +60,7 @@ const VisitIndexPage = () => {
       </PageContainer>
       <PageContainer className="Visit-SpeakerContainer">
         <SectionHeading heading="Hotels Nearby" />
-        <SpeakerGrid className="Visit-SpeakerGrid" speakers={speakers} />
+        <HotelGrid className="Visit-HotelsGrid" hotels={hotels} />
       </PageContainer>
       <PageContainer className="Visit-SponsorContainer">
         <SectionHeading heading="Sponsored by">
