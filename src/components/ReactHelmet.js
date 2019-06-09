@@ -5,7 +5,7 @@ const ReactHelmet= () => {
     return (
         <Helmet>
             <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
-            <style>{'body { display: flex; flex-direction: column; align-items:center;  }'}</style>
+            <style>{'body { display: flex; flex-direction: column; align-items:center; background-color: #000000; }'}</style>
         </Helmet>
     )
 }

@@ -42,7 +42,7 @@ const IndexPage = () => {
   return (
       <Layout>
           <PageContainer className="Landing-HeroContainer">
-              <Hero title="Chicago, IL" subtitle="October 7-9, 2019" bio="A hands-on two-day conference with workshops and talks on React Native from Expo and Software Mansion." ctaLabel="Tickets" href="/tickets">
+              <Hero title="Chicago, IL" subtitle="October 7-9, 2019" bio="A hands-on two-day conference with workshops and talks on React Native from Expo and Software Mansion."  graphic={<HeroGraphic />} ctaLabel="Tickets" href="/tickets">
                   <a style={{color:"#ffffff", textDecoration:"underline", fontWeight: "bold", maxWidth:"160px"}}>Become A Sponsor</a>
               </Hero>
           </PageContainer>

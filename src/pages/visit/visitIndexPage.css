@@ -1,0 +1,33 @@
+.Visit-HeroContainer {
+    margin-top: 50px;
+}
+
+.Visit-HeroGraphic {
+    margin-left: 30px;
+    height: 400px;
+    width: 700px;
+}
+.Visit-SpeakerContainer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 50px;
+    padding-left: 50px;
+}
+
+.Visit-SpeakersCTA {
+    width: 200px;
+    height: 40px;
+}
+
+.Visit-SpeakerGrid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.Visit-SponsorContainer {
+    margin-top: 50px;
+    padding-left: 50px;
+}
