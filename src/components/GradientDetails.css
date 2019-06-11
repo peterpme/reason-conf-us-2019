@@ -1,0 +1,24 @@
+/* going left to right */
+.VectorOne {
+    position: absolute;
+    z-index: 0;
+    left: -12.42%;
+    right: 67.03%;
+    top: -2.19%;
+    bottom: 59.45%;
+    background: linear-gradient(319.21deg, rgba(10, 20, 35, 0.26) 11.25%, rgba(44, 101, 185, 0.5) 35.28%, rgba(100, 146, 210, 0.5) 75.04%);
+}
+
+.VectorTwo {
+    position: absolute;
+    z-index: 0;
+    left: 61.63%;
+    right: 31.26%;
+    top: -6.73%;
+    bottom: 56.64%;
+
+    background: #235193;
+    opacity: 0.5;
+    transform: matrix(0.82, -0.57, 0.56, 0.82, 0, 0);
+
+}

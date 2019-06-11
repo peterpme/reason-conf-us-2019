@@ -1,9 +1,10 @@
 .SectionHeading-container {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
 }
 
 .SectionHeading {
     color: #ffffff;
+    padding-right: 50px;
 }

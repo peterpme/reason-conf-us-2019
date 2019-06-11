@@ -1,0 +1,13 @@
+.PageHeader {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+.PageHeader-navBar{
+    width: 70%;
+}
