@@ -1,16 +1,12 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 
 import { make as Layout } from "../components/Layout.bs"
 import { make as PageContainer } from "../components/PageContainer.bs"
 import { make as SectionHeading } from "../components/SectionHeading.bs"
 import { make as CTAButton } from "../components/CTAButton.bs"
-import { make as SpeakerCard } from "../components/SpeakerCard.bs"
 import { make as HeroGraphic } from "../components/HeroGraphic.bs"
 import { make as SpeakerGrid } from "../components/SpeakerGrid.bs"
-import { make as HeroHeader } from "../components/HeroHeader.bs"
 import { make as Hero } from "../components/Hero.bs"
-import { make as PageHeader } from "../components/PageHeader.bs"
 
 import "./indexPage.css"
 

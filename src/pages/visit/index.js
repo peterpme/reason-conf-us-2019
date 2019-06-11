@@ -6,6 +6,7 @@ import { make as SectionHeading } from "../../components/SectionHeading.bs"
 import { make as CTAButton } from "../../components/CTAButton.bs"
 import { make as HotelGrid } from "../../components/HotelGrid.bs"
 import { make as Hero } from "../../components/Hero.bs"
+import Map from "../../components/Map.js"
 
 import "./visitIndexPage.css"
 
@@ -63,9 +64,8 @@ const VisitIndexPage = () => {
         <HotelGrid className="Visit-HotelsGrid" hotels={hotels} />
       </PageContainer>
       <PageContainer className="Visit-SponsorContainer">
-        <SectionHeading heading="Sponsored by">
-          <CTAButton buttonStyle="Visit-SpeakersCTA" label="Become a sponsor" to="/Sponsors" />
-        </SectionHeading>
+        <SectionHeading heading="City Guide" />
+        <Map />
       </PageContainer>
     </Layout>
   )

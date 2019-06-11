@@ -1,0 +1,96 @@
+.Map-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.Map-legend{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-right: 20px;
+}
+
+.Map-legendNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.Map-LegendNavItem{
+    font-size: 13px;
+    font-weight: bold;
+    font-family: "Montserrat" , sans-serif;
+    color: #ffffff;
+    border: none;
+    background-color: transparent;
+}
+
+.Map-LegendNavItem:hover,
+.Map-LegendNavItem:active,
+.Map-LegendNavItem:focus{
+    color: #DD4B39;
+}
+
+.Map-LegendNavItem-selected {
+    font-weight: bold;
+    border-bottom: 2px solid #DD4B39;
+}
+
+.Map-PlaceCardContainer {
+    height: 400px;
+    overflow: auto;
+    overflow-y: scroll;
+}
+.Map-PlaceCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 280px;
+    height: 100px;
+    border-bottom: 2px solid #11233D;
+}
+
+.Map-PlaceCard:hover,
+.Map-PlaceCard:active,
+.Map-PlaceCard:focus {
+    background-color: #11233D;
+}
+
+.Map-PlaceCardName{
+    color: #ffffff;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.Map-PlaceCard:hover .Map-PlaceCardName,
+.Map-PlaceCard:active .Map-PlaceCardName,
+.Map-PlaceCard:focus .Map-PlaceCardName {
+    color: #DD4B39;
+}
+.Map-PlaceCardAddress{
+    color: #ffffff;
+}
+
+.Map-PlaceCardType{
+    color: #ffffff;
+}
+
+.Map-marker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:20px;
+    height:20px;
+    border-radius: 10px;
+    background-color: #DD4B39;
+}
+
+.Map-markerInnerCircle {
+    width:10px;
+    height:10px;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+}
