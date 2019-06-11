@@ -12,7 +12,7 @@ import "./indexPage.css"
 
 const speakers = [
   {
-    speakerName: "Fuck" + "\n" + "Off",
+    speakerName: "First" + "\n" + "Name",
     title: "Software Engineer",
     company: "Facebook",
     bio:
@@ -21,7 +21,7 @@ const speakers = [
       "https://images.unsplash.com/photo-1559697242-07e90b48b9fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
   },
   {
-    speakerName: "Fuck" + "\n" + "Off",
+    speakerName: "First" + "\n" + "Name",
     title: "Software Engineer",
     company: "Facebook",
     bio:
@@ -30,7 +30,7 @@ const speakers = [
       "https://images.unsplash.com/photo-1559697242-07e90b48b9fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
   },
   {
-    speakerName: "Fuck" + "\n" + "Off",
+    speakerName: "First" + "\n" + "Name",
     title: "Software Engineer",
     company: "Facebook",
     bio:
