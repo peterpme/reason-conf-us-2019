@@ -2,12 +2,12 @@
 
 module NavItem = {
   [@react.component]
-  let make = (~label, ~to_) => {
+  let make = (~label, ~to__) => {
     <Link
       className="Navbar-linkLabel"
       labelClassName="Navbar-linkLabel"
       label
-      to_
+      to__
     />;
   };
 };
@@ -15,11 +15,12 @@ module NavItem = {
 [@react.component]
 let make = (~className) => {
   <nav className={"NavBar " ++ className}>
-    <NavItem label="Workshops" to_="/" />
-    <NavItem label="Speakers" to_="/" />
-    <NavItem label="Sponsors" to_="/" />
-    <NavItem label="Schedule" to_="/" />
-    <NavItem label="Contact" to_="/" />
+    <NavItem label="Workshops" to__="/" />
+    <NavItem label="Speakers" to__="/" />
+    <NavItem label="Sponsors" to__="/" />
+    <NavItem label="Schedule" to__="/" />
+    <NavItem label="Visit" to__="/visit" />
+    <NavItem label="Contact" to__="/" />
     <TicketsButton />
   </nav>;
 };

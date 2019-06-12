@@ -3,7 +3,7 @@ external make:
   (
     ~className: string=?,
     ~labelClassName: string=?,
-    ~to_: string=?,
+    ~to__: string=?,
     ~label: string=?,
     ~style: ReactDOMRe.style=?
   ) =>

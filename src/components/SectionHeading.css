@@ -8,3 +8,16 @@
     color: #ffffff;
     padding-right: 50px;
 }
+
+@media only screen and (max-width: 1150px) {
+    .SectionHeading-container{
+        flex-wrap: wrap;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .SectionHeading {
+        color: #ffffff;
+        padding-right: 0px;
+    }
+}

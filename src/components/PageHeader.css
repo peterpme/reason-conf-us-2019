@@ -11,3 +11,9 @@
 .PageHeader-navBar{
     width: 70%;
 }
+
+@media only screen and (max-width: 1150px) {
+    .PageHeader {
+
+    }
+}
