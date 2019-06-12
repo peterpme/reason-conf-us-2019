@@ -1,6 +1,5 @@
 .SpeakerGrid {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-gap: 20px;
 }

@@ -1,71 +1,65 @@
 .SpeakerCard {
-    position: relative;
-    width: 300px;
-    margin-right: 50px;
-    z-index: 0;
+  position: relative;
+  width: 300px;
+  z-index: 0;
 }
 
 .SpeakerCard:before {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    width: 100%;
-    height: 310px;
-    background-image: linear-gradient(
-     rgba(56, 121, 213,.5) 0%,
-     rgb(0, 0, 0) 95%
-    )
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 310px;
+  background-image: linear-gradient(rgba(56, 121, 213, 0.5) 0%, rgb(0, 0, 0) 95%);
 }
 
 .SpeakerCard-avatar {
-    width: 300px;
-    height: 300px;
+  width: 300px;
+  height: 300px;
 }
-
 
 .SpeakerCard-name {
-    display: block;
-    font-family: "Montserrat", sans-serif ;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 24px;
-    color: #DD4B39;
-    margin-top:-30px;
-    margin-left:20px;
-    position: absolute;
-    z-index: 2;
-    white-space: pre-wrap;
-    line-height: 30px;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  color: #dd4b39;
+  margin-top: -30px;
+  margin-left: 20px;
+  position: absolute;
+  z-index: 2;
+  white-space: pre-wrap;
+  line-height: 30px;
 }
 
-
 .SpeakerCard-infoContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border-left: 5px solid #DD4B39;
-    padding-left: 15px;
-    margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-left: 5px solid #dd4b39;
+  padding-left: 15px;
+  margin-top: 30px;
 }
 
 .SpeakerCard-title {
-    font-family: "Montserrat", sans-serif ;
-    font-weight: bold;
-    font-size: 14px;
-    color: #ffffff;
-    margin-bottom: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 5px;
 }
 
 .SpeakerCard-bio {
-    font-family: "Montserrat", sans-serif ;
-    font-weight: normal;
-    font-size: 14px;
-    color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: #ffffff;
 }
 
 @media only screen and (max-width: 400px) {
-    .SpeakerCard {
-        margin-bottom: 50px;
-        margin-right: 0px;
-    }
+  .SpeakerCard {
+    margin-bottom: 50px;
+    margin-right: 0px;
+  }
 }

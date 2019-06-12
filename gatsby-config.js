@@ -3,8 +3,8 @@ var proxy = require("http-proxy-middleware")
 module.exports = {
   siteMetadata: {
     title: "Reason Conf US 2019",
-    description:
-      "This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution."
+    description: "A hands-on ReasonML conference for web developers & OCaml enthusiasts",
+    date: "October 7-8, 2019"
   },
   plugins: [
     "gatsby-plugin-react-helmet",

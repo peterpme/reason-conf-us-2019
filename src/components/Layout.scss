@@ -1,0 +1,15 @@
+body,
+body > div {
+  width: 100%;
+  height: 100%;
+}
+
+body > div > div {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}

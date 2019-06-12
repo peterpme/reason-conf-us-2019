@@ -5,7 +5,6 @@ module NavItem = {
   let make = (~label, ~to__) => {
     <Link
       className="navbar-item"
-      labelClassName="navbar-link"
       label
       to__
     />;

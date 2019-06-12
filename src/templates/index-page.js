@@ -6,6 +6,7 @@ import Layout from "../components/Layout"
 // import { make as Layout } from "../components/Layout.bs"
 import { make as PageContainer } from "../components/PageContainer.bs"
 import { make as SectionHeading } from "../components/SectionHeading.bs"
+import { make as Section } from "../components/Section.bs"
 import { make as CTAButton } from "../components/CTAButton.bs"
 import { make as HeroGraphic } from "../components/HeroGraphic.bs"
 import { make as SpeakerGrid } from "../components/SpeakerGrid.bs"
@@ -21,11 +22,11 @@ const IndexPageTemplate = ({ data, isMobile }) => {
   const speakers = allSpeakersJson.speakers
   return (
     <Layout>
-      <PageContainer className="Landing-HeroContainer">
+      <PageContainer>
         <Hero
           title={site.siteMetadata.title}
-          subtitle="October 7-9, 2019"
-          bio="A hands-on two-day conference with workshops and talks on React Native from Expo and Software Mansion."
+          subtitle={site.siteMetadata.date}
+          bio={site.siteMetadata.description}
           graphic={
             <HeroGraphic width={isMobile ? "360" : "760"} height={isMobile ? "200" : "380"} />
           }
@@ -42,16 +43,21 @@ const IndexPageTemplate = ({ data, isMobile }) => {
           </a>
         </Hero>
       </PageContainer>
-      <PageContainer className="Landing-SpeakerContainer">
-        <SectionHeading heading="Heading about talks and speakers">
-          <CTAButton buttonStyle="Landing-SpeakersCTA" label="View All Speakers" to="/Speakers" />
-        </SectionHeading>
-        <SpeakerGrid className="Landing-SpeakerGrid" speakers={speakers} />
+      <PageContainer>
+        <Section
+          title="Heading about talks and speakers"
+          extra={
+            <CTAButton buttonStyle="Landing-SpeakersCTA" label="View All Speakers" to="/Speakers" />
+          }>
+          <SpeakerGrid speakers={speakers} />
+        </Section>
       </PageContainer>
-      <PageContainer className="Landing-SponsorContainer">
-        <SectionHeading heading="Sponsored by">
-          <CTAButton buttonStyle="Landing-SpeakersCTA" label="Become a sponsor" to="/Sponsors" />
-        </SectionHeading>
+      <PageContainer>
+        <Section
+          title="Sponsored by"
+          extra={
+            <CTAButton buttonStyle="Landing-SpeakersCTA" label="Become a sponsor" to="/Sponsors" />
+          }></Section>
       </PageContainer>
     </Layout>
   )
@@ -62,9 +68,10 @@ export const query = graphql`
   query HomePage {
     allSpeakersJson(filter: { featured: { ne: false } }) {
       speakers: nodes {
-        bio
-        company
         name
+        bio
+        title
+        company
         imageUrl
       }
     }

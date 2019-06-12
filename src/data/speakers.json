@@ -5,7 +5,15 @@
     "title": "Engineer",
     "company": "Facebook",
     "bio": "Creator of React.js and Reason",
-    "imageUrl": "https://pbs.twimg.com/profile_images/822703594780528640/2i1RPzvd_200x200.jpg"
+    "imageUrl": "https://res.cloudinary.com/chicagojs/image/fetch/https://pbs.twimg.com/profile_images/822703594780528640/2i1RPzvd_200x200.jpg"
+  },
+  {
+    "name": "Ricky Vetter",
+    "featured": true,
+    "title": "Engineer",
+    "company": "Facebook",
+    "bio": "Messenger.com Platform and Reason Engineer",
+    "imageUrl": "https://res.cloudinary.com/chicagojs/image/fetch/https://pbs.twimg.com/profile_images/541111032207273984/DGsZmmfr_200x200.jpeg"
   },
   {
     "name": "Cheng Lou",
@@ -13,7 +21,7 @@
     "title": "Engineer",
     "company": "Facebook",
     "bio": "Reason Core Developer and Messenger.com Platform Engineer",
-    "imageUrl": "https://pbs.twimg.com/profile_images/554199709909131265/Y5qUDaCB_200x200.jpeg"
+    "imageUrl": "https://res.cloudinary.com/chicagojs/image/fetch/https://pbs.twimg.com/profile_images/554199709909131265/Y5qUDaCB_200x200.jpeg"
   },
   {
     "name": "Ricky Vetter",
@@ -21,6 +29,6 @@
     "title": "Engineer",
     "company": "Facebook",
     "bio": "Messenger.com Platform and Reason Engineer",
-    "imageUrl": "https://pbs.twimg.com/profile_images/541111032207273984/DGsZmmfr_200x200.jpeg"
+    "imageUrl": "https://res.cloudinary.com/chicagojs/image/fetch/https://pbs.twimg.com/profile_images/541111032207273984/DGsZmmfr_200x200.jpeg"
   }
 ]
