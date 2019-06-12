@@ -18,3 +18,9 @@
 .Navbar-linkLabel:focus{
     color: #eee;
 }
+
+@media only screen and (max-width: 800px) {
+    .NavBar {
+        display:none;
+    }
+}
