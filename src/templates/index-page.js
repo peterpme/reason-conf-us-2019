@@ -1,6 +1,7 @@
 import React from "react"
 
-import { make as Layout } from "../components/Layout.bs"
+import Layout from "../components/Layout"
+// import { make as Layout } from "../components/Layout.bs"
 import { make as PageContainer } from "../components/PageContainer.bs"
 import { make as SectionHeading } from "../components/SectionHeading.bs"
 import { make as CTAButton } from "../components/CTAButton.bs"
@@ -40,12 +41,12 @@ const speakers = [
   }
 ]
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
   return (
     <Layout>
       <PageContainer className="Landing-HeroContainer">
         <Hero
-          title="Chicago, IL"
+          title={data.site.siteMetadata.title}
           subtitle="October 7-9, 2019"
           bio="A hands-on two-day conference with workshops and talks on React Native from Expo and Software Mansion."
           graphic={<HeroGraphic />}
@@ -78,3 +79,13 @@ const IndexPage = () => {
 }
 
 export default IndexPage
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
