@@ -28,10 +28,12 @@
     "parcel-bundler": "^1.9.4",
     "prop-types": "^15.6.0",
     "react": "^16.8.4",
+    "react-burger-menu": "^2.6.10",
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.1",
     "react-map-gl": "^5.0.3",
     "react-mapbox-gl": "^4.4.0",
+    "react-sizes": "^2.0.0",
     "reason-react": "0.7.0",
     "uuid": "^3.2.1"
   },

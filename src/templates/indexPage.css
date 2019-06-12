@@ -26,3 +26,9 @@
     margin-top: 50px;
     padding-left: 50px;
 }
+
+@media only screen and (max-width: 800px) {
+    .Landing-SpeakerContainer {
+        padding-left: 0px;
+    }
+}

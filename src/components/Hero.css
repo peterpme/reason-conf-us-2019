@@ -5,3 +5,12 @@
     margin-left: 50px;
     margin-right: 50px;
 }
+
+@media only screen and (max-width: 800px) {
+    .Hero{
+        align-items: center;
+        flex-wrap: wrap;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}

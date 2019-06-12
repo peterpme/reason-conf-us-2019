@@ -1,4 +1,5 @@
 import React from "react"
+import withSizes from "react-sizes"
 
 import { make as Layout } from "../components/Layout.bs"
 import { make as PageContainer } from "../components/PageContainer.bs"
@@ -40,7 +41,11 @@ const speakers = [
   }
 ]
 
-const IndexPage = () => {
+const mapSizesToProps = ({ width }) => ({
+  isMobile: width < 800
+})
+
+const IndexPage = ({ isMobile }) => {
   return (
     <Layout>
       <PageContainer className="Landing-HeroContainer">
@@ -48,7 +53,9 @@ const IndexPage = () => {
           title="Chicago, IL"
           subtitle="October 7-9, 2019"
           bio="A hands-on two-day conference with workshops and talks on React Native from Expo and Software Mansion."
-          graphic={<HeroGraphic />}
+          graphic={
+            <HeroGraphic width={isMobile ? "360" : "760"} height={isMobile ? "200" : "380"} />
+          }
           ctaLabel="Tickets"
           href="/tickets">
           <a
@@ -77,4 +84,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default withSizes(mapSizesToProps)(IndexPage)
