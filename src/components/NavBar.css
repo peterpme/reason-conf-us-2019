@@ -1,26 +1,40 @@
-.NavBar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    top: 0;
-    right: 0;
+.navbar-item:hover,
+.navbar-item:active,
+.navbar-item:focus {
+  background: #333 !important;
 }
 
-.Navbar-linkLabel{
-    color: #ffffff;
-    font-size: 13px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
+.navbar-item.navbar-item--link {
+  background: transparent !important;
 }
 
-.Navbar-linkLabel:hover,
-.Navbar-linkLabel:active,
-.Navbar-linkLabel:focus{
-    color: #eee;
+.navbar-link {
+  color: #fff;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 
-@media only screen and (max-width: 800px) {
-    .NavBar {
-        display:none;
-    }
+.navbar-link:hover,
+.navbar-link:active,
+.navbar-link:focus {
+  background: transparent;
+  color: #eee;
+}
+
+.navbar-button {
+  background-color: #dd4b39;
+  border: none;
+  padding: 10px 25px;
+  color: white;
+
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.navbar-button:hover,
+.navbar-button:active,
+.navbar-button:focus {
+  color: #eee;
 }
