@@ -63,7 +63,7 @@
     color: #ffffff;
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 400px) {
     .SpeakerCard {
         margin-bottom: 50px;
         margin-right: 0px;

@@ -42,7 +42,7 @@ const speakers = [
 ]
 
 const mapSizesToProps = ({ width }) => ({
-  isMobile: width < 1150
+  isMobile: width < 800
 })
 
 const IndexPage = ({ isMobile }) => {

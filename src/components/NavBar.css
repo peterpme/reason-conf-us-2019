@@ -19,7 +19,7 @@
     color: #eee;
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 800px) {
     .NavBar {
         display:none;
     }
