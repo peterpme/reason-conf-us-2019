@@ -17,19 +17,22 @@ const IndexPageTemplate = ({ data, isMobile }) => {
   const speakers = allSpeakersJson.speakers
   const sponsors = allSponsorsJson.tiers
 
+  const meta = site.siteMetadata
   return (
     <Layout>
       <PageContainer>
         <Hero
-          title={site.siteMetadata.title}
-          subtitle={site.siteMetadata.date}
-          bio={site.siteMetadata.description}
+          title={meta.city}
+          subtitle={meta.date}
+          bio={meta.description}
           graphic={
             <HeroGraphic width={isMobile ? "360" : "760"} height={isMobile ? "200" : "380"} />
           }
           ctaLabel="Tickets"
-          href="/tickets">
+          href={meta.ticketLink}>
           <a
+            href={meta.sponsorLink}
+            rel="noreferrer nofollow"
             style={{
               color: "#ffffff",
               textDecoration: "underline",
@@ -42,19 +45,15 @@ const IndexPageTemplate = ({ data, isMobile }) => {
       </PageContainer>
       <PageContainer>
         <Section
-          title="Heading about talks and speakers"
-          extra={
-            <CTAButton buttonStyle="Landing-SpeakersCTA" label="View All Speakers" to="/Speakers" />
-          }>
+          title="A glimpse of our speakers"
+          extra={<CTAButton label="View All Speakers" to="/speakers" />}>
           <SpeakerGrid speakers={speakers} />
         </Section>
       </PageContainer>
       <PageContainer>
         <Section
-          title="Sponsored by"
-          extra={
-            <CTAButton buttonStyle="Landing-SpeakersCTA" label="Become a sponsor" to="/Sponsors" />
-          }></Section>
+          title="Thanks to our amazing sponsors"
+          extra={<CTAButton label="Become a sponsor" to="/sponsors" />}></Section>
           {sponsors.map(node =>
               <SponsorRow tier={node.tier} sponsors={node.sponsors} />
           )}
@@ -79,6 +78,9 @@ export const query = graphql`
       siteMetadata {
         description
         title
+        ticketLink
+        cfpLink
+        sponsorLink
       }
     }
     allSponsorsJson {

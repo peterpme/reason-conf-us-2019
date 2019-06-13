@@ -1,11 +1,9 @@
-[%bs.raw {|require('./CTAButton.css')|}];
+[%bs.raw {|require('./CTAButton.scss')|}];
 
 [@react.component]
-let make = (~buttonStyle, ~label, ~to__, ~height="50px", ~width="200px") => {
+let make = (~label, ~to__) => {
   <Link
-    className={"CTAButton " ++ buttonStyle}
-    labelClassName="CTAButton-label"
-    style={ReactDOMRe.Style.make(~height, ~width, ())}
+    className="CTAButton"
     label
     to__
   />;

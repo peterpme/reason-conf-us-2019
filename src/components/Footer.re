@@ -1,6 +1,7 @@
+[%bs.raw {|require('./Footer.scss')|}];
 [@react.component]
 let make = () => {
-  <footer className="footer">
-    <Logo width="150" />
+  <footer className="Footer">
+    <Logo width="130" />
   </footer>
 }
