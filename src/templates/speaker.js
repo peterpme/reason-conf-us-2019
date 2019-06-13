@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
-import Helmet from 'react-helmet'
-import { graphql, Link } from 'gatsby'
-import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import React from "react"
+import PropTypes from "prop-types"
+import { kebabCase } from "lodash"
+import Helmet from "react-helmet"
+import { graphql, Link } from "gatsby"
+import Layout from "../components/Layout"
+import Content, { HTMLContent } from "../components/Content"
 
 export const SpeakerTemplate = ({
   content,
@@ -12,7 +12,7 @@ export const SpeakerTemplate = ({
   description,
   tags,
   title,
-  helmet,
+  helmet
 }) => {
   return <div>Speaker</div>
   const PostContent = contentComponent || Content
@@ -23,7 +23,7 @@ SpeakerTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
-  helmet: PropTypes.object,
+  helmet: PropTypes.object
 }
 
 const Speaker = ({ data }) => {
@@ -31,16 +31,15 @@ const Speaker = ({ data }) => {
 
   return (
     <Layout>
-      <SpeakerTemplate
-      />
+      <SpeakerTemplate />
     </Layout>
   )
 }
 
 Speaker.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
-  }),
+    markdownRemark: PropTypes.object
+  })
 }
 
 export default Speaker

@@ -1,21 +1,15 @@
 import React from "react"
 import { graphql } from "gatsby"
-import withSizes from "react-sizes"
 
 import Layout from "../components/Layout"
-// import { make as Layout } from "../components/Layout.bs"
 import { make as PageContainer } from "../components/PageContainer.bs"
-import { make as SectionHeading } from "../components/SectionHeading.bs"
 import { make as Section } from "../components/Section.bs"
 import { make as CTAButton } from "../components/CTAButton.bs"
 import { make as HeroGraphic } from "../components/HeroGraphic.bs"
 import { make as SpeakerGrid } from "../components/SpeakerGrid.bs"
 import { make as Hero } from "../components/Hero.bs"
+import { make as SponsorRow } from "../components/SponsorRow.bs"
 import "./indexPage.css"
-
-const mapSizesToProps = ({ width }) => ({
-  isMobile: width < 800
-})
 
 const IndexPageTemplate = ({ data, isMobile }) => {
   const { allSpeakersJson, site } = data
@@ -58,6 +52,7 @@ const IndexPageTemplate = ({ data, isMobile }) => {
           extra={
             <CTAButton buttonStyle="Landing-SpeakersCTA" label="Become a sponsor" to="/Sponsors" />
           }></Section>
+        <SponsorRow speakers={speakers} />
       </PageContainer>
     </Layout>
   )
