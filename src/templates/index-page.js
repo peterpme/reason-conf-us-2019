@@ -25,7 +25,7 @@ const IndexPageTemplate = ({ data, isMobile }) => {
     <Layout>
       <PageContainer>
         <Hero
-          title={meta.title}
+          title={meta.city}
           subtitle={meta.date}
           bio={meta.description}
           graphic={
@@ -48,19 +48,15 @@ const IndexPageTemplate = ({ data, isMobile }) => {
       </PageContainer>
       <PageContainer>
         <Section
-          title="Heading about talks and speakers"
-          extra={
-            <CTAButton buttonStyle="Landing-SpeakersCTA" label="View All Speakers" to="/Speakers" />
-          }>
+          title="A glimpse of our speakers"
+          extra={<CTAButton label="View All Speakers" to="/speakers" />}>
           <SpeakerGrid speakers={speakers} />
         </Section>
       </PageContainer>
       <PageContainer>
         <Section
-          title="Sponsored by"
-          extra={
-            <CTAButton buttonStyle="Landing-SpeakersCTA" label="Become a sponsor" to="/Sponsors" />
-          }></Section>
+          title="Thanks to our amazing sponsors"
+          extra={<CTAButton label="Become a sponsor" to="/sponsors" />}></Section>
       </PageContainer>
     </Layout>
   )

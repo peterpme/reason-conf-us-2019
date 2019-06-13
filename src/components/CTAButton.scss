@@ -1,0 +1,16 @@
+.CTAButton {
+  background-color: #dd4b39;
+  color: white;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #eee;
+  }
+}
