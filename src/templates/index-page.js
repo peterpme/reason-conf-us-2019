@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 import withSizes from "react-sizes"
 
 import Layout from "../components/Layout"
-// import { make as Layout } from "../components/Layout.bs"
 import { make as PageContainer } from "../components/PageContainer.bs"
 import { make as SectionHeading } from "../components/SectionHeading.bs"
 import { make as Section } from "../components/Section.bs"
@@ -76,6 +75,8 @@ export const query = graphql`
     }
     site {
       siteMetadata {
+        city
+        date
         description
         title
         ticketLink
