@@ -1,6 +1,6 @@
 import React from "react"
 import Helmet from "react-helmet"
-import { make as Navbar } from "../components/Navbar.bs.js"
+import { make as NavBar } from "../components/NavBar.bs.js"
 import { make as Footer } from "../components/Footer.bs.js"
 import useSiteMetadata from "./SiteMetadata"
 import "./all.sass"
@@ -19,7 +19,7 @@ export default function TemplateWrapper({ children }) {
         <meta property="og:url" content="/" />
         <meta property="og:image" content="/img/og-image.jpg" />
       </Helmet>
-      <Navbar />
+      <NavBar />
       <div className="Site-content">{children}</div>
       <Footer />
     </React.Fragment>
