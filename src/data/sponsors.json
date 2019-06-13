@@ -1,0 +1,25 @@
+[
+  {
+    "tier": "Platinum",
+    "sponsors": [{
+      "name": "Draftbit",
+      "imageUrl": "https://unsplash.com/photos/qW_k6x5OfRc"
+    }]
+  },
+  {
+    "tier": "Gold",
+    "sponsors": []
+  },
+  {
+    "tier": "Silver",
+    "sponsors": []
+  },
+  {
+    "tier": "Bronze",
+    "sponsors": []
+  },
+  {
+    "tier": "Other",
+    "sponsors": []
+  }
+]
