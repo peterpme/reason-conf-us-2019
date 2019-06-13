@@ -81,5 +81,14 @@ export const query = graphql`
         title
       }
     }
+    allSponsorsJson {
+      tiers: nodes {
+        tier
+        sponsors {
+          name
+          imageUrl
+        }
+      }
+    }
   }
 `
