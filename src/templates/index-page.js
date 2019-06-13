@@ -1,24 +1,22 @@
 import React from "react"
 import { graphql } from "gatsby"
-import withSizes from "react-sizes"
 
 import Layout from "../components/Layout"
 import { make as PageContainer } from "../components/PageContainer.bs"
-import { make as SectionHeading } from "../components/SectionHeading.bs"
 import { make as Section } from "../components/Section.bs"
 import { make as CTAButton } from "../components/CTAButton.bs"
 import { make as HeroGraphic } from "../components/HeroGraphic.bs"
 import { make as SpeakerGrid } from "../components/SpeakerGrid.bs"
 import { make as Hero } from "../components/Hero.bs"
+import { make as SponsorRow } from "../components/SponsorRow.bs"
+
 import "./indexPage.css"
 
-const mapSizesToProps = ({ width }) => ({
-  isMobile: width < 800
-})
-
 const IndexPageTemplate = ({ data, isMobile }) => {
-  const { allSpeakersJson, site } = data
+  const { allSpeakersJson, allSponsorsJson, site } = data
   const speakers = allSpeakersJson.speakers
+  const sponsors = allSponsorsJson.tiers
+
   const meta = site.siteMetadata
   return (
     <Layout>
@@ -56,6 +54,9 @@ const IndexPageTemplate = ({ data, isMobile }) => {
         <Section
           title="Thanks to our amazing sponsors"
           extra={<CTAButton label="Become a sponsor" to="/sponsors" />}></Section>
+          {sponsors.map(node =>
+              <SponsorRow tier={node.tier} sponsors={node.sponsors} />
+          )}
       </PageContainer>
     </Layout>
   )

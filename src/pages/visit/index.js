@@ -1,6 +1,6 @@
 import React from "react"
 
-import Layout from '../../components/Layout'
+import Layout from "../../components/Layout"
 import { make as PageContainer } from "../../components/PageContainer.bs"
 import { make as SectionHeading } from "../../components/SectionHeading.bs"
 import { make as CTAButton } from "../../components/CTAButton.bs"
