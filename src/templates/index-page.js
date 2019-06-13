@@ -9,11 +9,14 @@ import { make as HeroGraphic } from "../components/HeroGraphic.bs"
 import { make as SpeakerGrid } from "../components/SpeakerGrid.bs"
 import { make as Hero } from "../components/Hero.bs"
 import { make as SponsorRow } from "../components/SponsorRow.bs"
+
 import "./indexPage.css"
 
 const IndexPageTemplate = ({ data, isMobile }) => {
-  const { allSpeakersJson, site } = data
+  const { allSpeakersJson, allSponsorsJson, site } = data
   const speakers = allSpeakersJson.speakers
+  const sponsors = allSponsorsJson.tiers
+
   return (
     <Layout>
       <PageContainer>
@@ -52,7 +55,9 @@ const IndexPageTemplate = ({ data, isMobile }) => {
           extra={
             <CTAButton buttonStyle="Landing-SpeakersCTA" label="Become a sponsor" to="/Sponsors" />
           }></Section>
-        <SponsorRow speakers={speakers} />
+          {sponsors.map(node =>
+              <SponsorRow tier={node.tier} sponsors={node.sponsors} />
+          )}
       </PageContainer>
     </Layout>
   )

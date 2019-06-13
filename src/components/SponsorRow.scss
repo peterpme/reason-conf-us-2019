@@ -1,12 +1,31 @@
 .SponsorRow{
-
+  display: flex;
+  flex-direction: column;
 }
+
 .SponsorRow-Tier {
-
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  color: #dd4b39;
+  border-bottom: 1px solid #333;
+  line-height: 30px;
 }
+
 .SponsorRow-Row {
-
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;g
+  align-items: center;
+  margin-bottom: 20px;
 }
-.SponsorRow-Logo{
 
+.SponsorRow-Link{
+  margin-right: 20px;
+}
+
+.SponsorRow-Logo{
+  height: 100px;
+  width: 100px;
 }
