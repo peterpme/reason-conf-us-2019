@@ -1,4 +1,4 @@
-[%bs.raw {|require('./NavBar.css')|}];
+[%bs.raw {|require('./NavBar.scss')|}];
 
 module NavItem = {
   [@react.component]

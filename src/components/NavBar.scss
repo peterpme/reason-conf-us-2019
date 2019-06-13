@@ -1,25 +1,28 @@
-.navbar-item:hover,
-.navbar-item:active,
-.navbar-item:focus {
-  background: #333 !important;
+.navbar-item {
+  color: #fff;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #333 !important;
+    background: transparent !important;
+  }
+
+  span {
+    color: #fff;
+    &:hover,
+    &:active,
+    &:focus {
+      color: #333 !important;
+    }
+  }
 }
 
 .navbar-item.navbar-item--link {
   background: transparent !important;
-}
-
-.navbar-link {
-  color: #fff;
-  font-size: 13px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-}
-
-.navbar-link:hover,
-.navbar-link:active,
-.navbar-link:focus {
-  background: transparent;
-  color: #eee;
 }
 
 .navbar-button {
