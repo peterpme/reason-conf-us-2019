@@ -3,23 +3,40 @@
     "tier": "Platinum",
     "sponsors": [{
       "name": "Draftbit",
+      "url": "https://draftbit.com",
       "imageUrl": "https://unsplash.com/photos/qW_k6x5OfRc"
     }]
   },
   {
     "tier": "Gold",
-    "sponsors": []
+    "sponsors": [{
+      "name": "Draftbit",
+      "url": "https://draftbit.com",
+      "imageUrl": "https://unsplash.com/photos/qW_k6x5OfRc"
+    }]
   },
   {
     "tier": "Silver",
-    "sponsors": []
+    "sponsors": [{
+      "name": "Draftbit",
+      "url": "https://draftbit.com",
+      "imageUrl": "https://unsplash.com/photos/qW_k6x5OfRc"
+    }]
   },
   {
     "tier": "Bronze",
-    "sponsors": []
+    "sponsors": [{
+      "name": "Draftbit",
+      "url": "https://draftbit.com",
+      "imageUrl": "https://unsplash.com/photos/qW_k6x5OfRc"
+    }]
   },
   {
     "tier": "Other",
-    "sponsors": []
+    "sponsors": [{
+      "name": "Draftbit",
+      "url": "https://draftbit.com",
+      "imageUrl": "https://unsplash.com/photos/qW_k6x5OfRc"
+    }]
   }
 ]
