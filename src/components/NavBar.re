@@ -1,10 +1,11 @@
-[%bs.raw {|require('./NavBar.css')|}];
+[%bs.raw {|require('./NavBar.scss')|}];
 
 module NavItem = {
   [@react.component]
   let make = (~label, ~to__) => {
     <Link
       className="navbar-item"
+      labelClassName="navbar-link"
       label
       to__
     />;

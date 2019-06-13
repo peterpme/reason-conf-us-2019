@@ -1,7 +1,10 @@
-.navbar-item:hover,
-.navbar-item:active,
-.navbar-item:focus {
-  background: #333 !important;
+.navbar-item {
+  color: white;
+  &:hover,
+  &:active,
+  &:focus {
+    background: #333 !important;
+  }
 }
 
 .navbar-item.navbar-item--link {
