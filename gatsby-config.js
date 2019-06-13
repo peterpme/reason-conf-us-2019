@@ -4,7 +4,16 @@ module.exports = {
   siteMetadata: {
     title: "Reason Conf US 2019",
     description: "A hands-on ReasonML conference for web developers & OCaml enthusiasts",
-    date: "October 7-8, 2019"
+    keywords: "ReasonML, OCaml, Javascript",
+    siteUrl: "https://www.reason-conf.us",
+    author: "ReasonConf",
+    twitter: "reasonconf",
+    city: "Chicago, IL",
+    date: "October 7-8, 2019",
+    ticketLink: "https://ti.to/chicagojs/reasonconf-us-2019",
+    cfpLink: "https://www.papercall.io/reason-conf-us-2019",
+    sponsorLink: "mailto:mike@chicagojs.org",
+    sponsorPdf: "https://drive.google.com/file/d/1U8YVMnv-BeWlOOFs66lRsZKTQVlRfZb4/view?usp=sharing"
   },
   plugins: [
     "gatsby-plugin-react-helmet",
