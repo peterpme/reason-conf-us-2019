@@ -2,11 +2,11 @@
 
 module NavItem = {
   [@react.component]
-  let make = (~label, ~to__) => {
+  let make = (~label, ~to_) => {
     <Link
       className="navbar-item"
       label
-      to__
+      to__=to_
     />;
   };
 };
@@ -32,7 +32,9 @@ let make = () => {
   <nav className="navbar" role="navigation" ariaLabel="main-navigation">
     <div className="container">
       <div className="navbar-brand">
+        <a href="/">
         <Logo />
+        </a>
         <div onClick=(_e => toggleHamburger()) className={"navbar-burger burger" ++ activeClassName}>
           <span />
           <span />
@@ -41,12 +43,12 @@ let make = () => {
       </div>
       <div id="navMenu" className={"navbar-menu" ++ activeClassName}>
         <div className="navbar-end has-text-centered">
-          <NavItem label="Workshops" to__="/" />
-          <NavItem label="Speakers" to__="/" />
-          <NavItem label="Sponsors" to__="/" />
-          <NavItem label="Schedule" to__="/" />
-          <NavItem label="Visit" to__="/visit" />
-          <NavItem label="Contact" to__="/" />
+          <NavItem label="Workshops" to_="/" />
+          <NavItem label="Speakers" to_="/" />
+          <NavItem label="Sponsors" to_="/" />
+          <NavItem label="Schedule" to_="/" />
+          <NavItem label="Visit" to_="/visit" />
+          <NavItem label="Contact" to_="/" />
           <ExternalLink label="Tickets" href="/tickets" />
         </div>
       </div>
