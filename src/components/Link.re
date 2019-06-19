@@ -4,5 +4,6 @@ external make:(
     ~labelClassName: string=?,
     ~to__: string=?,
     ~label: string=?,
-    ~style: ReactDOMRe.style=?
+    ~style: ReactDOMRe.style=?,
+    ~children: React.element=?
   ) => React.element = ""

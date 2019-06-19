@@ -7,7 +7,9 @@ module NavItem = {
       className="navbar-item"
       label
       to__=to_
-    />
+    >
+    {label->React.string}
+    </Link>
   };
 };
 
