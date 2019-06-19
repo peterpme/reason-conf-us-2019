@@ -20,5 +20,17 @@
     "reason-react"
   ],
   "ppx-flags": [],
-  "refmt": 3
+  "refmt": 3,
+  "gentypeconfig": {
+    "language": "untyped",
+    "module": "es6",
+    "importPath": "relative",
+    "reasonReactPath": "reason-react/src/ReasonReact.js",
+    "exportInterfaces": false,
+    "shims": {},
+    "debug": {
+      "all": false,
+      "basic": false
+    }
+  }
 }

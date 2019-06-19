@@ -6294,6 +6294,11 @@ gaze@^1.0.0:
   dependencies:
     globule "^1.0.0"
 
+gentype@^2.29.1:
+  version "2.29.1"
+  resolved "https://registry.yarnpkg.com/gentype/-/gentype-2.29.1.tgz#41452047bc135468f02aaa6c4ebf48ca1c358de4"
+  integrity sha512-NKnt52mETHZ8Wl+2Pw0EaNFq/7t/bhgU11GmXYewgsC889kTXreCpqs4I0f48cP7sGG0prXDbiY5ByMKUBMvJA==
+
 geojson-vt@^3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/geojson-vt/-/geojson-vt-3.2.1.tgz#f8adb614d2c1d3f6ee7c4265cad4bbf3ad60c8b7"
