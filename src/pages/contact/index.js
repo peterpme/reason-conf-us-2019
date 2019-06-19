@@ -1,6 +1,7 @@
 import React from "react"
 import { navigate } from "gatsby-link"
 import Layout from "../../components/Layout"
+import { make as ContactGraphic } from "../../components/ContactGraphic.bs"
 
 function encode(data) {
   return Object.keys(data)
@@ -107,6 +108,7 @@ export default class Index extends React.Component {
             </div>
           </div>
         </section>
+        <ContactGraphic />
       </Layout>
     )
   }
