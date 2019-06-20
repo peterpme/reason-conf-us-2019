@@ -34,8 +34,8 @@ let make = (~width="656", ~height="207") => {
       />
     </svg>
     <svg
-      width="404"
-      height="334"
+      width={width !== "656" ? "200" : "404"}
+      height={height !== "207" ? "150" : "334"}
       viewBox="0 0 404 334"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
