@@ -3,8 +3,10 @@ import Helmet from "react-helmet"
 import { make as NavBar } from "../components/NavBar.bs.js"
 import { make as Footer } from "../components/Footer.bs.js"
 import useSiteMetadata from "./SiteMetadata"
-import "./all.sass"
+
 import "./Layout.scss"
+
+import "../../styles/main.css"
 
 export default function TemplateWrapper({ children }) {
   const { title, description } = useSiteMetadata()
@@ -16,11 +18,11 @@ export default function TemplateWrapper({ children }) {
         <meta name="description" content={description} />
         <meta property="og:type" content="business.business" />
         <meta property="og:title" content={title} />
-        <meta property="og:url" content="/" />
+        <meta property="og:url" content="/"/>
         <meta property="og:image" content="/img/og-image.jpg" />
       </Helmet>
       <NavBar />
-      <div className="Site-content">{children}</div>
+      <div className="pt-10 flex flex-col max-w-5xl ml-auto mr-auto w-full">{children}</div>
       <Footer />
     </React.Fragment>
   )
