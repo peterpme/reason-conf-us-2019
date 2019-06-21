@@ -6,9 +6,9 @@ let make = (~className, ~hotels) => {
     {hotels
      ->Belt.Array.map(h =>
          <HotelCard
-           hotelName=h##hotelName
+           hotelName=h##name
            address=h##address
-           description=h##description
+           description=h##info
            imageUrl=h##imageUrl
            bookingLink=h##bookingLink
          />
