@@ -9,8 +9,10 @@ import { make as HeroGraphic } from "../components/HeroGraphic.bs"
 import SpeakerList from "../components/SpeakerList"
 import { make as Hero } from "../components/Hero.bs"
 import { make as SponsorRow } from "../components/SponsorRow.bs"
+import { make as CodeOfConduct } from "../components/CodeOfConduct.bs"
 
 import "./indexPage.css"
+import "../components/Link.scss"
 
 const IndexPageTemplate = ({ data, isMobile }) => {
   const { allSpeakersJson, allSponsorsJson, site } = data
@@ -43,6 +45,7 @@ const IndexPageTemplate = ({ data, isMobile }) => {
           </a>
         </Hero>
       </PageContainer>
+      <CodeOfConduct />
     </Layout>
   )
 }
