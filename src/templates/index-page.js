@@ -43,21 +43,6 @@ const IndexPageTemplate = ({ data, isMobile }) => {
           </a>
         </Hero>
       </PageContainer>
-      <PageContainer>
-        <Section
-          title="A glimpse of our speakers"
-          extra={<CTAButton label="View All Speakers" to="/speakers" />}>
-          <SpeakerList />
-        </Section>
-      </PageContainer>
-      <PageContainer>
-        <Section
-          title="Thanks to our amazing sponsors"
-          extra={<CTAButton label="Become a sponsor" to="/sponsors" />}></Section>
-        {sponsors.map(node => (
-          <SponsorRow tier={node.tier} sponsors={node.sponsors} />
-        ))}
-      </PageContainer>
     </Layout>
   )
 }
