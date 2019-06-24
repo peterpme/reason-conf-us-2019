@@ -6,7 +6,7 @@ import { make as PageContainer } from "../components/PageContainer.bs"
 import { make as Section } from "../components/Section.bs"
 import { make as CTAButton } from "../components/CTAButton.bs"
 import { make as HeroGraphic } from "../components/HeroGraphic.bs"
-import { make as SpeakerGrid } from "../components/SpeakerGrid.bs"
+import SpeakerList from "../components/SpeakerList"
 import { make as Hero } from "../components/Hero.bs"
 import { make as SponsorRow } from "../components/SponsorRow.bs"
 
@@ -47,16 +47,16 @@ const IndexPageTemplate = ({ data, isMobile }) => {
         <Section
           title="A glimpse of our speakers"
           extra={<CTAButton label="View All Speakers" to="/speakers" />}>
-          <SpeakerGrid speakers={speakers} />
+          <SpeakerList />
         </Section>
       </PageContainer>
       <PageContainer>
         <Section
           title="Thanks to our amazing sponsors"
           extra={<CTAButton label="Become a sponsor" to="/sponsors" />}></Section>
-          {sponsors.map(node =>
-              <SponsorRow tier={node.tier} sponsors={node.sponsors} />
-          )}
+        {sponsors.map(node => (
+          <SponsorRow tier={node.tier} sponsors={node.sponsors} />
+        ))}
       </PageContainer>
     </Layout>
   )
