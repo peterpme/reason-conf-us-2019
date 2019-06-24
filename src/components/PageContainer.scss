@@ -1,0 +1,8 @@
+.PageContainer {
+    margin: 0 auto;
+    max-width: 1150px;
+
+    @media screen and (max-width: 1150px) {
+      padding: 0 20px;
+    }
+}
