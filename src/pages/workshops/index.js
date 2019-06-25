@@ -10,14 +10,11 @@ export default function WorkshopsPage({ data }) {
   return (
     <Layout>
       <Hero
-        title="Workshops"
-        subtitle="October 7th"
-        bio="We're looking for exciting workshops topics ranging from beginner to advanced levels. Have something you'd love to teach someone? Apply to give one!"
+        title={meta.workshop.title}
+        subtitle={meta.workshop.date}
+        bio={meta.workshop.description}
         graphic={
-          <img
-            className="Visit-HeroGraphic"
-            src="https://images.unsplash.com/photo-1494522855154-9297ac14b55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
-          />
+          <img alt="Attend a workshop" className="Visit-HeroGraphic" src={meta.workshop.imageUrl} />
         }
         ctaLabel="Give a workshop"
         href={meta.cfpLink}>
@@ -31,13 +28,14 @@ export const query = graphql`
   query WorkshopPage {
     site {
       siteMetadata {
-        city
-        date
-        description
-        title
         ticketLink
         cfpLink
-        sponsorLink
+        workshop {
+          title
+          description
+          date
+          imageUrl
+        }
       }
     }
   }
