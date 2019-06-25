@@ -38,6 +38,14 @@ module.exports = {
         "Our line-up hasn't been announced yet but expect a full day of talks by ReasonML core contributors and enthusiasts alike including a special keynote by our very own Jordan Walke.",
       imageUrl:
         "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+    },
+    speakers: {
+      title: "Speakers",
+      date: "October 8th",
+      description:
+        "Our line-up hasn't been announced yet but expect a full day of talks by ReasonML core contributors and enthusiasts alike including a special keynote by our very own Jordan Walke.",
+      imageUrl:
+        "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
     }
   },
   plugins: [
