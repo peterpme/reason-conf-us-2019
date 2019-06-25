@@ -23,7 +23,7 @@ const PlaceCard = ({ name, address, info, website }) => {
   )
 }
 
-const MapView = ({ food, drink, coffee, sightseeing }) => {
+const MapView = ({ food, bar, coffee, sightseeing }) => {
   const [viewport, setViewport] = useState({
     width: 710,
     height: 430,
@@ -34,7 +34,8 @@ const MapView = ({ food, drink, coffee, sightseeing }) => {
   })
 
   const [mapMarkers, setMapMarkers] = useState(food)
-
+  let meme = mapMarkers.map(marker => (marker.coords))
+  console.log(meme)
   return (
     <div className="Map-container">
       <div className="Map-legend">
@@ -48,8 +49,8 @@ const MapView = ({ food, drink, coffee, sightseeing }) => {
           <LegendNavItem
             setState={setMapMarkers}
             label="Drink"
-            category={drink}
-            selected={mapMarkers[0].type === "drink"}
+            category={bar}
+            selected={mapMarkers[0].type === "Bar"}
           />
           <LegendNavItem
             setState={setMapMarkers}
@@ -82,9 +83,9 @@ const MapView = ({ food, drink, coffee, sightseeing }) => {
         mapStyle={"mapbox://styles/sebastiankurp/cjwr24hr8076i1cn5s5478no0"}
         mapboxApiAccessToken="pk.eyJ1Ijoic2ViYXN0aWFua3VycCIsImEiOiJjandwZWZ1emkxOHR1NDhwOG1lM2pmeHVmIn0.fHuAftP7b6uRy1UfWieSPQ"
         onViewportChange={viewport => setViewport(viewport)}>
-        {mapMarkers.map(marker => {
+        {meme.map(marker => {
           return (
-            <Marker latitude={marker.coords[0]} longitude={marker.coords[1]}>
+            <Marker latitude={marker[0]} longitude={marker[1]}>
               <div className="Map-marker">
                 <div className="Map-markerInnerCircle" />
               </div>
@@ -104,6 +105,7 @@ export default function Map() {
           allInterestsJson(filter: { Type: { ne: "hotel" } }) {
             interests: nodes {
               address: Address
+              coords: Coords
               amenities: Amenities
               info: Info
               name: Name
@@ -119,11 +121,11 @@ export default function Map() {
         const DEFAULT_COORDS = [41.8767575, -87.6278634]
         const interests = data.allInterestsJson.interests.map(i => ({
           ...i,
-          coords: DEFAULT_COORDS
+          // coords: DEFAULT_COORDS
         }))
 
         const food = interests.filter(i => i.type === "food")
-        const drink = interests.filter(i => i.type === "drink")
+        const drink = interests.filter(i => i.type === "bar")
         const coffee = interests.filter(i => i.type === "coffee")
         const sightseeing = interests.filter(i => i.type === "sightseeing")
 

@@ -51,6 +51,7 @@
     width: 280px;
     height: 100px;
     border-bottom: 2px solid #11233D;
+    text-decoration: none;
 }
 
 .Map-PlaceCard:hover,
