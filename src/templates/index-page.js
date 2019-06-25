@@ -22,29 +22,25 @@ const IndexPageTemplate = ({ data, isMobile }) => {
   const meta = site.siteMetadata
   return (
     <Layout>
-      <PageContainer>
-        <Hero
-          title={meta.city}
-          subtitle={meta.date}
-          bio={meta.description}
-          graphic={
-            <HeroGraphic width={isMobile ? "360" : "760"} height={isMobile ? "200" : "380"} />
-          }
-          ctaLabel="Tickets"
-          href={meta.ticketLink}>
-          <a
-            href={meta.sponsorLink}
-            rel="noreferrer nofollow"
-            style={{
-              color: "#ffffff",
-              textDecoration: "underline",
-              fontWeight: "bold",
-              maxWidth: "160px"
-            }}>
-            Become A Sponsor
-          </a>
-        </Hero>
-      </PageContainer>
+      <Hero
+        title={meta.city}
+        subtitle={meta.date}
+        bio={meta.description}
+        graphic={<HeroGraphic width={isMobile ? "360" : "760"} height={isMobile ? "200" : "380"} />}
+        ctaLabel="Tickets"
+        href={meta.ticketLink}>
+        <a
+          href={meta.sponsorLink}
+          rel="noreferrer nofollow"
+          style={{
+            color: "#ffffff",
+            textDecoration: "underline",
+            fontWeight: "bold",
+            maxWidth: "160px"
+          }}>
+          Become A Sponsor
+        </a>
+      </Hero>
       <CodeOfConduct />
     </Layout>
   )
