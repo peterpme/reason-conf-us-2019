@@ -1,195 +1,7 @@
 import React, { useState } from "react"
 import ReactMapGL, { Marker } from "react-map-gl"
-
+import { StaticQuery, graphql } from "gatsby"
 import "./Map.css"
-
-const food = [
-  {
-    name: "Food Palce",
-    type: "food",
-    address: "Random Address",
-    desc: "Food Type",
-    link: "/link.com",
-    coords: [41.8767575, -87.6278634]
-  },
-  {
-    name: "Food Palce",
-    type: "food",
-    address: "Random Address",
-    desc: "Food Type",
-    link: "/link.com",
-    coords: [41.8765575, -87.6259634]
-  },
-  {
-    name: "Food Palce",
-    type: "food",
-    address: "Random Address",
-    desc: "Food Type",
-    link: "/link.com",
-    coords: [41.8763585, -87.6298654]
-  },
-  {
-    name: "Food Palce",
-    type: "food",
-    address: "Random Address",
-    desc: "Food Type",
-    link: "/link.com",
-    coords: [41.8769585, -87.6288694]
-  },
-  {
-    name: "Food Palce",
-    type: "food",
-    address: "Random Address",
-    desc: "Food Type",
-    link: "/link.com",
-    coords: [41.8765595, -87.6138694]
-  }
-]
-
-const drink = [
-  {
-    name: "Drink Palce",
-    type: "drink",
-    address: "Random Address",
-    desc: "Drink Type",
-    link: "/link.com",
-    coords: [41.8767575, -87.6278634]
-  },
-  {
-    name: "Drink Palce",
-    type: "drink",
-    address: "Random Address",
-    desc: "Drink Type",
-    link: "/link.com",
-    coords: [41.8767575, -87.6278634]
-  },
-  {
-    name: "Drink Palce",
-    type: "drink",
-    address: "Random Address",
-    desc: "Drink Type",
-    link: "/link.com",
-    coords: [41.8767575, -87.6278634]
-  },
-  {
-    name: "Drink Palce",
-    type: "drink",
-    address: "Random Address",
-    desc: "Drink Type",
-    link: "/link.com",
-    coords: [41.8767575, -87.6278634]
-  },
-  {
-    name: "Drink Palce",
-    type: "drink",
-    address: "Random Address",
-    desc: "Drink Type",
-    link: "/link.com",
-    coords: [41.8767575, -87.6278634]
-  }
-]
-
-const coffee = [
-  {
-    name: "Coffee Palce",
-    type: "coffee",
-    address: "Random Address",
-    desc: "Coffee Type",
-    link: "/link.com",
-    coords: [41.8767575, -87.6278634]
-  },
-  {
-    name: "Coffee Palce",
-    type: "coffee",
-    address: "Random Address",
-    desc: "Coffee Type",
-    link: "/link.com",
-    coords: [41.8767575, -87.6278634]
-  },
-  {
-    name: "Coffee Palce",
-    type: "coffee",
-    address: "Random Address",
-    desc: "Coffee Type",
-    link: "/link.com",
-    coords: [41.8767575, -87.6278634]
-  },
-  {
-    name: "Coffee Palce",
-    type: "coffee",
-    address: "Random Address",
-    desc: "Coffee Type",
-    link: "/link.com",
-    coords: [41.8767575, -87.6278634]
-  },
-  {
-    name: "Coffee Palce",
-    type: "coffee",
-    address: "Random Address",
-    desc: "Coffee Type",
-    link: "/link.com",
-    coords: [41.8767575, -87.6278634]
-  },
-  {
-    name: "Coffee Palce",
-    type: "coffee",
-    address: "Random Address",
-    desc: "Coffee Type",
-    link: "/link.com",
-    coords: [41.8767575, -87.6278634]
-  }
-]
-
-const sightseeing = [
-  {
-    name: "SightSeeing Palce",
-    type: "sightseeing",
-    address: "Random Address",
-    desc: "Sightseeing Type",
-    link: "/link.com",
-    coords: [41.8767575, -87.6278634]
-  },
-  {
-    name: "SightSeeing Palce",
-    type: "sightseeing",
-    address: "Random Address",
-    desc: "Sightseeing Type",
-    link: "/link.com",
-    coords: [41.8767575, -87.6278634]
-  },
-  {
-    name: "SightSeeing Palce",
-    type: "sightseeing",
-    address: "Random Address",
-    desc: "Sightseeing Type",
-    link: "/link.com",
-    coords: [41.8767575, -87.6278634]
-  },
-  {
-    name: "SightSeeing Palce",
-    type: "sightseeing",
-    address: "Random Address",
-    desc: "Sightseeing Type",
-    link: "/link.com",
-    coords: [41.8767575, -87.6278634]
-  },
-  {
-    name: "SightSeeing Palce",
-    type: "sightseeing",
-    address: "Random Address",
-    desc: "Sightseeing Type",
-    link: "/link.com",
-    coords: [41.8767575, -87.6278634]
-  },
-  {
-    name: "SightSeeing Palce",
-    type: "sightseeing",
-    address: "Random Address",
-    desc: "Sightseeing Type",
-    link: "/link.com",
-    coords: [41.8764575, -87.6268634]
-  }
-]
 
 const LegendNavItem = ({ label, category, setState, selected }) => {
   return (
@@ -201,16 +13,17 @@ const LegendNavItem = ({ label, category, setState, selected }) => {
   )
 }
 
-const PlaceCard = ({ name, address, desc, link }) => {
+const PlaceCard = ({ name, address, info, website }) => {
   return (
-    <a className="Map-PlaceCard" href={link}>
+    <a className="Map-PlaceCard" href={website}>
       <span className="Map-PlaceCardName">{name}</span>
       <span className="Map-PlaceCardAddress">{address}</span>
-      <span className="Map-PlaceCardType">{desc}</span>
+      <span className="Map-PlaceCardType">{info}</span>
     </a>
   )
 }
-const Map = () => {
+
+const MapView = ({ food, drink, coffee, sightseeing }) => {
   const [viewport, setViewport] = useState({
     width: 710,
     height: 430,
@@ -219,6 +32,7 @@ const Map = () => {
     zoom: 13,
     pitch: 90
   })
+
   const [mapMarkers, setMapMarkers] = useState(food)
 
   return (
@@ -282,4 +96,39 @@ const Map = () => {
   )
 }
 
-export default Map
+export default function Map() {
+  return (
+    <StaticQuery
+      query={graphql`
+        query Interests {
+          allInterestsJson(filter: { Type: { ne: "hotel" } }) {
+            interests: nodes {
+              address: Address
+              amenities: Amenities
+              info: Info
+              name: Name
+              phone: Phone
+              type: Type
+              website: Website
+              id
+            }
+          }
+        }
+      `}
+      render={data => {
+        const DEFAULT_COORDS = [41.8767575, -87.6278634]
+        const interests = data.allInterestsJson.interests.map(i => ({
+          ...i,
+          coords: DEFAULT_COORDS
+        }))
+
+        const food = interests.filter(i => i.type === "food")
+        const drink = interests.filter(i => i.type === "drink")
+        const coffee = interests.filter(i => i.type === "coffee")
+        const sightseeing = interests.filter(i => i.type === "sightseeing")
+
+        return <MapView food={food} drink={drink} coffee={coffee} sightseeing={sightseeing} />
+      }}
+    />
+  )
+}

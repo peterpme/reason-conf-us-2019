@@ -13,7 +13,16 @@ module.exports = {
     ticketLink: "https://ti.to/chicagojs/reasonconf-us-2019",
     cfpLink: "https://www.papercall.io/reason-conf-us-2019",
     sponsorLink: "mailto:mike@chicagojs.org",
-    sponsorPdf: "https://drive.google.com/file/d/1U8YVMnv-BeWlOOFs66lRsZKTQVlRfZb4/view?usp=sharing"
+    sponsorPdf:
+      "https://drive.google.com/file/d/1U8YVMnv-BeWlOOFs66lRsZKTQVlRfZb4/view?usp=sharing",
+    venue: {
+      name: "Venue Six10",
+      address: "610 S. Michigan Ave",
+      city: "Chicago, IL",
+      zip: "60605",
+      imageUrl:
+        "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+    }
   },
   plugins: [
     "gatsby-plugin-react-helmet",

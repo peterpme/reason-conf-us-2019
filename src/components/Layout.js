@@ -2,6 +2,7 @@ import React from "react"
 import Helmet from "react-helmet"
 import { make as NavBar } from "../components/NavBar.bs.js"
 import { make as Footer } from "../components/Footer.bs.js"
+import { make as PageContainer } from "../components/PageContainer.bs.js"
 import useSiteMetadata from "./SiteMetadata"
 
 import "./Layout.scss"

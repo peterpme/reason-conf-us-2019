@@ -1,0 +1,32 @@
+.PageContainer {
+    color: white;
+    margin: 0 auto;
+    max-width: 1150px;
+    font-family: "Montserrat" , sans-serif;
+
+    h1,h2,h3,
+    p {
+      color: white
+    }
+
+    h2 {
+      font-weight: bold;
+      margin-top: 8px;
+      margin-bottom: 16px;
+      font-size: 18px;
+    }
+
+    p {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: white;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    @media screen and (max-width: 1150px) {
+      padding: 0 20px;
+    }
+}

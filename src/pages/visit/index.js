@@ -1,47 +1,17 @@
 import React from "react"
+import { graphql } from "gatsby"
 
 import Layout from "../../components/Layout"
 import { make as PageContainer } from "../../components/PageContainer.bs"
 import { make as SectionHeading } from "../../components/SectionHeading.bs"
 import { make as CTAButton } from "../../components/CTAButton.bs"
-import { make as HotelGrid } from "../../components/HotelGrid.bs"
+import HotelList from "../../components/HotelList"
 import { make as Hero } from "../../components/Hero.bs"
 import Map from "../../components/Map.js"
 
 import "./visitIndexPage.css"
 
-const hotels = [
-  {
-    hotelName: "Fairmont Chicago -" + "\n" + "Millennium Park",
-    address: "200 North Columbus Drive, 60601, Chicago",
-    description:
-      "The Fairmont Chicago, Millennium Park is a sophisticated high-rise that combines classic and contemporary styles, with sweeping views of downtown Chicago",
-    bookingLink: "bookingLinkTemp.com",
-    imageUrl:
-      "https://images.unsplash.com/photo-1517840901100-8179e982acb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
-  },
-  {
-    hotelName: "Fairmont Chicago -" + "\n" + "Millennium Park",
-    address: "200 North Columbus Drive, 60601, Chicago",
-    description:
-      "The Fairmont Chicago, Millennium Park is a sophisticated high-rise that combines classic and contemporary styles, with sweeping views of downtown Chicago",
-    bookingLink: "bookingLinkTemp.com",
-    imageUrl:
-      "https://images.unsplash.com/photo-1517840901100-8179e982acb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
-  },
-  {
-    hotelName: "Fairmont Chicago -" + "\n" + "Millennium Park",
-    address: "200 North Columbus Drive, 60601, Chicago",
-    description:
-      "The Fairmont Chicago, Millennium Park is a sophisticated high-rise that combines classic and contemporary styles, with sweeping views of downtown Chicago",
-    bookingLink: "bookingLinkTemp.com",
-    imageUrl:
-      "https://images.unsplash.com/photo-1517840901100-8179e982acb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
-  }
-]
-
 const VisitIndexPage = () => {
-  console.log("visitPage-hotels: ", hotels)
   return (
     <Layout>
       <PageContainer className="Visit-HeroContainer">
@@ -61,7 +31,7 @@ const VisitIndexPage = () => {
       </PageContainer>
       <PageContainer className="Visit-SpeakerContainer">
         <SectionHeading heading="Hotels Nearby" />
-        <HotelGrid className="Visit-HotelsGrid" hotels={hotels} />
+        <HotelList />
       </PageContainer>
       <PageContainer className="Visit-SponsorContainer">
         <SectionHeading heading="City Guide" />
