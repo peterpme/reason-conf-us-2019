@@ -10,7 +10,7 @@ import Map from "../../components/Map.js"
 
 import "./visitIndexPage.css"
 
-const VisitIndexPage = ({ data }) => {
+export default function VisitPage({ data }) {
   const meta = (data && data.site && data.site.siteMetadata) || {}
   return (
     <Layout>
@@ -19,7 +19,7 @@ const VisitIndexPage = ({ data }) => {
         subtitle={meta.venue.name}
         bio={meta.venue.address + "\n" + meta.venue.city + "\n" + meta.venue.zip}
         graphic={
-          <img alt={meta.venue.name} className="Visit-HeroGraphic" src={meta.venue.imageUrl} />
+          <img className="Visit-HeroGraphic" alt={meta.venue.name} src={meta.venue.imageUrl} />
         }
         ctaLabel="Directions"
         href={meta.venue.directionsLink}
@@ -34,8 +34,6 @@ const VisitIndexPage = ({ data }) => {
     </Layout>
   )
 }
-
-export default VisitIndexPage
 
 export const query = graphql`
   query VisitPage {
