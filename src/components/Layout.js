@@ -2,6 +2,7 @@ import React from "react"
 import Helmet from "react-helmet"
 import { make as NavBar } from "../components/NavBar.bs.js"
 import { make as Footer } from "../components/Footer.bs.js"
+import { make as PageContainer } from "../components/PageContainer.bs.js"
 import useSiteMetadata from "./SiteMetadata"
 import "./all.sass"
 import "./Layout.scss"
@@ -20,7 +21,9 @@ export default function TemplateWrapper({ children }) {
         <meta property="og:image" content="/img/og-image.jpg" />
       </Helmet>
       <NavBar />
-      <div className="Site-content">{children}</div>
+      <div className="Site-content">
+        <PageContainer>{children}</PageContainer>
+      </div>
       <Footer />
     </React.Fragment>
   )
