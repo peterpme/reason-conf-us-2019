@@ -16,10 +16,11 @@ module.exports = {
     sponsorPdf:
       "https://drive.google.com/file/d/1U8YVMnv-BeWlOOFs66lRsZKTQVlRfZb4/view?usp=sharing",
     venue: {
-      name: "Venue Six10",
+      name: "Venue SIX10",
       address: "610 S. Michigan Ave",
       city: "Chicago, IL",
       zip: "60605",
+      directionsLink: "https://google.com",
       imageUrl:
         "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
     },
@@ -54,6 +55,9 @@ module.exports = {
         "Our sponsors will be announced soon. Thank you to our incredible sponsors for making Reason Conf happen. If you're interested in sponsoring, please contact us below.",
       imageUrl:
         "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+    },
+    visit: {
+      title: "Downtown Chicago"
     }
   },
   plugins: [
