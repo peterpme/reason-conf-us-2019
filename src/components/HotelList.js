@@ -15,7 +15,8 @@ export default function HotelList() {
               info: Info
               name: Name
               phone: Phone
-              website: Website
+              imageUrl: ImageUrl
+              bookingLink: Website
             }
           }
         }

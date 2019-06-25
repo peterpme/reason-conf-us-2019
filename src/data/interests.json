@@ -96,9 +96,10 @@
     "id": "recO60lhvLGH7FGwY",
     "Name": "Hilton Chicago",
     "Address": "720 S Michigan Ave, Chicago, IL 60605",
-    "Website": "hilton.com",
+    "Website": "https://hilton.com",
     "Phone": "(312) 922-4400",
     "Info": "Sleek rooms have modern decor and custom-designed beds, plus flat-screens and free Wi-Fi; some provide lake views. Executive rooms offer access to a lounge serving free breakfast and evening appetizers. Suites add separate living areas.",
+    "ImageUrl": "https://res.cloudinary.com/chicagojs/image/upload/c_fill,g_center,h_400,w_400/v1561434344/2019-reason-conf-us/website/hotel-hilton.jpg",
     "Amenities": [
       "Paid Wi-Fi"
     ],
@@ -117,9 +118,10 @@
     "id": "recQkqUGllFTQOiqG",
     "Name": "HI Chicago Hostel ",
     "Address": "24 East Congress Parkway, Chicago, IL 60605",
-    "Website": "hiusa.org",
+    "Website": "https://hiusa.org",
     "Phone": "(312) 360-0300",
     "Info": "The modern, single-sex dorms feature wooden bunk beds, shared or en suite bathrooms, and free Wi-Fi. Towels and linens are included. Private rooms are also available.",
+    "ImageUrl": "https://res.cloudinary.com/chicagojs/image/upload/c_fill,g_center,h_400,w_400/v1561434344/2019-reason-conf-us/website/hotel-hostel.jpg",
     "Amenities": [
       "Laundry Service",
       "Air-conditioned"
@@ -140,11 +142,12 @@
   },
   {
     "id": "recTRvZ1Oz0lTcRsa",
-    "Name": "The Blackstone, Autograph Collection",
+    "Name": "The Blackstone",
     "Address": "636 South Michigan Avenue, E Balbo Dr, Chicago, IL 60605",
-    "Website": "theblackstonehotel.com",
+    "Website": "https://theblackstonehotel.com",
     "Phone": "(312) 447-0955",
     "Info": "Sophisticated rooms (some with lake views) offer flat-screens TVs, iPod docks and Wi-Fi (fee), as well as minifridges and coffeemakers. Club rooms provide access to a lounge with free continental breakfast and snacks. Suites add separate living spaces, and some have fireplaces. Room service is available.",
+    "ImageUrl": "https://res.cloudinary.com/chicagojs/image/upload/c_fill,g_center,h_400,w_400/v1561434346/2019-reason-conf-us/website/hotel-blackstone.jpg",
     "Amenities": [
       "Air-conditioned",
       "Laundry Service"
@@ -204,11 +207,12 @@
   },
   {
     "id": "reccCnCwwCwNyP5hW",
-    "Name": "The Congress Plaza Hotel & Convention Center",
+    "Name": "The Congress Plaza Hotel",
     "Address": "520 S Michigan Ave, Chicago, IL 60605",
-    "Website": "congressplazahotel.com",
+    "Website": "https://congressplazahotel.com",
     "Phone": "(312) 427-3800",
     "Info": "Elegant rooms come with free Wi-Fi, coffeemakers and cable TV; suites add separate living rooms with dining tables and sitting areas. Some rooms and suites have views of Lake Michigan, and marble bathrooms with whirlpool tubs.",
+    "ImageUrl": "https://res.cloudinary.com/chicagojs/image/upload/c_fill,g_center,h_400,w_400/v1561434347/2019-reason-conf-us/website/hotel-congress.jpg",
     "Amenities": [
       "Air-conditioned"
     ],
