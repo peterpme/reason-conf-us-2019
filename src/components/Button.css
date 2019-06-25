@@ -1,0 +1,35 @@
+.Button--bare {
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  color: white;
+}
+
+.Button--bare:hover,
+.Button--bare:active,
+.Button--bare:focus {
+  text-decoration: none;
+}
+
+.Button--solid {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #dd4b39;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  transition: background-color 100ms ease-in-out;
+}
+
+.Button--solid:hover,
+.Button--solid:active,
+.Button--solid:focus {
+  background-color: #a71d0c;
+  text-decoration: none;
+}
