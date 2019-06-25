@@ -2,6 +2,7 @@ import React from "react"
 import { navigate } from "gatsby-link"
 import Layout from "../../components/Layout"
 import { make as PageContainer } from "../../components/PageContainer.bs.js"
+import { make as ContactGraphic } from "../../components/ContactGraphic.bs"
 
 function encode(data) {
   return Object.keys(data)
@@ -97,6 +98,7 @@ export default class Index extends React.Component {
               </button>
             </div>
           </form>
+          <ContactGraphic />
         </PageContainer>
       </Layout>
     )
