@@ -1,0 +1,30 @@
+[
+  {
+    "time": "8:00AM",
+    "title": "Breakfast & Registration"
+  },
+  {
+    "time": "9:00AM",
+    "title": "Keynote by Jordan Walke, Creator of React.js and ReasonML"
+  },
+  {
+    "time": "10:45AM",
+    "title": "Break"
+  },
+  {
+    "time": "12:00PM",
+    "title": "Lunch"
+  },
+  {
+    "time": "3:00PM",
+    "title": "Break"
+  },
+  {
+    "time": "5:00PM",
+    "title": "Closing Keynote TBD"
+  },
+  {
+    "time": "6:30PM",
+    "title": "Evening After Party"
+  }
+]

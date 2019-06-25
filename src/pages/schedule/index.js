@@ -6,6 +6,7 @@ import { make as Button } from "../../components/Button.bs"
 
 export default function SchedulePage({ data }) {
   const meta = (data && data.site && data.site.siteMetadata) || {}
+  const talks = (data && data.allTalksJson && data.allTalksJson.talks) || []
   return (
     <Layout>
       <Hero
@@ -17,12 +18,27 @@ export default function SchedulePage({ data }) {
         href={meta.cfpLink}>
         <Button mode="bare" href={meta.ticketLink} label="Purchase Tickets" />
       </Hero>
+      <h2>Day structure</h2>
+      {talks.map(talk => {
+        return (
+          <section style={{ marginBottom: 10 }} key={talk.id}>
+            {talk.time} {talk.title}
+          </section>
+        )
+      })}
     </Layout>
   )
 }
 
 export const query = graphql`
   query SchedulePage {
+    allTalksJson {
+      talks: nodes {
+        id
+        time
+        title
+      }
+    }
     site {
       siteMetadata {
         ticketLink
