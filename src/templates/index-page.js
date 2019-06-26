@@ -2,13 +2,8 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
-import { make as PageContainer } from "../components/PageContainer.bs"
-import { make as Section } from "../components/Section.bs"
-import { make as CTAButton } from "../components/CTAButton.bs"
 import { make as HeroGraphic } from "../components/HeroGraphic.bs"
-import SpeakerList from "../components/SpeakerList"
 import { make as Hero } from "../components/Hero.bs"
-import { make as SponsorRow } from "../components/SponsorRow.bs"
 import { make as CodeOfConduct } from "../components/CodeOfConduct.bs"
 
 import "./indexPage.css"
@@ -16,8 +11,8 @@ import "../components/Link.scss"
 
 const IndexPageTemplate = ({ data, isMobile }) => {
   const { allSpeakersJson, allSponsorsJson, site } = data
-  const speakers = allSpeakersJson.speakers
-  const sponsors = allSponsorsJson.tiers
+  // const speakers = allSpeakersJson.speakers
+  // const sponsors = allSponsorsJson.tiers
 
   const meta = site.siteMetadata
   return (
