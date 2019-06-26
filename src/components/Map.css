@@ -94,6 +94,10 @@
     background-color: #DD4B39;
 }
 
+.Map-marker-selected {
+    background-color: #E37056;
+}
+
 .Map-markerInnerCircle {
     width:10px;
     height:10px;

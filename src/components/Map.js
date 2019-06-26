@@ -13,9 +13,9 @@ const LegendNavItem = ({ label, category, setState, selected }) => {
   )
 }
 
-const PlaceCard = ({ name, address, info, website }) => {
+const PlaceCard = ({ name, address, info, website, onClick }) => {
   return (
-    <a className="Map-PlaceCard" href={website} target="_blank">
+    <a className="Map-PlaceCard" href={website} target="_blank" onClick={()=> onClick} >
       <span className="Map-PlaceCardName">{name}</span>
       <span className="Map-PlaceCardAddress">{address}</span>
       <span className="Map-PlaceCardType">{info}</span>
@@ -34,7 +34,7 @@ const MapView = ({ food, drink, coffee, sightseeing }) => {
   })
 
   const [mapMarkers, setMapMarkers] = useState(food)
-
+  const [selectedMarker, setSelectedMarker] = useState(mapMarkers[0].coords)
   let selectedMapMarkers = mapMarkers.map(marker => (marker.coords))
 
   return (
@@ -74,6 +74,7 @@ const MapView = ({ food, drink, coffee, sightseeing }) => {
                 address={item.address}
                 desc={item.desc}
                 website={item.website}
+                onClick={() => setSelectedMarker(item.coords)}
               />
             )
           })}
@@ -87,7 +88,7 @@ const MapView = ({ food, drink, coffee, sightseeing }) => {
         {selectedMapMarkers.map(marker => {
           return (
             <Marker latitude={marker[0]} longitude={marker[1]}>
-              <div className="Map-marker">
+              <div className={selectedMarker === marker ? "Map-marker Map-marker-selected" :"Map-marker" }>
                 <div className="Map-markerInnerCircle" />
               </div>
             </Marker>
