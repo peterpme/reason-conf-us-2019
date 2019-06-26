@@ -4,7 +4,7 @@
     "Name": "Lou Malnati's Pizzeria",
     "Address": "805 S State St, Chicago, IL 60605",
     "Coords": [41.8715417,-87.6271677],
-    "Website": "loumalnatis.com",
+    "Website": "https://www.loumalnatis.com",
     "Phone": "(312) 786-1000",
     "Info": "Family-owned local chain for Italian classics & Chicago-style, deep-dish pizzas with butter crusts.",
     "Type": "food"
@@ -14,7 +14,7 @@
     "Name": "Bar Louie",
     "Address": "47 W Polk St, Chicago, IL 60605",
     "Coords": [41.8718717,-87.6290977],
-    "Website": "barlouie.com",
+    "Website": "https://www.barlouie.com",
     "Phone": "(312) 347-0000",
     "Info": "Upbeat grill chain with American grub, martinis & microbrews, plus happy-hour deals.",
     "Type": "bar"
@@ -24,7 +24,7 @@
     "Name": "HERO Coffee Bar",
     "Address": "439 S Dearborn St, Chicago, IL 60605",
     "Coords": [41.8759712,-87.6289904],
-    "Website": "herocoffeebars.com",
+    "Website": "https://www.herocoffeebars.com",
     "Phone": "(312) 631-3269",
     "Info": "Coffee shop with pour-over java drinks & farm-to-table sandwiches in a funky setting.",
     "Type": "coffee"
@@ -34,7 +34,7 @@
     "Name": "The Berghoff Restaurant",
     "Address": "17 W Adams St, Chicago, IL 60603",
     "Coords": [41.879264,-87.6284211],
-    "Website": "theberghoff.com",
+    "Website": "https://www.theberghoff.com",
     "Phone": "(312) 427-3170",
     "Info": "Institution since 1898 serving traditional German cuisine & steins of beer in an old-world setting.",
     "Type": "food"
@@ -44,7 +44,7 @@
     "Name": "Willis Tower",
     "Address": "233 S Wacker Dr, Chicago, IL 60606",
     "Coords": [41.8788763,-87.6359282],
-    "Website": "willistower.com",
+    "Website": "https://www.willistower.com",
     "Phone": "(312) 875-0066",
     "Info": "Iconic, 110-story skyscraper featuring expansive views of Chicago from its 103rd-story Skydeck.",
     "Type": "sightseeing"
@@ -67,7 +67,7 @@
     "Name": "2Twenty2 Tavern",
     "Address": "222 S Wabash Ave, Chicago, IL 60604",
     "Coords": [41.8788515,-87.626458],
-    "Website": "2twenty2tavern.com",
+    "Website": "https://www.2twenty2tavern.com",
     "Phone": "(312) 878-9994",
     "Info": "Bourbon, craft beer & pub snacks offered in lofty, sleek digs with shuffleboard & live music.",
     "Amenities": [
@@ -80,7 +80,7 @@
     "Name": "Dollop Coffee Co.",
     "Address": "343 S Dearborn St, Chicago, IL 60604",
     "Coords":[41.8771927,-87.6289936],
-    "Website": "dollopcoffee.com",
+    "Website": "https://www.dollopcoffee.com/",
     "Phone": "(312) 846-6103",
     "Info": "Coffee drinks, sandwiches, local pies & pastries in a cozy space with bookshelves & free WiFi.",
     "Type": "coffee"
@@ -121,7 +121,7 @@
     "Name": "Umai",
     "Address": "730 S Clark St, Chicago, IL 60605",
     "Coords": [41.8727705,-87.6308599],
-    "Website": "umaichicago.com",
+    "Website": "https://www.umaichicago.com/",
     "Phone": "(312) 986-8888",
     "Info": "Sushi bar & Japanese standards, plus a full bar, in an airy, loftlike room. Delivery available.",
     "Type": "food"
@@ -146,7 +146,7 @@
     "Name": "Buddy Guy's Legends",
     "Address": "700 S Wabash Ave, Chicago, IL 60605",
     "Coords": [41.8729564,-87.6264399],
-    "Website": "buddyguy.com",
+    "Website": "https://www.buddyguy.com",
     "Phone": "(312) 427-1190",
     "Info": "Classic blues club with up-and-coming & famous acts 7 nights a week plus New-Orleans-inspired grub.",
     "Amenities": [
@@ -174,7 +174,7 @@
     "Name": "Wildberry Pancakes & Cafe",
     "Address": "130 E Randolph St, Chicago, IL 60601",
     "Coords": [41.8849848,-87.6231119],
-    "Website": "wildberrycafe.com",
+    "Website": "https://www.wildberrycafe.com",
     "Phone": "(312) 938-9777",
     "Info": "Pancakes & other big portions of American eats draw hungry folks to this breakfast-lunch cafe.",
     "Type": "food"
@@ -192,7 +192,7 @@
     "Name": "Peet's Coffee",
     "Address": "41 E 8th St, Chicago, IL 60605",
     "Coords": [41.8715368,-87.626229],
-    "Website": "peets.com",
+    "Website": "https://www.peets.com",
     "Phone": "(312) 489-5097",
     "Info": "Berkeley-born chain featuring signature coffee, tea & blended drinks alongside baked goods.",
     "Type": "coffee"
@@ -212,7 +212,7 @@
     "Name": "The Art Institute of Chicago",
     "Address": "111 S Michigan Ave, Chicago, IL 60603",
     "Coords": [41.8789219,-87.6217188],
-    "Website": "artic.edu",
+    "Website": "https://www.artic.edu",
     "Phone": "(312) 443-3600",
     "Type": "sightseeing"
   },
@@ -221,7 +221,7 @@
     "Name": "Yolk",
     "Address": "1120 S Michigan Ave, Chicago, IL 60605",
     "Coords": [41.8688239,-87.6246198],
-    "Website": "eatyolk.com",
+    "Website": "https://www.eatyolk.com",
     "Phone": "(312) 789-9655",
     "Info": "Cafe chain serving creative breakfast dishes & sandwiches in a cheery, contemporary atmosphere.",
     "Type": "food"
@@ -243,7 +243,7 @@
   {
     "id": "recealZTqfBTFfnXk",
     "Name": "Chicago Riverwalk",
-    "Website": "chicagoriverwalk.us",
+    "Website": "https://www.chicagoriverwalk.us",
     "Coords": [41.8918295,-87.6041589],
     "Phone": "(877) 300-6746",
     "Info": "Riverside pedestrian path featuring city views & dining, plus bridges, fishing piers & boat docks.",
@@ -254,7 +254,7 @@
     "Name": "Navy Pier",
     "Address": "600 E Grand Ave, Chicago, IL 60611",
     "Coords": [41.8918295,-87.6041589],
-    "Website": "navypier.org",
+    "Website": "https://www.navypier.org",
     "Phone": "(312) 595-7437",
     "Info": "Former Navy training center draws crowds with carnival rides, restaurants, shops & fireworks.",
     "Type": "sightseeing"
