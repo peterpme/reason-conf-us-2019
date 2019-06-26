@@ -23,7 +23,7 @@ const PlaceCard = ({ name, address, info, website }) => {
   )
 }
 
-const MapView = ({ food, bar, coffee, sightseeing }) => {
+const MapView = ({ food, drink, coffee, sightseeing }) => {
   const [viewport, setViewport] = useState({
     width: 710,
     height: 430,
@@ -49,8 +49,8 @@ const MapView = ({ food, bar, coffee, sightseeing }) => {
           <LegendNavItem
             setState={setMapMarkers}
             label="Drink"
-            category={bar}
-            selected={mapMarkers[0].type === "Bar"}
+            category={drink}
+            selected={mapMarkers[0].type === "bar"}
           />
           <LegendNavItem
             setState={setMapMarkers}
