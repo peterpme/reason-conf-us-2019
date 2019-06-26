@@ -30,7 +30,7 @@ const MapView = ({ food, bar, coffee, sightseeing }) => {
     latitude: 41.8764515,
     longitude: -87.6269634,
     zoom: 13,
-    pitch: 90
+    pitch: 75
   })
 
   const [mapMarkers, setMapMarkers] = useState(food)
