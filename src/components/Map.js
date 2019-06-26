@@ -15,7 +15,7 @@ const LegendNavItem = ({ label, category, setState, selected }) => {
 
 const PlaceCard = ({ name, address, info, website }) => {
   return (
-    <a className="Map-PlaceCard" href={website}>
+    <a className="Map-PlaceCard" href={website} target="_blank">
       <span className="Map-PlaceCardName">{name}</span>
       <span className="Map-PlaceCardAddress">{address}</span>
       <span className="Map-PlaceCardType">{info}</span>
@@ -34,8 +34,9 @@ const MapView = ({ food, drink, coffee, sightseeing }) => {
   })
 
   const [mapMarkers, setMapMarkers] = useState(food)
-  let meme = mapMarkers.map(marker => (marker.coords))
-  console.log(meme)
+
+  let selectedMapMarkers = mapMarkers.map(marker => (marker.coords))
+
   return (
     <div className="Map-container">
       <div className="Map-legend">
@@ -72,7 +73,7 @@ const MapView = ({ food, drink, coffee, sightseeing }) => {
                 name={item.name}
                 address={item.address}
                 desc={item.desc}
-                link={item.link}
+                website={item.website}
               />
             )
           })}
@@ -83,7 +84,7 @@ const MapView = ({ food, drink, coffee, sightseeing }) => {
         mapStyle={"mapbox://styles/sebastiankurp/cjwr24hr8076i1cn5s5478no0"}
         mapboxApiAccessToken="pk.eyJ1Ijoic2ViYXN0aWFua3VycCIsImEiOiJjandwZWZ1emkxOHR1NDhwOG1lM2pmeHVmIn0.fHuAftP7b6uRy1UfWieSPQ"
         onViewportChange={viewport => setViewport(viewport)}>
-        {meme.map(marker => {
+        {selectedMapMarkers.map(marker => {
           return (
             <Marker latitude={marker[0]} longitude={marker[1]}>
               <div className="Map-marker">
@@ -118,10 +119,8 @@ export default function Map() {
         }
       `}
       render={data => {
-        const DEFAULT_COORDS = [41.8767575, -87.6278634]
         const interests = data.allInterestsJson.interests.map(i => ({
-          ...i,
-          // coords: DEFAULT_COORDS
+          ...i
         }))
 
         const food = interests.filter(i => i.type === "food")

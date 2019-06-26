@@ -52,6 +52,9 @@
     width: 280px;
     height: 100px;
     border-bottom: 2px solid #11233D;
+}
+
+.Map-PlaceCard a {
     text-decoration: none;
 }
 
@@ -74,6 +77,7 @@
 }
 .Map-PlaceCardAddress{
     color: #ffffff;
+    text-decoration: none;
 }
 
 .Map-PlaceCardType{
