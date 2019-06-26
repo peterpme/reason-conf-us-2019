@@ -21,6 +21,9 @@ body > div > div {
 }
 
 .Site-content {
-  padding-top: 40px;
   flex: 1;
+}
+
+@media screen and (min-width: 769px) {
+  padding-top: 40px;
 }

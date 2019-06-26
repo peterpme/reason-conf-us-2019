@@ -1,10 +1,39 @@
 import React from "react"
 import Layout from "../../components/Layout"
+import { graphql } from "gatsby"
+import { make as Hero } from "../../components/Hero.bs"
+import { make as Button } from "../../components/Button.bs"
 
-export default function SpeakersPage() {
+export default function SpeakersPage({ data }) {
+  const meta = (data && data.site && data.site.siteMetadata) || {}
   return (
     <Layout>
-      <h1>Speakers will be announced soon</h1>
+      <Hero
+        title={meta.speakers.title}
+        subtitle={meta.speakers.date}
+        bio={meta.speakers.description}
+        graphic={<img alt="Chicago" className="Visit-HeroGraphic" src={meta.speakers.imageUrl} />}
+        ctaLabel="Apply to Speak"
+        href={meta.cfpLink}>
+        <Button mode="bare" href={meta.ticketLink} label="Purchase Tickets" />
+      </Hero>
     </Layout>
   )
 }
+
+export const query = graphql`
+  query SpeakersPage {
+    site {
+      siteMetadata {
+        ticketLink
+        cfpLink
+        speakers {
+          title
+          date
+          description
+          imageUrl
+        }
+      }
+    }
+  }
+`
