@@ -1,3 +1,5 @@
+let svgLarge = [%bs.raw {|require('../img/logo-horizontal-white.svg')|}];
+let svgHorizontal = [%bs.raw {|require('../img/logo.svg')|}];
 [@react.component]
 let make = (~width="200", ~height="103") => {
   <svg

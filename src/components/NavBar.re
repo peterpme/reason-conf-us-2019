@@ -1,4 +1,5 @@
 [%bs.raw {|require('./NavBar.scss')|}];
+let svgLogo = [%bs.raw {|require('../img/Logo-horizontal-white.svg')|}];
 
 module NavItem = {
   [@react.component]
@@ -31,11 +32,16 @@ let make = () => {
     setActive(_ => activeState);
     setActiveClassName(_ => activeState ? "is-active" : "");
   };
+let windowWidth = [%bs.raw {|window.innerWidth|}];
+
+Js.log(windowWidth);
   <nav className="navbar" role="navigation" ariaLabel="main-navigation">
     <div className="container">
       <div className="navbar-brand">
         <a href="/">
-        <Logo />
+        {
+          windowWidth < 768 ? <img src=svgLogo width="240" height="60" /> : <Logo />
+        }
         </a>
         <div onClick=(_e => toggleHamburger()) className={"navbar-burger burger" ++ activeClassName}>
           <span />
