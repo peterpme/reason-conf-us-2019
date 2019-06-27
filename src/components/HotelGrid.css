@@ -1,5 +1,8 @@
 .HotelGrid {
   margin-top: 30px;
+}
+
+@media screen and (min-width: 1024px) {
   display: grid;
   grid-template-columns: 30% 30% 30%;
   grid-gap: 30px;
