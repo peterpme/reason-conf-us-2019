@@ -22,7 +22,7 @@ module.exports = {
       zip: "60605",
       directionsLink: "https://google.com",
       imageUrl:
-        "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+        "https://res.cloudinary.com/chicagojs/image/upload/c_fill,f_auto,g_center,h_350,w_730/v1561602141/2019-reason-conf-us/website/venue610.jpg"
     },
     workshop: {
       title: "Workshops",
@@ -30,7 +30,7 @@ module.exports = {
       description:
         "We're looking for exciting workshops topics ranging from beginner to advanced levels. Have something you'd love to teach someone? Apply to give one!",
       imageUrl:
-        "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+        "https://res.cloudinary.com/chicagojs/image/upload/c_fill,f_auto,g_center,h_350,w_730/v1561601314/2019-reason-conf-us/website/annie-spratt-QckxruozjRg-unsplash.jpg"
     },
     schedule: {
       title: "Schedule",
@@ -38,7 +38,7 @@ module.exports = {
       description:
         "Our line-up hasn't been announced yet but expect a full day of talks by ReasonML core contributors and enthusiasts alike including a special keynote by our very own Jordan Walke.",
       imageUrl:
-        "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+        "https://res.cloudinary.com/chicagojs/image/upload/c_fill,f_auto,g_center,h_350,w_730/v1561601072/2019-reason-conf-us/website/pedro-lastra-Nyvq2juw4_o-unsplash.jpg"
     },
     speakers: {
       title: "Speakers",
@@ -46,7 +46,7 @@ module.exports = {
       description:
         "Our line-up hasn't been announced yet but expect a full day of talks by ReasonML core contributors and enthusiasts alike including a special keynote by our very own Jordan Walke.",
       imageUrl:
-        "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+        "https://res.cloudinary.com/chicagojs/image/upload/c_fill,h_350,w_730/v1561601074/2019-reason-conf-us/website/lance-anderson-uevmkfCH98Q-unsplash.jpg"
     },
     sponsors: {
       title: "Sponsors",
@@ -54,7 +54,7 @@ module.exports = {
       description:
         "Our sponsors will be announced soon. Thank you to our incredible sponsors for making Reason Conf happen. If you're interested in sponsoring, please contact us below.",
       imageUrl:
-        "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+        "https://res.cloudinary.com/chicagojs/image/upload/c_fill,f_auto,g_center,h_350,w_730/v1561601074/2019-reason-conf-us/website/yuvraj-singh-4V07cUP8Sxc-unsplash.jpg"
     },
     visit: {
       title: "Downtown Chicago"

@@ -1,4 +1,5 @@
 .Button--bare {
+  border: none;
   cursor: pointer;
   background-color: transparent;
   font-size: 14px;
@@ -15,6 +16,7 @@
 }
 
 .Button--solid {
+  border: none;
   cursor: pointer;
   text-decoration: none;
   background-color: #dd4b39;
