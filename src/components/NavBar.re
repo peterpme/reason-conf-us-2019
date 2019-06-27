@@ -5,7 +5,6 @@ module NavItem = {
   let make = (~label, ~to_) => {
     <Link
       className="navbar-item"
-      activeClassName="navbar-item-active"
       label
       to__=to_
     >
@@ -45,7 +44,7 @@ let make = () => {
         </div>
       </div>
       <div id="navMenu" className={"navbar-menu" ++ activeClassName}>
-        <div className="navbar-container">
+        <div className="navbar-end has-text-centered">
           <NavItem label="Workshops" to_="/workshops" />
           <NavItem label="Speakers" to_="/speakers" />
           <NavItem label="Sponsors" to_="/sponsors" />
