@@ -13,9 +13,9 @@ const LegendNavItem = ({ label, category, setState, selected }) => {
   )
 }
 
-const PlaceCard = ({ name, address, info, website }) => {
+const PlaceCard = ({ name, address, info, website, onClick }) => {
   return (
-    <a className="Map-PlaceCard" href={website}>
+    <a className="Map-PlaceCard" href={website} target="_blank" onClick={()=> onClick} >
       <span className="Map-PlaceCardName">{name}</span>
       <span className="Map-PlaceCardAddress">{address}</span>
       <span className="Map-PlaceCardType">{info}</span>
@@ -30,10 +30,12 @@ const MapView = ({ food, drink, coffee, sightseeing }) => {
     latitude: 41.8764515,
     longitude: -87.6269634,
     zoom: 13,
-    pitch: 90
+    pitch: 75
   })
 
   const [mapMarkers, setMapMarkers] = useState(food)
+  const [selectedMarker, setSelectedMarker] = useState(mapMarkers[0].coords)
+  let selectedMapMarkers = mapMarkers.map(marker => (marker.coords))
 
   return (
     <div className="Map-container">
@@ -49,7 +51,7 @@ const MapView = ({ food, drink, coffee, sightseeing }) => {
             setState={setMapMarkers}
             label="Drink"
             category={drink}
-            selected={mapMarkers[0].type === "drink"}
+            selected={mapMarkers[0].type === "bar"}
           />
           <LegendNavItem
             setState={setMapMarkers}
@@ -71,7 +73,8 @@ const MapView = ({ food, drink, coffee, sightseeing }) => {
                 name={item.name}
                 address={item.address}
                 desc={item.desc}
-                link={item.link}
+                website={item.website}
+                onClick={() => setSelectedMarker(item.coords)}
               />
             )
           })}
@@ -82,10 +85,10 @@ const MapView = ({ food, drink, coffee, sightseeing }) => {
         mapStyle={"mapbox://styles/sebastiankurp/cjwr24hr8076i1cn5s5478no0"}
         mapboxApiAccessToken="pk.eyJ1Ijoic2ViYXN0aWFua3VycCIsImEiOiJjandwZWZ1emkxOHR1NDhwOG1lM2pmeHVmIn0.fHuAftP7b6uRy1UfWieSPQ"
         onViewportChange={viewport => setViewport(viewport)}>
-        {mapMarkers.map(marker => {
+        {selectedMapMarkers.map(marker => {
           return (
-            <Marker latitude={marker.coords[0]} longitude={marker.coords[1]}>
-              <div className="Map-marker">
+            <Marker latitude={marker[0]} longitude={marker[1]}>
+              <div className={selectedMarker === marker ? "Map-marker Map-marker-selected" :"Map-marker" }>
                 <div className="Map-markerInnerCircle" />
               </div>
             </Marker>
@@ -104,6 +107,7 @@ export default function Map() {
           allInterestsJson(filter: { Type: { ne: "hotel" } }) {
             interests: nodes {
               address: Address
+              coords: Coords
               amenities: Amenities
               info: Info
               name: Name
@@ -116,14 +120,12 @@ export default function Map() {
         }
       `}
       render={data => {
-        const DEFAULT_COORDS = [41.8767575, -87.6278634]
         const interests = data.allInterestsJson.interests.map(i => ({
-          ...i,
-          coords: DEFAULT_COORDS
+          ...i
         }))
 
         const food = interests.filter(i => i.type === "food")
-        const drink = interests.filter(i => i.type === "drink")
+        const drink = interests.filter(i => i.type === "bar")
         const coffee = interests.filter(i => i.type === "coffee")
         const sightseeing = interests.filter(i => i.type === "sightseeing")
 

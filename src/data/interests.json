@@ -3,7 +3,8 @@
     "id": "rec79sF6ahOh38vfr",
     "Name": "Lou Malnati's Pizzeria",
     "Address": "805 S State St, Chicago, IL 60605",
-    "Website": "loumalnatis.com",
+    "Coords": [41.8715417,-87.6271677],
+    "Website": "https://www.loumalnatis.com",
     "Phone": "(312) 786-1000",
     "Info": "Family-owned local chain for Italian classics & Chicago-style, deep-dish pizzas with butter crusts.",
     "Type": "food"
@@ -12,7 +13,8 @@
     "id": "rec7uYW1WmagdnJED",
     "Name": "Bar Louie",
     "Address": "47 W Polk St, Chicago, IL 60605",
-    "Website": "barlouie.com",
+    "Coords": [41.8718717,-87.6290977],
+    "Website": "https://www.barlouie.com",
     "Phone": "(312) 347-0000",
     "Info": "Upbeat grill chain with American grub, martinis & microbrews, plus happy-hour deals.",
     "Type": "bar"
@@ -21,7 +23,8 @@
     "id": "rec8y0ktZxl70jROU",
     "Name": "HERO Coffee Bar",
     "Address": "439 S Dearborn St, Chicago, IL 60605",
-    "Website": "herocoffeebars.com",
+    "Coords": [41.8759712,-87.6289904],
+    "Website": "https://www.herocoffeebars.com",
     "Phone": "(312) 631-3269",
     "Info": "Coffee shop with pour-over java drinks & farm-to-table sandwiches in a funky setting.",
     "Type": "coffee"
@@ -30,7 +33,8 @@
     "id": "rec9NX6i7W7m0l3qf",
     "Name": "The Berghoff Restaurant",
     "Address": "17 W Adams St, Chicago, IL 60603",
-    "Website": "theberghoff.com",
+    "Coords": [41.879264,-87.6284211],
+    "Website": "https://www.theberghoff.com",
     "Phone": "(312) 427-3170",
     "Info": "Institution since 1898 serving traditional German cuisine & steins of beer in an old-world setting.",
     "Type": "food"
@@ -39,7 +43,8 @@
     "id": "recC7g8g9COwZFut0",
     "Name": "Willis Tower",
     "Address": "233 S Wacker Dr, Chicago, IL 60606",
-    "Website": "willistower.com",
+    "Coords": [41.8788763,-87.6359282],
+    "Website": "https://www.willistower.com",
     "Phone": "(312) 875-0066",
     "Info": "Iconic, 110-story skyscraper featuring expansive views of Chicago from its 103rd-story Skydeck.",
     "Type": "sightseeing"
@@ -48,6 +53,7 @@
     "id": "recEj1f5iRm6Txwva",
     "Name": "Kitty O’ Sheas",
     "Address": "720 S Michigan Ave, Chicago, IL 60605",
+    "Coords": [41.8724628,-87.6247849],
     "Phone": "(312) 294-6860",
     "Info": "Traditional bar featuring Irish pub fare, beer, wine & live entertainment inside the Hilton Chicago.\n",
     "Amenities": [
@@ -60,7 +66,8 @@
     "id": "recF4EqT6UKmHx75D",
     "Name": "2Twenty2 Tavern",
     "Address": "222 S Wabash Ave, Chicago, IL 60604",
-    "Website": "2twenty2tavern.com",
+    "Coords": [41.8788515,-87.626458],
+    "Website": "https://www.2twenty2tavern.com",
     "Phone": "(312) 878-9994",
     "Info": "Bourbon, craft beer & pub snacks offered in lofty, sleek digs with shuffleboard & live music.",
     "Amenities": [
@@ -72,7 +79,8 @@
     "id": "recI18YVZiXGdqCqS",
     "Name": "Dollop Coffee Co.",
     "Address": "343 S Dearborn St, Chicago, IL 60604",
-    "Website": "dollopcoffee.com",
+    "Coords":[41.8771927,-87.6289936],
+    "Website": "https://www.dollopcoffee.com/",
     "Phone": "(312) 846-6103",
     "Info": "Coffee drinks, sandwiches, local pies & pastries in a cozy space with bookshelves & free WiFi.",
     "Type": "coffee"
@@ -81,6 +89,7 @@
     "id": "recK1WolWxv9SDqqI",
     "Name": "Intelligentsia Coffee Monadnock Coffeebar",
     "Address": "Monadnock Building, 53 W Jackson Blvd, Chicago, IL 60604",
+    "Coords":[41.87816,-87.629714],
     "Phone": "(312) 253-0594",
     "Info": "High-end coffee bar chain serving daily roasted brews in an industrial-chic setting.",
     "Type": "coffee"
@@ -89,6 +98,7 @@
     "id": "recNnYz7MVTFNhSlZ",
     "Name": "Millennium Park",
     "Address": "201 E Randolph St, Chicago, IL 60602",
+    "Coords":[41.8841262,-87.6214286],
     "Info": "24.5-acre green space with a video display, the reflective \"Bean\" sculpture & an outdoor theater.",
     "Type": "sightseeing"
   },
@@ -96,6 +106,7 @@
     "id": "recO60lhvLGH7FGwY",
     "Name": "Hilton Chicago",
     "Address": "720 S Michigan Ave, Chicago, IL 60605",
+    "Coords": [41.8724628,-87.6247849],
     "Website": "https://hilton.com",
     "Phone": "(312) 922-4400",
     "Info": "Sleek rooms have modern decor and custom-designed beds, plus flat-screens and free Wi-Fi; some provide lake views. Executive rooms offer access to a lounge serving free breakfast and evening appetizers. Suites add separate living areas.",
@@ -109,7 +120,8 @@
     "id": "recQGygwNXum26ACY",
     "Name": "Umai",
     "Address": "730 S Clark St, Chicago, IL 60605",
-    "Website": "umaichicago.com",
+    "Coords": [41.8727705,-87.6308599],
+    "Website": "https://www.umaichicago.com/",
     "Phone": "(312) 986-8888",
     "Info": "Sushi bar & Japanese standards, plus a full bar, in an airy, loftlike room. Delivery available.",
     "Type": "food"
@@ -118,6 +130,7 @@
     "id": "recQkqUGllFTQOiqG",
     "Name": "HI Chicago Hostel ",
     "Address": "24 East Congress Parkway, Chicago, IL 60605",
+    "Coords": [41.8758397,-87.6265313],
     "Website": "https://hiusa.org",
     "Phone": "(312) 360-0300",
     "Info": "The modern, single-sex dorms feature wooden bunk beds, shared or en suite bathrooms, and free Wi-Fi. Towels and linens are included. Private rooms are also available.",
@@ -132,7 +145,8 @@
     "id": "recTFBnDEL3gmWqyn",
     "Name": "Buddy Guy's Legends",
     "Address": "700 S Wabash Ave, Chicago, IL 60605",
-    "Website": "buddyguy.com",
+    "Coords": [41.8729564,-87.6264399],
+    "Website": "https://www.buddyguy.com",
     "Phone": "(312) 427-1190",
     "Info": "Classic blues club with up-and-coming & famous acts 7 nights a week plus New-Orleans-inspired grub.",
     "Amenities": [
@@ -144,6 +158,7 @@
     "id": "recTRvZ1Oz0lTcRsa",
     "Name": "The Blackstone",
     "Address": "636 South Michigan Avenue, E Balbo Dr, Chicago, IL 60605",
+    "Coords": [41.873953,-87.624231],
     "Website": "https://theblackstonehotel.com",
     "Phone": "(312) 447-0955",
     "Info": "Sophisticated rooms (some with lake views) offer flat-screens TVs, iPod docks and Wi-Fi (fee), as well as minifridges and coffeemakers. Club rooms provide access to a lounge with free continental breakfast and snacks. Suites add separate living spaces, and some have fireplaces. Room service is available.",
@@ -158,7 +173,8 @@
     "id": "recU1zzPFZR1Sv0jQ",
     "Name": "Wildberry Pancakes & Cafe",
     "Address": "130 E Randolph St, Chicago, IL 60601",
-    "Website": "wildberrycafe.com",
+    "Coords": [41.8849848,-87.6231119],
+    "Website": "http://www.wildberrycafe.com",
     "Phone": "(312) 938-9777",
     "Info": "Pancakes & other big portions of American eats draw hungry folks to this breakfast-lunch cafe.",
     "Type": "food"
@@ -167,6 +183,7 @@
     "id": "recUby6RYwQ7KpL7i",
     "Name": "Ohio Street Beach",
     "Address": "600 N Lake Shore Dr, Chicago, IL 60611",
+    "Coords": [41.8930835,-87.6151781],
     "Info": "North-facing sandy public beach on Lake Michigan, a popular swimming option with city skyline views.",
     "Type": "sightseeing"
   },
@@ -174,7 +191,8 @@
     "id": "recUzFA03cA5dVa0u",
     "Name": "Peet's Coffee",
     "Address": "41 E 8th St, Chicago, IL 60605",
-    "Website": "peets.com",
+    "Coords": [41.8715368,-87.626229],
+    "Website": "https://www.peets.com",
     "Phone": "(312) 489-5097",
     "Info": "Berkeley-born chain featuring signature coffee, tea & blended drinks alongside baked goods.",
     "Type": "coffee"
@@ -183,6 +201,7 @@
     "id": "recVOH5LCZOzR8dGJ",
     "Name": "Chicago Architecture Center",
     "Address": "111 East Wacker Drive, Chicago, IL 60601",
+    "Coords": [41.8877434,-87.6236024],
     "Website": "www.architecture.org",
     "Phone": "(312) 922-3432",
     "Info": "The Chicago Architecture Center (CAC) is the city’s new all-in-one architecture experience: a museum with two floors of fascinating exhibits and a gateway to more than 85 awe-inspiring boat, walking, bus, bike and L tours!",
@@ -192,7 +211,8 @@
     "id": "recXkXKPpg7rj1h8o",
     "Name": "The Art Institute of Chicago",
     "Address": "111 S Michigan Ave, Chicago, IL 60603",
-    "Website": "artic.edu",
+    "Coords": [41.8789219,-87.6217188],
+    "Website": "https://www.artic.edu",
     "Phone": "(312) 443-3600",
     "Type": "sightseeing"
   },
@@ -200,7 +220,8 @@
     "id": "recYa7fBbSbcL6bbB",
     "Name": "Yolk",
     "Address": "1120 S Michigan Ave, Chicago, IL 60605",
-    "Website": "eatyolk.com",
+    "Coords": [41.8688239,-87.6246198],
+    "Website": "https://www.eatyolk.com",
     "Phone": "(312) 789-9655",
     "Info": "Cafe chain serving creative breakfast dishes & sandwiches in a cheery, contemporary atmosphere.",
     "Type": "food"
@@ -209,6 +230,7 @@
     "id": "reccCnCwwCwNyP5hW",
     "Name": "The Congress Plaza Hotel",
     "Address": "520 S Michigan Ave, Chicago, IL 60605",
+    "Coords": [41.8749082,-87.6248194],
     "Website": "https://congressplazahotel.com",
     "Phone": "(312) 427-3800",
     "Info": "Elegant rooms come with free Wi-Fi, coffeemakers and cable TV; suites add separate living rooms with dining tables and sitting areas. Some rooms and suites have views of Lake Michigan, and marble bathrooms with whirlpool tubs.",
@@ -221,7 +243,8 @@
   {
     "id": "recealZTqfBTFfnXk",
     "Name": "Chicago Riverwalk",
-    "Website": "chicagoriverwalk.us",
+    "Website": "https://www.chicagoriverwalk.us",
+    "Coords": [41.8918295,-87.6041589],
     "Phone": "(877) 300-6746",
     "Info": "Riverside pedestrian path featuring city views & dining, plus bridges, fishing piers & boat docks.",
     "Type": "sightseeing"
@@ -230,7 +253,8 @@
     "id": "reciCPFC3Z7nfKf9W",
     "Name": "Navy Pier",
     "Address": "600 E Grand Ave, Chicago, IL 60611",
-    "Website": "navypier.org",
+    "Coords": [41.8918295,-87.6041589],
+    "Website": "https://www.navypier.org",
     "Phone": "(312) 595-7437",
     "Info": "Former Navy training center draws crowds with carnival rides, restaurants, shops & fireworks.",
     "Type": "sightseeing"
@@ -239,6 +263,7 @@
     "id": "recujPxxhEUh29wyA",
     "Name": "Starbucks",
     "Address": "555 S Dearborn St, Chicago, IL 60605",
+    "Coords": [41.8747052,-87.6289204],
     "Phone": "(312) 922-8910",
     "Info": "Seattle-based coffeehouse chain known for its signature roasts, light bites and WiFi availability.",
     "Type": "coffee"
