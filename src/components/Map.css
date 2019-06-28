@@ -27,6 +27,7 @@
     color: #ffffff;
     border: none;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .Map-LegendNavItem:hover,
