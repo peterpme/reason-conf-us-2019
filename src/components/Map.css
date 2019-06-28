@@ -99,6 +99,10 @@
     background-color: #E37056;
 }
 
+.Map-marker-venue {
+    background-color: #ffffff;
+}
+
 .Map-markerInnerCircle {
     width:10px;
     height:10px;

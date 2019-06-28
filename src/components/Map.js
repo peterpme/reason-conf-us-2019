@@ -85,6 +85,11 @@ const MapView = ({ food, drink, coffee, sightseeing }) => {
         mapStyle={"mapbox://styles/sebastiankurp/cjwr24hr8076i1cn5s5478no0"}
         mapboxApiAccessToken="pk.eyJ1Ijoic2ViYXN0aWFua3VycCIsImEiOiJjandwZWZ1emkxOHR1NDhwOG1lM2pmeHVmIn0.fHuAftP7b6uRy1UfWieSPQ"
         onViewportChange={viewport => setViewport(viewport)}>
+          <Marker latitude={41.874040} longitude={-87.624800}>
+              <div className="Map-marker Map-marker-venue">
+                  <div className="Map-markerInnerCircle" />
+              </div>
+          </Marker>
         {selectedMapMarkers.map(marker => {
           return (
             <Marker latitude={marker[0]} longitude={marker[1]}>
