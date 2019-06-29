@@ -20,7 +20,7 @@ module.exports = {
       address: "610 S. Michigan Ave",
       city: "Chicago, IL",
       zip: "60605",
-      directionsLink: "https://google.com",
+      directionsLink: "https://goo.gl/maps/QWbD6C7FErE3uLaZ6",
       imageUrl:
         "https://res.cloudinary.com/chicagojs/image/upload/c_fill,f_auto,g_center,h_350,w_730/v1561602141/2019-reason-conf-us/website/venue610.jpg"
     },

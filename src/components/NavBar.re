@@ -1,5 +1,5 @@
 [%bs.raw {|require('./NavBar.scss')|}];
-let svgLogo = [%bs.raw {|require('../img/Logo-horizontal-white.svg')|}];
+let svgLogo = [%bs.raw {|require('../img/logo-horizontal-white.svg')|}];
 
 module NavItem = {
   [@react.component]
