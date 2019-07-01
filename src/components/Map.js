@@ -1,7 +1,61 @@
 import React, { useState } from "react"
-import ReactMapGL, { Marker } from "react-map-gl"
+import ReactMapGL, { Marker,Popup } from "react-map-gl"
 import { StaticQuery, graphql } from "gatsby"
 import "./Map.css"
+
+const MapMarker = ({latitude, longitude, name, address }) => {
+    // const googleMapsQuery = address.replace(/,/g,"%2C+").replace(/ /g, "+")
+    const [popUpVisible, setPopUpVisible] = useState(false)
+        if(latitude === 41.874040 && longitude === -87.624800 ) {
+            return (
+            <>
+            {popUpVisible && <Popup
+                latitude={41.874040 }
+                longitude={-87.624800}
+                offsetLeft={10}
+                offsetTop={20}
+                closeButton={true}
+                closeOnClick={false}
+                onClose={() => setPopUpVisible(false)}
+                anchor="top" >
+                <div className="Map-Popover">
+                    <span className="Map-Popover-Title">{name}</span>
+                    <a className="Map-Popover-Directions" href={`https://www.google.com/maps/search/?api=1&query${latitude},${longitude}`} target="_blank" > Directions </a>
+                </div>
+            </Popup>}
+            <Marker latitude={41.874040} longitude={-87.624800}>
+                <button className="Map-marker Map-marker-venue" onClick={() => setPopUpVisible(true)} >
+                    <div className="Map-markerInnerCircle" />
+                </button>
+            </Marker>
+            </>
+            )
+        } else {
+            return (
+            <>
+                {popUpVisible && <Popup
+                    latitude={latitude}
+                    longitude={longitude}
+                    offsetLeft={10}
+                    offsetTop={20}
+                    closeButton={true}
+                    closeOnClick={false}
+                    onClose={() => setPopUpVisible(false)}
+                    anchor="top" >
+                    <div className="Map-Popover">
+                        <span className="Map-Popover-Title">{name}</span>
+                        <a className="Map-Popover-Directions" href={`https://www.google.com/maps/search/?api=1&query${latitude},${longitude}`} target="_blank" > Directions </a>
+                    </div>
+                </Popup>}
+                <Marker latitude={latitude} longitude={longitude}>
+                    <button className="Map-marker" onClick={() => setPopUpVisible(true)}>
+                        <div className="Map-markerInnerCircle"/>
+                    </button>
+                </Marker>
+            </>
+            )
+        }
+}
 
 const LegendNavItem = ({ label, category, setState, selected }) => {
   return (
@@ -35,7 +89,7 @@ const MapView = ({ food, drink, coffee, sightseeing }) => {
 
   const [mapMarkers, setMapMarkers] = useState(food)
   const [selectedMarker, setSelectedMarker] = useState(mapMarkers[0].coords)
-  let selectedMapMarkers = mapMarkers.map(marker => (marker.coords))
+  let selectedMapMarkers = mapMarkers.map(marker => ({coords:marker.coords, name: marker.name, address: marker.address}))
 
   return (
     <div className="Map-container">
@@ -85,18 +139,10 @@ const MapView = ({ food, drink, coffee, sightseeing }) => {
         mapStyle={"mapbox://styles/sebastiankurp/cjwr24hr8076i1cn5s5478no0"}
         mapboxApiAccessToken="pk.eyJ1Ijoic2ViYXN0aWFua3VycCIsImEiOiJjandwZWZ1emkxOHR1NDhwOG1lM2pmeHVmIn0.fHuAftP7b6uRy1UfWieSPQ"
         onViewportChange={viewport => setViewport(viewport)}>
-          <Marker latitude={41.874040} longitude={-87.624800}>
-              <div className="Map-marker Map-marker-venue">
-                  <div className="Map-markerInnerCircle" />
-              </div>
-          </Marker>
+        <MapMarker latitude={41.874040} longitude={-87.624800} name="Venue SIX10" address="610 S Michigan Ave, Chicago, IL 60605, USA"/>
         {selectedMapMarkers.map(marker => {
           return (
-            <Marker latitude={marker[0]} longitude={marker[1]}>
-              <div className={selectedMarker === marker ? "Map-marker Map-marker-selected" :"Map-marker" }>
-                <div className="Map-markerInnerCircle" />
-              </div>
-            </Marker>
+            <MapMarker latitude={marker.coords[0]} longitude={marker.coords[1]} name={marker.name} address={marker.address}/>
           )
         })}
       </ReactMapGL>
