@@ -10,14 +10,15 @@ const VenueInfo = {
 }
 
 const MapMarker = ({latitude, longitude, name, address }) => {
-    const googleMapsDestination = address.replace(/ /g, "+")
     const [popUpVisible, setPopUpVisible] = useState(false)
-        if(latitude === 41.874040 && longitude === -87.624800 ) {
-            return (
-            <>
+    const googleMapsDestination = address.replace(/ /g, "+")
+    const isVenue = latitude === 41.874040 && longitude === -87.624800
+
+    return (
+        <>
             {popUpVisible && <Popup
-                latitude={41.874040 }
-                longitude={-87.624800}
+                latitude={latitude}
+                longitude={longitude}
                 offsetLeft={10}
                 offsetTop={20}
                 closeButton={true}
@@ -26,41 +27,16 @@ const MapMarker = ({latitude, longitude, name, address }) => {
                 anchor="top" >
                 <div className="Map-Popover">
                     <span className="Map-Popover-Title">{name}</span>
-                    <a className="Map-Popover-Directions" href="https://goo.gl/maps/RhpxmpdzrRDfVQha6" target="_blank" > Directions </a>
+                    <a className="Map-Popover-Directions" href={ isVenue ? "https://goo.gl/maps/RhpxmpdzrRDfVQha6":`https://www.google.com/maps?saddr=610+S+Michigan+Ave,Chicago,IL+60605,USA&daddr=${googleMapsDestination}`} target="_blank" > {isVenue ? "Address" : "Directions"} </a>
                 </div>
             </Popup>}
-            <Marker latitude={41.874040} longitude={-87.624800}>
-                <button className="Map-marker Map-marker-venue" onClick={() => setPopUpVisible(true)} >
-                    <div className="Map-markerInnerCircle" />
+            <Marker latitude={latitude} longitude={longitude}>
+                <button className={isVenue ? "Map-marker Map-marker-venue": "Map-marker"} onClick={() => setPopUpVisible(true)}>
+                    <div className="Map-markerInnerCircle"/>
                 </button>
             </Marker>
-            </>
-            )
-        } else {
-            return (
-            <>
-                {popUpVisible && <Popup
-                    latitude={latitude}
-                    longitude={longitude}
-                    offsetLeft={10}
-                    offsetTop={20}
-                    closeButton={true}
-                    closeOnClick={false}
-                    onClose={() => setPopUpVisible(false)}
-                    anchor="top" >
-                    <div className="Map-Popover">
-                        <span className="Map-Popover-Title">{name}</span>
-                        <a className="Map-Popover-Directions" href={`https://www.google.com/maps?saddr=610+S+Michigan+Ave,Chicago,IL+60605,USA&daddr=${googleMapsDestination}`} target="_blank" > Directions </a>
-                    </div>
-                </Popup>}
-                <Marker latitude={latitude} longitude={longitude}>
-                    <button className="Map-marker" onClick={() => setPopUpVisible(true)}>
-                        <div className="Map-markerInnerCircle"/>
-                    </button>
-                </Marker>
-            </>
-            )
-        }
+        </>
+    )
 }
 
 const LegendNavItem = ({ label, category, setState, selected }) => {
