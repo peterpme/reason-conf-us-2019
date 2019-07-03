@@ -62,7 +62,7 @@
 .Map-PlaceCard:hover,
 .Map-PlaceCard:active,
 .Map-PlaceCard:focus {
-    background-color: #11233D;
+    background-color: rgba(17, 35, 60, 0.45);
 }
 
 .Map-PlaceCardName{

@@ -9,14 +9,14 @@ const VenueInfo = {
     address: "610 S Michigan Ave, Chicago, IL 60605, USA"
 }
 
-const MapMarker = ({latitude, longitude, name, address }) => {
+const MapMarker = ({selectedMarker, latitude, longitude, name, address }) => {
     const [popUpVisible, setPopUpVisible] = useState(false)
     const googleMapsDestination = address.replace(/ /g, "+")
     const isVenue = latitude === 41.874040 && longitude === -87.624800
 
     return (
         <>
-            {popUpVisible && <Popup
+            {name === selectedMarker && <Popup
                 latitude={latitude}
                 longitude={longitude}
                 offsetLeft={10}
@@ -49,9 +49,9 @@ const LegendNavItem = ({ label, category, setState, selected }) => {
   )
 }
 
-const PlaceCard = ({ name, address, info, website, onClick }) => {
+const PlaceCard = ({ name, address, info, website, onClick, setSelectedMarkerState }) => {
   return (
-    <a className="Map-PlaceCard" href={website} target="_blank" onClick={()=> onClick} >
+    <a className="Map-PlaceCard" href={website} target="_blank" onClick={()=> onClick} onMouseOver={() => setSelectedMarkerState(name)}>
       <span className="Map-PlaceCardName">{name}</span>
       <span className="Map-PlaceCardAddress">{address}</span>
       <span className="Map-PlaceCardType">{info}</span>
@@ -70,7 +70,7 @@ const MapView = ({ food, drink, coffee, sightseeing }) => {
   })
 
   const [mapMarkers, setMapMarkers] = useState(food)
-  const [selectedMarker, setSelectedMarker] = useState(mapMarkers[0].coords)
+  const [selectedMarker, setSelectedMarker] = useState()
   let selectedMapMarkers = mapMarkers.map(marker => ({coords:marker.coords, name: marker.name, address: marker.address}))
 
   return (
@@ -111,6 +111,7 @@ const MapView = ({ food, drink, coffee, sightseeing }) => {
                 desc={item.desc}
                 website={item.website}
                 onClick={() => setSelectedMarker(item.coords)}
+                setSelectedMarkerState={setSelectedMarker}
               />
             )
           })}
@@ -121,10 +122,10 @@ const MapView = ({ food, drink, coffee, sightseeing }) => {
         mapStyle={"mapbox://styles/sebastiankurp/cjwr24hr8076i1cn5s5478no0"}
         mapboxApiAccessToken="pk.eyJ1Ijoic2ViYXN0aWFua3VycCIsImEiOiJjandwZWZ1emkxOHR1NDhwOG1lM2pmeHVmIn0.fHuAftP7b6uRy1UfWieSPQ"
         onViewportChange={viewport => setViewport(viewport)}>
-        <MapMarker latitude={VenueInfo.coords[0]} longitude={VenueInfo.coords[1]} name={VenueInfo.name} address={VenueInfo.address}/>
+        <MapMarker selectedMarker={selectedMarker} latitude={VenueInfo.coords[0]} longitude={VenueInfo.coords[1]} name={VenueInfo.name} address={VenueInfo.address}/>
         {selectedMapMarkers.map(marker => {
           return (
-            <MapMarker latitude={marker.coords[0]} longitude={marker.coords[1]} name={marker.name} address={marker.address}/>
+            <MapMarker selectedMarker={selectedMarker} latitude={marker.coords[0]} longitude={marker.coords[1]} name={marker.name} address={marker.address}/>
           )
         })}
       </ReactMapGL>
