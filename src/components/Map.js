@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from "gatsby"
 import "./Map.css"
 
 const MapMarker = ({latitude, longitude, name, address }) => {
-    // const googleMapsQuery = address.replace(/,/g,"%2C+").replace(/ /g, "+")
+    const googleMapsDestination = address.replace(/ /g, "+")
     const [popUpVisible, setPopUpVisible] = useState(false)
         if(latitude === 41.874040 && longitude === -87.624800 ) {
             return (
@@ -20,7 +20,7 @@ const MapMarker = ({latitude, longitude, name, address }) => {
                 anchor="top" >
                 <div className="Map-Popover">
                     <span className="Map-Popover-Title">{name}</span>
-                    <a className="Map-Popover-Directions" href={`https://www.google.com/maps/search/?api=1&query${latitude},${longitude}`} target="_blank" > Directions </a>
+                    <a className="Map-Popover-Directions" href={`https://www.google.com/maps?saddr=610+S+Michigan+Ave,Chicago,IL+60605,USA&daddr=${googleMapsDestination}`} target="_blank" > Directions </a>
                 </div>
             </Popup>}
             <Marker latitude={41.874040} longitude={-87.624800}>
@@ -44,7 +44,7 @@ const MapMarker = ({latitude, longitude, name, address }) => {
                     anchor="top" >
                     <div className="Map-Popover">
                         <span className="Map-Popover-Title">{name}</span>
-                        <a className="Map-Popover-Directions" href={`https://www.google.com/maps/search/?api=1&query${latitude},${longitude}`} target="_blank" > Directions </a>
+                        <a className="Map-Popover-Directions" href={`https://www.google.com/maps?saddr=610+S+Michigan+Ave,Chicago,IL+60605,USA&daddr=${googleMapsDestination}`} target="_blank" > Directions </a>
                     </div>
                 </Popup>}
                 <Marker latitude={latitude} longitude={longitude}>
