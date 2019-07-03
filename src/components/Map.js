@@ -3,6 +3,12 @@ import ReactMapGL, { Marker,Popup } from "react-map-gl"
 import { StaticQuery, graphql } from "gatsby"
 import "./Map.css"
 
+const VenueInfo = {
+    name: "Venue SIX 10",
+    coords: [41.874040,-87.624800],
+    address: "610 S Michigan Ave, Chicago, IL 60605, USA"
+}
+
 const MapMarker = ({latitude, longitude, name, address }) => {
     const googleMapsDestination = address.replace(/ /g, "+")
     const [popUpVisible, setPopUpVisible] = useState(false)
@@ -20,7 +26,7 @@ const MapMarker = ({latitude, longitude, name, address }) => {
                 anchor="top" >
                 <div className="Map-Popover">
                     <span className="Map-Popover-Title">{name}</span>
-                    <a className="Map-Popover-Directions" href={`https://www.google.com/maps?saddr=610+S+Michigan+Ave,Chicago,IL+60605,USA&daddr=${googleMapsDestination}`} target="_blank" > Directions </a>
+                    <a className="Map-Popover-Directions" href="https://goo.gl/maps/RhpxmpdzrRDfVQha6" target="_blank" > Directions </a>
                 </div>
             </Popup>}
             <Marker latitude={41.874040} longitude={-87.624800}>
@@ -139,7 +145,7 @@ const MapView = ({ food, drink, coffee, sightseeing }) => {
         mapStyle={"mapbox://styles/sebastiankurp/cjwr24hr8076i1cn5s5478no0"}
         mapboxApiAccessToken="pk.eyJ1Ijoic2ViYXN0aWFua3VycCIsImEiOiJjandwZWZ1emkxOHR1NDhwOG1lM2pmeHVmIn0.fHuAftP7b6uRy1UfWieSPQ"
         onViewportChange={viewport => setViewport(viewport)}>
-        <MapMarker latitude={41.874040} longitude={-87.624800} name="Venue SIX10" address="610 S Michigan Ave, Chicago, IL 60605, USA"/>
+        <MapMarker latitude={VenueInfo.coords[0]} longitude={VenueInfo.coords[1]} name={VenueInfo.name} address={VenueInfo.address}/>
         {selectedMapMarkers.map(marker => {
           return (
             <MapMarker latitude={marker.coords[0]} longitude={marker.coords[1]} name={marker.name} address={marker.address}/>
