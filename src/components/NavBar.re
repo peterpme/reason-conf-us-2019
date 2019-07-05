@@ -3,25 +3,9 @@ let svgLogo = [%bs.raw {|require('../img/logo-horizontal-white.svg')|}];
 
 module NavItem = {
   [@react.component]
-  let make = (~label, ~to_) => {
-    <Link
-      className="navbar-item"
-      label
-      to__=to_
-    >
-    {label->React.string}
-    </Link>
-  };
+  let make = (~label, ~to_) =>
+    <Link className="navbar-item" label to__=to_> label->React.string </Link>;
 };
-
-module ExternalLink {
-  [@react.component]
-  let make = (~label, ~href) => {
-  <a className="navbar-item navbar-item--link" href>
-    <span className="navbar-button"> label->React.string </span>
-  </a>
-  }
-}
 
 [@react.component]
 let make = (~isMobile) => {
@@ -57,7 +41,11 @@ let make = (~isMobile) => {
           <NavItem label="Schedule" to_="/schedule" />
           <NavItem label="Visit" to_="/visit" />
           <NavItem label="Contact" to_="/contact" />
-          <ExternalLink label="Tickets" href="/tickets" />
+          <Button
+            mode="solid"
+            label="Tickets"
+            href="https://ti.to/chicagojs/reasonconf-us-2019"
+          />
         </div>
       </div>
     </div>
