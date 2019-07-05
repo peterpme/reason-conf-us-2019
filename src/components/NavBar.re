@@ -41,11 +41,13 @@ let make = (~isMobile) => {
           <NavItem label="Schedule" to_="/schedule" />
           <NavItem label="Visit" to_="/visit" />
           <NavItem label="Contact" to_="/contact" />
+          <div className="navbar-item">
           <Button
             mode="solid"
             label="Tickets"
             href="https://ti.to/chicagojs/reasonconf-us-2019"
           />
+          </div>
         </div>
       </div>
     </div>

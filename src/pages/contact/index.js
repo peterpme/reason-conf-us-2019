@@ -97,7 +97,7 @@ export default class ContactPage extends React.Component {
                 </div>
               </div>
               <div className="field">
-                <Button mode="button" label="Send" />
+                <Button mode="button" label="Send" href="" />
               </div>
             </form>
           }
