@@ -14,7 +14,7 @@ export default function TemplateWrapper({ children }) {
     innerWidth: 769
   }
 
-  if (window) {
+  if (typeof window !== "undefined") {
     windowSize = useWindowSize()
   }
 
