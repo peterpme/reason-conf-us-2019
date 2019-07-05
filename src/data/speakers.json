@@ -2,8 +2,7 @@
   {
     "name": "Jordan Walke",
     "featured": true,
-    "title": "Engineer",
-    "company": "Facebook",
+    "about": "Creator of React.js & ReasonML, Engineer at Facebook",
     "bio": "Creator of React.js and Reason",
     "imageUrl": "https://res.cloudinary.com/chicagojs/image/fetch/https://pbs.twimg.com/profile_images/822703594780528640/2i1RPzvd_200x200.jpg"
   },
