@@ -126,8 +126,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "GatsbyJS",
-        short_name: "GatsbyJS",
+        name: "Reason Conf 2019",
+        short_name: "ReasonConf",
         start_url: "/",
         background_color: "#000",
         theme_color: "#DD4B39",
