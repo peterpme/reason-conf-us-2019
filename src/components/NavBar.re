@@ -24,7 +24,7 @@ module ExternalLink {
 }
 
 [@react.component]
-let make = () => {
+let make = (~isMobile) => {
   let (active, setActive) = React.useState(() => false);
   let (activeClassName, setActiveClassName) = React.useState(() => "");
   let toggleHamburger = () => {
@@ -32,18 +32,18 @@ let make = () => {
     setActive(_ => activeState);
     setActiveClassName(_ => activeState ? "is-active" : "");
   };
-let windowWidth = [%bs.raw {|window.innerWidth|}];
-
-Js.log(windowWidth);
   <nav className="navbar" role="navigation" ariaLabel="main-navigation">
     <div className="container">
       <div className="navbar-brand">
         <a href="/">
-        {
-          windowWidth < 768 ? <img src=svgLogo width="240" height="60" /> : <Logo />
-        }
+          {
+            isMobile ?
+              <img className="navbar-logo--small" src=svgLogo width="240" height="60" /> : <Logo />
+          }
         </a>
-        <div onClick=(_e => toggleHamburger()) className={"navbar-burger burger" ++ activeClassName}>
+        <div
+          onClick={_e => toggleHamburger()}
+          className={"navbar-burger burger" ++ activeClassName}>
           <span />
           <span />
           <span />
