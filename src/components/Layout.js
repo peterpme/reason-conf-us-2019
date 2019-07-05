@@ -10,7 +10,14 @@ import "./Layout.scss"
 
 export default function TemplateWrapper({ children }) {
   const { title, description } = useSiteMetadata()
-  const windowSize = useWindowSize()
+  let windowSize = {
+    innerWidth: 769
+  }
+
+  if (window) {
+    windowSize = useWindowSize()
+  }
+
   return (
     <React.Fragment>
       <Helmet>
