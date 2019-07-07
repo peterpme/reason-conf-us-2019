@@ -12,7 +12,7 @@ const VenueInfo = {
 const MapMarker = ({selectedMarker, latitude, longitude, name, address }) => {
     const [popUpVisible, setPopUpVisible] = useState(false)
     const googleMapsDestination = address.replace(/ /g, "+")
-    const isVenue = latitude === 41.874040 && longitude === -87.624800
+    const isVenue = latitude === VenueInfo.coords[0] && longitude === VenueInfo.coords[1]
 
     return (
         <>
