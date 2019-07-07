@@ -20,7 +20,7 @@ module.exports = {
       address: "610 S. Michigan Ave",
       city: "Chicago, IL",
       zip: "60605",
-      directionsLink: "https://google.com",
+      directionsLink: "https://goo.gl/maps/QWbD6C7FErE3uLaZ6",
       imageUrl:
         "https://res.cloudinary.com/chicagojs/image/upload/c_fill,f_auto,g_center,h_350,w_730/v1561602141/2019-reason-conf-us/website/venue610.jpg"
     },
@@ -126,8 +126,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "GatsbyJS",
-        short_name: "GatsbyJS",
+        name: "Reason Conf 2019",
+        short_name: "ReasonConf",
         start_url: "/",
         background_color: "#000",
         theme_color: "#DD4B39",
@@ -139,12 +139,6 @@ module.exports = {
         // If you do not provide a crossOrigin option, it will skip CORS for manifest.
         // Any invalid keyword or empty string defaults to `anonymous`
         crossOrigin: `use-credentials`
-      }
-    },
-    {
-      resolve: "gatsby-plugin-netlify-cms",
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`
       }
     },
     {

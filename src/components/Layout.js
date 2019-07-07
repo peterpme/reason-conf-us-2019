@@ -1,5 +1,6 @@
 import React from "react"
 import Helmet from "react-helmet"
+import useWindowSize from "@rehooks/window-size"
 import { make as NavBar } from "../components/NavBar.bs.js"
 import { make as Footer } from "../components/Footer.bs.js"
 import { make as PageContainer } from "../components/PageContainer.bs.js"
@@ -9,6 +10,14 @@ import "./Layout.scss"
 
 export default function TemplateWrapper({ children }) {
   const { title, description } = useSiteMetadata()
+  let windowSize = {
+    innerWidth: 769
+  }
+
+  if (typeof window !== "undefined") {
+    windowSize = useWindowSize()
+  }
+
   return (
     <React.Fragment>
       <Helmet>
@@ -20,7 +29,7 @@ export default function TemplateWrapper({ children }) {
         <meta property="og:url" content="/" />
         <meta property="og:image" content="/img/og-image.jpg" />
       </Helmet>
-      <NavBar />
+      <NavBar isMobile={windowSize.innerWidth < 769} />
       <div className="Site-content">
         <PageContainer>{children}</PageContainer>
       </div>

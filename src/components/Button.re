@@ -9,11 +9,12 @@ let make = (~href, ~label, ~mode) => {
     | _ => "Button--solid"
   };
 
-  let externalLink = href->Js.String.includes("href");
-  let mailto = href->Js.String.includes("mailto");
+  let externalLink = Js.String.includes("http", href);
+  let mailto = Js.String.includes("mailto", href);
   let buttonType = mode === "button";
+
   switch (externalLink, mailto, buttonType) {
-    | (true, false, false) => <a href className>{label->React.string}</a>
+    | (true, false, false) => <a href target="_blank" rel="nofollow noreferrer" className>{label->React.string}</a>
     | (false, true, false) => <a href className>{label->React.string}</a>
     | (false, false, true) => <button type_="submit" className>{label->React.string}</button>
     | _ => <span className>{label->React.string}</span>

@@ -18,7 +18,7 @@
 .Button--solid {
   border: none;
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: none !important;
   background-color: #dd4b39;
   color: white;
   padding: 10px 20px;
@@ -32,6 +32,7 @@
 .Button--solid:hover,
 .Button--solid:active,
 .Button--solid:focus {
+  color: #FFF !important;
   background-color: #a71d0c;
   text-decoration: none;
 }

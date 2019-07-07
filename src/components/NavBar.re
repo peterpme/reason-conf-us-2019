@@ -1,30 +1,14 @@
 [%bs.raw {|require('./NavBar.scss')|}];
-let svgLogo = [%bs.raw {|require('../img/Logo-horizontal-white.svg')|}];
+let svgLogo = [%bs.raw {|require('../img/logo-horizontal-white.svg')|}];
 
 module NavItem = {
   [@react.component]
-  let make = (~label, ~to_) => {
-    <Link
-      className="navbar-item"
-      label
-      to__=to_
-    >
-    {label->React.string}
-    </Link>
-  };
+  let make = (~label, ~to_) =>
+    <Link className="navbar-item" label to__=to_> label->React.string </Link>;
 };
 
-module ExternalLink {
-  [@react.component]
-  let make = (~label, ~href) => {
-  <a className="navbar-item navbar-item--link" href>
-    <span className="navbar-button"> label->React.string </span>
-  </a>
-  }
-}
-
 [@react.component]
-let make = () => {
+let make = (~isMobile) => {
   let (active, setActive) = React.useState(() => false);
   let (activeClassName, setActiveClassName) = React.useState(() => "");
   let toggleHamburger = () => {
@@ -32,18 +16,18 @@ let make = () => {
     setActive(_ => activeState);
     setActiveClassName(_ => activeState ? "is-active" : "");
   };
-let windowWidth = [%bs.raw {|window.innerWidth|}];
-
-Js.log(windowWidth);
   <nav className="navbar" role="navigation" ariaLabel="main-navigation">
     <div className="container">
       <div className="navbar-brand">
         <a href="/">
-        {
-          windowWidth < 768 ? <img src=svgLogo width="240" height="60" /> : <Logo />
-        }
+          {
+            isMobile ?
+              <img className="navbar-logo--small" src=svgLogo width="240" height="60" /> : <Logo />
+          }
         </a>
-        <div onClick=(_e => toggleHamburger()) className={"navbar-burger burger" ++ activeClassName}>
+        <div
+          onClick={_e => toggleHamburger()}
+          className={"navbar-burger burger" ++ activeClassName}>
           <span />
           <span />
           <span />
@@ -57,7 +41,13 @@ Js.log(windowWidth);
           <NavItem label="Schedule" to_="/schedule" />
           <NavItem label="Visit" to_="/visit" />
           <NavItem label="Contact" to_="/contact" />
-          <ExternalLink label="Tickets" href="/tickets" />
+          <div className="navbar-item">
+          <Button
+            mode="solid"
+            label="Tickets"
+            href="https://ti.to/chicagojs/reasonconf-us-2019"
+          />
+          </div>
         </div>
       </div>
     </div>

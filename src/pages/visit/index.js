@@ -47,6 +47,7 @@ export const query = graphql`
           city
           zip
           imageUrl
+          directionsLink
         }
         visit {
           title
