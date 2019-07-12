@@ -8,19 +8,25 @@ export default function SpeakerList() {
       query={graphql`
         query SpeakerList {
           allSpeakersJson {
-            speakers: nodes {
-              bio
-              title
-              name
-              imageUrl
-              id
-              featured
-              company
+            speakers: edges {
+              speaker: node {
+                id
+                name
+                about
+                type
+                location
+                twitterUrl
+                githubUrl
+                imageUrl
+              }
             }
           }
         }
       `}
-      render={data => <SpeakerGrid speakers={data.allSpeakersJson.speakers} />}
+      render={data => {
+        const speakers = data.allSpeakersJson.speakers.map(({ speaker }) => speaker)
+        return <SpeakerGrid speakers={speakers} />
+      }}
     />
   )
 }

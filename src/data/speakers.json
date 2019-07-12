@@ -1,33 +1,61 @@
 [
   {
+    "id": "recBEPfYySpQ48yun",
+    "name": "Ken Wheeler",
+    "about": "Reason Lover & Proud Owner of Red Octobers",
+    "type": "25-30m Talk",
+    "location": "New Jersey",
+    "talkTitle": "Processing Audio using DSP in Reason",
+    "confirmed": true,
+    "twitterUrl": "https://twitter.com/ken_wheeler/",
+    "githubUrl": "https://github.com/kenwheeler/",
+    "imageUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/ken-wheeler.jpg"
+  },
+  {
+    "id": "recS2vtB8fnRm9l4Q",
+    "name": "Ricky Vetter",
+    "about": "Front End Engineer, Messenger Web at Facebook",
+    "type": "25-30m Talk",
+    "location": "New York, NY",
+    "confirmed": true,
+    "twitterUrl": "https://twitter.com/rickyvetter",
+    "githubUrl": "https://github.com/rickyvetter",
+    "imageUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/ricky-vetter.jpg"
+  },
+  {
+    "id": "recbFcsbw0R9fZQEK",
     "name": "Jordan Walke",
-    "featured": true,
-    "about": "Creator of React.js & ReasonML, Engineer at Facebook",
-    "bio": "Creator of React.js and Reason",
-    "imageUrl": "https://res.cloudinary.com/chicagojs/image/fetch/https://pbs.twimg.com/profile_images/822703594780528640/2i1RPzvd_200x200.jpg"
+    "about": "Creator of ReactJS & ReasonML",
+    "type": "25-30m Talk",
+    "location": "Palo Alto, CA",
+    "talkTitle": "Reason Conf Keynote Address",
+    "confirmed": true,
+    "twitterUrl": "https://twitter.com/jordwalke",
+    "githubUrl": "https://github.com/jordwalke",
+    "imageUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/jordan-walke.jpg"
   },
   {
-    "name": "Ricky Vetter",
-    "featured": true,
-    "title": "Engineer",
-    "company": "Facebook",
-    "bio": "Messenger.com Platform and Reason Engineer",
-    "imageUrl": "https://res.cloudinary.com/chicagojs/image/fetch/https://pbs.twimg.com/profile_images/541111032207273984/DGsZmmfr_200x200.jpeg"
+    "id": "recjjtthafwfqVWY5",
+    "name": "Bryan Phelps",
+    "about": "Founder of Outrun Labs & Creator of OniVim & Revery",
+    "type": "25-30m Talk",
+    "location": "Seattle, WA",
+    "talkTitle": "Making Windows Development Reasonable",
+    "confirmed": true,
+    "twitterUrl": "https://twitter.com/bryphe/",
+    "githubUrl": "https://github.com/bryphe",
+    "imageUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/bryan-phelps.jpg"
   },
   {
-    "name": "Cheng Lou",
-    "featured": true,
-    "title": "Engineer",
-    "company": "Facebook",
-    "bio": "Reason Core Developer and Messenger.com Platform Engineer",
-    "imageUrl": "https://res.cloudinary.com/chicagojs/image/fetch/https://pbs.twimg.com/profile_images/554199709909131265/Y5qUDaCB_200x200.jpeg"
-  },
-  {
-    "name": "Ricky Vetter",
-    "featured": false,
-    "title": "Engineer",
-    "company": "Facebook",
-    "bio": "Messenger.com Platform and Reason Engineer",
-    "imageUrl": "https://res.cloudinary.com/chicagojs/image/fetch/https://pbs.twimg.com/profile_images/541111032207273984/DGsZmmfr_200x200.jpeg"
+    "id": "recqh4beEcRYT12jH",
+    "name": "Sean Grove",
+    "about": "Co-founder of OneGraph.com",
+    "type": "25-30m Talk",
+    "location": "San Francisco, SA",
+    "talkTitle": "Building ⚡️ GraphQL Servers with OneGraph",
+    "confirmed": true,
+    "twitterUrl": "https://twitter.com/sgrove/",
+    "githubUrl": "https://github.com/sgrove",
+    "imageUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/sean-grove.jpg"
   }
 ]

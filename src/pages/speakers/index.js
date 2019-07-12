@@ -3,6 +3,7 @@ import Layout from "../../components/Layout"
 import { graphql } from "gatsby"
 import { make as Hero } from "../../components/Hero.bs"
 import { make as Button } from "../../components/Button.bs"
+import SpeakerList from "../../components/SpeakerList"
 
 export default function SpeakersPage({ data }) {
   const meta = (data && data.site && data.site.siteMetadata) || {}
@@ -17,6 +18,7 @@ export default function SpeakersPage({ data }) {
         href={meta.cfpLink}>
         <Button mode="bare" href={meta.ticketLink} label="Purchase Tickets" />
       </Hero>
+      <SpeakerList />
     </Layout>
   )
 }

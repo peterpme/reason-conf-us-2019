@@ -2,6 +2,7 @@
   position: relative;
   width: 300px;
   z-index: 0;
+  margin-bottom: 20px;
 }
 
 .SpeakerCard:before {
@@ -10,7 +11,7 @@
   position: absolute;
   width: 100%;
   height: 310px;
-  background-image: linear-gradient(rgba(56, 121, 213, 0.5) 0%, rgb(0, 0, 0) 95%);
+  background-image: linear-gradient(rgba(56, 121, 213, 0.2) 50%, rgba(0, 0, 0, 1) 90%);
 }
 
 .SpeakerCard-avatar {
@@ -25,7 +26,7 @@
   font-weight: bold;
   font-size: 24px;
   color: #dd4b39;
-  margin-top: -30px;
+  margin-top: -35px;
   margin-left: 20px;
   position: absolute;
   z-index: 2;
@@ -62,4 +63,13 @@
     margin-bottom: 50px;
     margin-right: 0px;
   }
+}
+
+.SpeakerCard-links {
+  display: flex;
+  align-items: center;
+}
+
+.SpeakerCard-links li {
+  margin-right: 8px;
 }

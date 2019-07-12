@@ -5,16 +5,14 @@ import Layout from "../components/Layout"
 import { make as HeroGraphic } from "../components/HeroGraphic.bs"
 import { make as Hero } from "../components/Hero.bs"
 import { make as CodeOfConduct } from "../components/CodeOfConduct.bs"
+import { make as StyledText } from "../components/StyledText.bs"
+import SpeakerList from "../components/SpeakerList"
 
 import "./indexPage.css"
 import "../components/Link.scss"
 
 const IndexPageTemplate = ({ data, isMobile }) => {
-  const { allSpeakersJson, allSponsorsJson, site } = data
-  // const speakers = allSpeakersJson.speakers
-  // const sponsors = allSponsorsJson.tiers
-
-  const meta = site.siteMetadata
+  const meta = data.site.siteMetadata
   return (
     <Layout>
       <Hero
@@ -37,6 +35,11 @@ const IndexPageTemplate = ({ data, isMobile }) => {
         </a>
       </Hero>
       <CodeOfConduct />
+      <StyledText className="SectionHeading" fontSize="30px">
+        Speakers
+      </StyledText>
+      <div style={{ marginBottom: 30 }} />
+      <SpeakerList />
     </Layout>
   )
 }
@@ -44,13 +47,18 @@ const IndexPageTemplate = ({ data, isMobile }) => {
 export default IndexPageTemplate
 export const query = graphql`
   query HomePage {
-    allSpeakersJson(filter: { featured: { ne: false } }) {
-      speakers: nodes {
-        name
-        bio
-        title
-        company
-        imageUrl
+    allSpeakersJson {
+      edges {
+        speaker: node {
+          id
+          name
+          about
+          type
+          location
+          twitterUrl
+          githubUrl
+          imageUrl
+        }
       }
     }
     site {
