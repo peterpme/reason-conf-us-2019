@@ -2,72 +2,108 @@
   {
     "id": "recuLdpaaBo72cxrX",
     "name": "Ben Anderson",
+    "about": "Software Engineer at Facebook",
     "bio": "Ben Anderson is a software engineer currently working on Reason tooling‏ at Facebook. He is a co-author of the Rely testing framework and has built his career on a passion for software craftsmanship and developer experience. In his free time, Ben likes to play music and do acrobatics (though rarely at the same time).\n",
+    "type": "30-45m Talk",
     "location": "San Francisco, CA",
     "talkTitle": "Investing in Testing (with Reason)",
     "confirmed": true,
+    "twitterUrl": "https://twitter.com/the_banderson",
+    "githubUrl": "https://github.com/banderson",
     "imageUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/ben-anderson"
   },
   {
     "id": "recn2pEOMSk2XX965",
     "name": "Bryan Phelps",
+    "about": "Founder of Outrun Labs & Creator of OniVim & Revery",
     "bio": "Founder of Outrun Labs, LLC. Building Onivim 2. Passionate about cross-platform development, graphics, and UI. ",
+    "type": "30-45m Talk",
     "location": "Seattle, WA",
     "talkTitle": "Making Windows Development Reasonable",
     "confirmed": true,
+    "twitterUrl": "https://twitter.com/bryphe",
+    "githubUrl": "https://github.com/bryphe",
     "imageUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/bryan-phelps.jpg"
   },
   {
     "id": "recYsWHfxly9x5S2u",
     "name": "Jordan Walke",
+    "about": "Creator of ReactJS & ReasonML",
+    "type": "30-45m Talk",
     "location": "Palo Alto, CA",
     "talkTitle": "Keynote address",
     "confirmed": true,
+    "twitterUrl": "https://twitter.com/jordwalke",
+    "githubUrl": "https://github.com/jordwalke",
     "imageUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/jordan-walke.jpg"
   },
   {
     "id": "recrZQkTItTpvy5SJ",
     "name": "Sean Grove",
+    "about": "Co-founder of OneGraph.com",
+    "type": "30-45m Talk",
     "location": "San Francisco, CA",
     "talkTitle": "Building ⚡️ GraphQL Servers with OneGraph",
     "confirmed": true,
+    "twitterUrl": "https://twitter.com/sgrove",
+    "githubUrl": "https://github.com/sgrove",
     "imageUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/sean-grove.jpg"
   },
   {
     "id": "recPpZRYIo6itfos3",
     "name": "Ken Wheeler",
+    "about": "Reason Lover & Proud Owner of Red Octobers",
+    "type": "30-45m Talk",
     "location": "New Jersey, NJ",
     "talkTitle": "Processing Audio using DSP in Reason",
     "confirmed": true,
+    "twitterUrl": "https://twitter.com/ken_wheeler",
+    "githubUrl": "https://github.com/kenwheeler/",
     "imageUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/ken-wheeler.jpg"
   },
   {
     "id": "recHX4JtaZOuw89j0",
     "name": "Ricky Vetter",
+    "about": "Front End Engineer, Messenger Web at Facebook",
+    "type": "30-45m Talk",
     "location": "New York, NY",
     "talkTitle": "Why React is just better in Reason ☺️",
     "confirmed": true,
+    "twitterUrl": "https://twitter.com/rickyvetter",
+    "githubUrl": "https://github.com/rickyvetter",
     "imageUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/ricky-vetter.jpg"
   },
   {
     "id": "rec7KvldX8MbSVTIL",
     "name": "Paul Biggar",
+    "about": "Co-founder of Dark Lang",
+    "type": "30-45m Talk",
     "location": "San Francisco, CA",
     "confirmed": true,
+    "twitterUrl": "https://twitter.com/paulbiggar",
+    "githubUrl": "https://github.com/pbiggar",
     "imageUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/paul-biggar.jpg"
   },
   {
     "id": "recMwlmcpbqqvXjDC",
     "name": "Honggo Zhang",
+    "about": "Creator of Bucklescript",
+    "type": "30-45m Talk",
     "location": "China",
     "confirmed": true,
+    "twitterUrl": "https://twitter.com/bobzhang1988",
+    "githubUrl": "https://github.com/bobzhang",
     "imageUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/bob-zhang"
   },
   {
     "id": "recsQPoPMhNG5Dbof",
     "name": "Raphael Rafatpanah",
+    "about": "Software Engineer at Wayfair",
+    "type": "30-45m Talk",
     "location": "Boston, MA",
     "confirmed": true,
+    "twitterUrl": "https://twitter.com/RRafatpanah",
+    "githubUrl": "https://github.com/persianturtle",
     "imageUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/raphael-rafatpanah"
   }
 ]
