@@ -27,6 +27,7 @@
     color: #ffffff;
     border: none;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .Map-LegendNavItem:hover,
@@ -61,7 +62,7 @@
 .Map-PlaceCard:hover,
 .Map-PlaceCard:active,
 .Map-PlaceCard:focus {
-    background-color: #11233D;
+    background-color: rgba(17, 35, 60, 0.45);
 }
 
 .Map-PlaceCardName{
@@ -92,10 +93,18 @@
     height:20px;
     border-radius: 10px;
     background-color: #DD4B39;
+    padding:0 ;
+    cursor: pointer;
+    border: none;
+    z-index: 0;
 }
 
 .Map-marker-selected {
     background-color: #E37056;
+}
+
+.Map-marker-venue {
+    background-color: #ffffff;
 }
 
 .Map-markerInnerCircle {
@@ -105,7 +114,26 @@
     background-color: #2a2a2a;
 }
 
+.Map-Popover {
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.Map-Popover-Title {
+    color: #000000;
+    font-size: 15px;
+}
+
+.Page-Container a  {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
 @media (min-width: 320px) and (max-width: 480px) {
+    .Map-container {
+        max-width: 300px;
+    }
     .Map-legend {
         width: 100%;
     }
