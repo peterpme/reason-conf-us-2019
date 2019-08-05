@@ -92,6 +92,13 @@ module.exports = {
         name: "data"
       }
     },
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: "UA-145064669-1",
+        allowLinker: true,
+      }
+    },
     "gatsby-transformer-json",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
