@@ -28,7 +28,7 @@
   {
     "id": "recYsWHfxly9x5S2u",
     "name": "Jordan Walke",
-    "about": "Creator of ReactJS & ReasonML",
+    "about": "Creator of ReactJS & ReasonML at Facebook",
     "type": "30-45m Talk",
     "location": "Palo Alto, CA",
     "talkTitle": "Keynote address",
@@ -79,6 +79,7 @@
     "about": "Co-founder of Dark Lang",
     "type": "30-45m Talk",
     "location": "San Francisco, CA",
+    "talkTitle": "Dark Lang and Tablecloth powered by Reason",
     "confirmed": true,
     "twitterUrl": "https://twitter.com/paulbiggar",
     "githubUrl": "https://github.com/pbiggar",
@@ -90,6 +91,7 @@
     "about": "Creator of Bucklescript",
     "type": "30-45m Talk",
     "location": "China",
+    "talkTitle": "Building Bucklescript at Bloomberg",
     "confirmed": true,
     "twitterUrl": "https://twitter.com/bobzhang1988",
     "githubUrl": "https://github.com/bobzhang",
@@ -101,9 +103,22 @@
     "about": "Software Engineer at Wayfair",
     "type": "30-45m Talk",
     "location": "Boston, MA",
+    "talkTitle": "Powering your CSS with Reason",
     "confirmed": true,
     "twitterUrl": "https://twitter.com/RRafatpanah",
     "githubUrl": "https://github.com/persianturtle",
     "imageUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/raphael-rafatpanah"
+  },
+  {
+    "id": "recFP4bgg1MsKRphP",
+    "name": "Youxi Li",
+    "about": "Software Engineer at Apartment List",
+    "type": "30-45m Talk",
+    "location": "San Francisco, CA",
+    "talkTitle": "The Cyborg Future: Melding a Rust/Wasm Core with a ReasonReact UI",
+    "confirmed": true,
+    "twitterUrl": "https://twitter.com/yukims19",
+    "githubUrl": "https://github.com/yukims19",
+    "imageUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/youxi-li"
   }
 ]
