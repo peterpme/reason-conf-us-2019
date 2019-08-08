@@ -1,5 +1,17 @@
 [
   {
+    "id": "recYsWHfxly9x5S2u",
+    "name": "Jordan Walke",
+    "about": "Creator of ReactJS & ReasonML at Facebook",
+    "type": "30-45m Talk",
+    "location": "Palo Alto, CA",
+    "talkTitle": "Keynote address",
+    "confirmed": true,
+    "twitterUrl": "https://twitter.com/jordwalke",
+    "githubUrl": "https://github.com/jordwalke",
+    "imageUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/jordan-walke.jpg"
+  },
+  {
     "id": "recuLdpaaBo72cxrX",
     "name": "Ben Anderson",
     "about": "Software Engineer at Facebook",
@@ -13,6 +25,30 @@
     "imageUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/ben-anderson"
   },
   {
+    "id": "recFP4bgg1MsKRphP",
+    "name": "Youxi Li",
+    "about": "Software Engineer at Apartment List",
+    "type": "30-45m Talk",
+    "location": "San Francisco, CA",
+    "talkTitle": "The Cyborg Future: Melding a Rust/Wasm Core with a ReasonReact UI",
+    "confirmed": true,
+    "twitterUrl": "https://twitter.com/yukims19",
+    "githubUrl": "https://github.com/yukims19",
+    "imageUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/youxi-li"
+  },
+  {
+    "id": "recMwlmcpbqqvXjDC",
+    "name": "Hongbo Zhang",
+    "about": "Creator of Bucklescript",
+    "type": "30-45m Talk",
+    "location": "China",
+    "talkTitle": "Building Bucklescript at Bloomberg",
+    "confirmed": true,
+    "twitterUrl": "https://twitter.com/bobzhang1988",
+    "githubUrl": "https://github.com/bobzhang",
+    "imageUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/bob-zhang"
+  },
+  {
     "id": "recn2pEOMSk2XX965",
     "name": "Bryan Phelps",
     "about": "Founder of Outrun Labs & Creator of OniVim & Revery",
@@ -24,18 +60,6 @@
     "twitterUrl": "https://twitter.com/bryphe",
     "githubUrl": "https://github.com/bryphe",
     "imageUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/bryan-phelps.jpg"
-  },
-  {
-    "id": "recYsWHfxly9x5S2u",
-    "name": "Jordan Walke",
-    "about": "Creator of ReactJS & ReasonML at Facebook",
-    "type": "30-45m Talk",
-    "location": "Palo Alto, CA",
-    "talkTitle": "Keynote address",
-    "confirmed": true,
-    "twitterUrl": "https://twitter.com/jordwalke",
-    "githubUrl": "https://github.com/jordwalke",
-    "imageUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/jordan-walke.jpg"
   },
   {
     "id": "recrZQkTItTpvy5SJ",
@@ -86,18 +110,6 @@
     "imageUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/paul-biggar.jpg"
   },
   {
-    "id": "recMwlmcpbqqvXjDC",
-    "name": "Hongbo Zhang",
-    "about": "Creator of Bucklescript",
-    "type": "30-45m Talk",
-    "location": "China",
-    "talkTitle": "Building Bucklescript at Bloomberg",
-    "confirmed": true,
-    "twitterUrl": "https://twitter.com/bobzhang1988",
-    "githubUrl": "https://github.com/bobzhang",
-    "imageUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/bob-zhang"
-  },
-  {
     "id": "recsQPoPMhNG5Dbof",
     "name": "Raphael Rafatpanah",
     "about": "Software Engineer at Wayfair",
@@ -108,17 +120,5 @@
     "twitterUrl": "https://twitter.com/RRafatpanah",
     "githubUrl": "https://github.com/persianturtle",
     "imageUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/raphael-rafatpanah"
-  },
-  {
-    "id": "recFP4bgg1MsKRphP",
-    "name": "Youxi Li",
-    "about": "Software Engineer at Apartment List",
-    "type": "30-45m Talk",
-    "location": "San Francisco, CA",
-    "talkTitle": "The Cyborg Future: Melding a Rust/Wasm Core with a ReasonReact UI",
-    "confirmed": true,
-    "twitterUrl": "https://twitter.com/yukims19",
-    "githubUrl": "https://github.com/yukims19",
-    "imageUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/youxi-li"
   }
 ]
