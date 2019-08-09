@@ -1,30 +1,121 @@
 [
   {
-    "time": "8:00AM",
-    "title": "Breakfast & Registration"
+    "id": "recXhIayi7W5d7g1J",
+    "time": "8:00 am",
+    "fullName": "",
+    "photoUrl": "",
+    "talkTitle": "Breakfast & Registration"
   },
   {
-    "time": "9:00AM",
-    "title": "Keynote by Jordan Walke, Creator of React.js and ReasonML"
+    "id": "rec67x1KS3aCwLQPL",
+    "time": "9:00 am",
+    "fullName": "",
+    "photoUrl": "",
+    "talkTitle": "Opening Remarks by Reason Conf Team"
   },
   {
-    "time": "10:45AM",
-    "title": "Break"
+    "id": "recBTCVmZ9vjiyyrd",
+    "time": "9:15 am",
+    "fullName": "Jordan Walke",
+    "photoUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/jordan-walke.jpg",
+    "talkTitle": "React, Reason & the Next Frontier"
   },
   {
-    "time": "12:00PM",
-    "title": "Lunch"
+    "id": "recVdwwhuXumbYPIT",
+    "time": "9:50 am",
+    "fullName": "Ben Anderson",
+    "photoUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/ben-anderson",
+    "talkTitle": "Investing in Testing (with Reason)"
   },
   {
-    "time": "3:00PM",
-    "title": "Break"
+    "id": "recQcKnbGp22JNtlV",
+    "time": "10:25 am",
+    "fullName": "Youxi Li",
+    "photoUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/youxi-li",
+    "talkTitle": "The Cyborg Future: Melding a Rust/Wasm Core with a ReasonReact UI"
   },
   {
-    "time": "5:00PM",
-    "title": "Closing Keynote TBD"
+    "id": "reck4D4vYy8hEkb6p",
+    "time": "11:00 am",
+    "fullName": "",
+    "photoUrl": "",
+    "talkTitle": "Morning Break"
   },
   {
-    "time": "6:30PM",
-    "title": "Evening After Party"
+    "id": "recyBrDajJLq7KVO7",
+    "time": "11:30 am",
+    "fullName": "Bryan Phelps",
+    "photoUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/bryan-phelps.jpg",
+    "talkTitle": "Making Windows Development Reasonable"
+  },
+  {
+    "id": "rec4vqPTDkXyxNMwd",
+    "time": "12:05 pm",
+    "fullName": "Sean Grove",
+    "photoUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/sean-grove.jpg",
+    "talkTitle": "Building ⚡️ GraphQL Servers with OneGraph"
+  },
+  {
+    "id": "recp7MyNehM6lDtdM",
+    "time": "12:40 pm",
+    "fullName": "",
+    "photoUrl": "",
+    "talkTitle": "Lunch"
+  },
+  {
+    "id": "recRIyJBOhlCQT5i0",
+    "time": "2:05 pm",
+    "fullName": "Ken Wheeler",
+    "photoUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/ken-wheeler.jpg",
+    "talkTitle": "Processing Audio using DSP in Reason"
+  },
+  {
+    "id": "recYCX44OlFmTEbwM",
+    "time": "2:40 pm",
+    "fullName": "Ricky Vetter",
+    "photoUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/ricky-vetter.jpg",
+    "talkTitle": "Why React is just better in Reason ☺️"
+  },
+  {
+    "id": "rec7s1fZPmvyuj84g",
+    "time": "3:15 pm",
+    "fullName": "",
+    "photoUrl": "",
+    "talkTitle": "Afternoon Break"
+  },
+  {
+    "id": "recpwk4TsGuD7PDxF",
+    "time": "3:45 pm",
+    "fullName": "Paul Biggar",
+    "photoUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/paul-biggar.jpg",
+    "talkTitle": "Dark Lang and Tablecloth powered by Reason"
+  },
+  {
+    "id": "rec6MjSXqV2SQI5pN",
+    "time": "4:20 pm",
+    "fullName": "Raphael Rafatpanah",
+    "photoUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/raphael-rafatpanah",
+    "talkTitle": "Powering your CSS with Reason"
+  },
+  {
+    "id": "recCrf0mIyP3IzU2T",
+    "time": "4:55 pm",
+    "fullName": "Hongbo Zhang",
+    "photoUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/bob-zhang",
+    "talkTitle": "Building Bucklescript at Bloomberg"
+  },
+  {
+    "id": "rec93L6opxXaOWzGg",
+    "time": "5:30 pm",
+    "fullName": "",
+    "photoUrl": "",
+    "talkTitle": "Closing Remarks by Reason Conf Team"
+  },
+  {
+    "id": "recq4QT9MH6DQLV3o",
+    "time": "7:00 pm",
+    "fullName": "",
+    "photoUrl": "",
+    "talkTitle": "Evening After Party"
   }
 ]

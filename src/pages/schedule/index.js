@@ -18,14 +18,24 @@ export default function SchedulePage({ data }) {
         href={meta.cfpLink}>
         <Button mode="bare" href={meta.ticketLink} label="Purchase Tickets" />
       </Hero>
-      <h2>Day structure</h2>
-      {talks.map(talk => {
-        return (
-          <section style={{ marginBottom: 10 }} key={talk.id}>
-            {talk.time} {talk.title}
-          </section>
-        )
-      })}
+      <div style={{ marginBottom: 48 }}>
+        {talks.map(talk => {
+          return (
+            <section key={talk.id} className="ScheduleRow">
+              <span className="ScheduleRow-time">{talk.time}</span>{" "}
+              {talk.photoUrl ? (
+                <img src={talk.photoUrl} width="60" height="60" className="ScheduleRow-image" />
+              ) : (
+                <span className="ScheduleRow-image" />
+              )}
+              <div>
+                <span className="ScheduleRow-name">{talk.fullName}</span>
+                <span className="ScheduleRow-title">{talk.talkTitle ? talk.talkTitle : null}</span>
+              </div>
+            </section>
+          )
+        })}
+      </div>
     </Layout>
   )
 }
@@ -36,7 +46,9 @@ export const query = graphql`
       talks: nodes {
         id
         time
-        title
+        talkTitle
+        fullName
+        photoUrl
       }
     }
     site {

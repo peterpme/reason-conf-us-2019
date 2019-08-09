@@ -42,3 +42,38 @@ body > div > div {
   margin-left: 8px;
   margin-top: 8px;
 }
+
+.ScheduleRow {
+  display: flex;
+  align-items: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ScheduleRow:last-child {
+  border-bottom: none;
+}
+
+.ScheduleRow-image {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  margin-right: 24px;
+}
+
+.ScheduleRow-time {
+  font-weight: bold;
+  color: white;
+  display: block;
+  margin-right: 24px;
+  width: 80px;
+}
+
+.ScheduleRow-name {
+  font-weight: bold;
+  color: white;
+  display: block;
+  font-size: 18px;
+}

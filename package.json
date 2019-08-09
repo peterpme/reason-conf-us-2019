@@ -63,6 +63,7 @@
   },
   "devDependencies": {
     "bs-platform": "5.0.4",
+    "dateformat": "^3.0.3",
     "gentype": "^2.29.1",
     "http-proxy-middleware": "^0.19.1",
     "netlify-lambda": "^1.4.13",

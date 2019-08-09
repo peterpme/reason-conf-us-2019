@@ -4052,6 +4052,11 @@ date-now@^0.1.4:
   resolved "https://registry.yarnpkg.com/date-now/-/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
   integrity sha1-6vQ5/U1ISK105cx9vvIAZyueNFs=
 
+dateformat@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/dateformat/-/dateformat-3.0.3.tgz#a6e37499a4d9a9cf85ef5872044d62901c9889ae"
+  integrity sha512-jyCETtSl3VMZMWeRo7iY1FL19ges1t55hMo5yaam4Jrsm5EPL89UQkoQRyiI+Yf4k8r2ZpdngkV8hr1lIdjb3Q==
+
 deasync@^0.1.14:
   version "0.1.14"
   resolved "https://registry.yarnpkg.com/deasync/-/deasync-0.1.14.tgz#232ea2252b443948cad033d792eb3b24b0a3d828"
@@ -5916,6 +5921,13 @@ gatsby-link@^2.1.1:
     "@babel/runtime" "^7.0.0"
     "@types/reach__router" "^1.0.0"
     prop-types "^15.6.1"
+
+gatsby-plugin-google-analytics@^2.1.6:
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.1.7.tgz#f4511a94ac8d37103699dbe582f6a5ac9ab91a36"
+  integrity sha512-fqIWS+uIXqwFg+wRkFuy1xjB7B8a6xKkNEB94j9ujWUwqlS9wcMv2E332+mNfI4Ql2J6pwrjwTBaUhM42Br1eg==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
 
 gatsby-plugin-manifest@^2.1.1:
   version "2.1.1"
