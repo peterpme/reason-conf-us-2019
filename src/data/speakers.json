@@ -42,7 +42,7 @@
     "about": "Creator of Bucklescript",
     "type": "30-45m Talk",
     "location": "China",
-    "talkTitle": "Building Bucklescript at Bloomberg",
+    "talkTitle": "Building a High Performance JavaScript Compiler",
     "confirmed": true,
     "twitterUrl": "https://twitter.com/bobzhang1988",
     "githubUrl": "https://github.com/bobzhang",
@@ -100,7 +100,7 @@
   {
     "id": "rec7KvldX8MbSVTIL",
     "name": "Paul Biggar",
-    "about": "Co-founder of Dark Lang",
+    "about": "Co-founder of Dark Lang & CircleCI",
     "type": "30-45m Talk",
     "location": "San Francisco, CA",
     "talkTitle": "Dark Lang and Tablecloth powered by Reason",
@@ -115,10 +115,21 @@
     "about": "Software Engineer at Wayfair",
     "type": "30-45m Talk",
     "location": "Boston, MA",
-    "talkTitle": "Powering your CSS with Reason",
+    "talkTitle": "Styling your CSS with Reason",
     "confirmed": true,
     "twitterUrl": "https://twitter.com/RRafatpanah",
     "githubUrl": "https://github.com/persianturtle",
     "imageUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/raphael-rafatpanah"
+  },
+  {
+    "id": "recZC3QUB5u4WVtpo",
+    "name": "António N. Monteiro",
+    "about": "Software Engineer at Ladder",
+    "location": "Palo Alto, CA",
+    "talkTitle": "Infinitely Scalable Native Reason Apps on AWS Lambda & Zeit Now",
+    "confirmed": true,
+    "twitterUrl": "https://twitter.com/_anmonteiro",
+    "githubUrl": "https://github.com/anmonteiro",
+    "imageUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/v1565404293/2019-reason-conf-us/speakers/antonio-monteiro"
   }
 ]
