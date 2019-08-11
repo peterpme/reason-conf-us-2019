@@ -95,18 +95,25 @@
     "time": "4:20 pm",
     "fullName": "Raphael Rafatpanah",
     "photoUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/raphael-rafatpanah",
-    "talkTitle": "Powering your CSS with Reason"
+    "talkTitle": "Styling your CSS with Reason"
   },
   {
     "id": "recCrf0mIyP3IzU2T",
     "time": "4:55 pm",
     "fullName": "Hongbo Zhang",
     "photoUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/2019-reason-conf-us/speakers/bob-zhang",
-    "talkTitle": "Building Bucklescript at Bloomberg"
+    "talkTitle": "Building a High Performance JavaScript Compiler"
+  },
+  {
+    "id": "recrRHx1UUN6njtgk",
+    "time": "5:30 pm",
+    "fullName": "António N. Monteiro",
+    "photoUrl": "https://res.cloudinary.com/chicagojs/image/upload/t_reason-site/v1565404293/2019-reason-conf-us/speakers/antonio-monteiro",
+    "talkTitle": "Infinitely Scalable Native Reason Apps on AWS Lambda & Zeit Now"
   },
   {
     "id": "rec93L6opxXaOWzGg",
-    "time": "5:30 pm",
+    "time": "6:00 pm",
     "fullName": "",
     "photoUrl": "",
     "talkTitle": "Closing Remarks by Reason Conf Team"

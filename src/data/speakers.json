@@ -125,6 +125,7 @@
     "id": "recZC3QUB5u4WVtpo",
     "name": "António N. Monteiro",
     "about": "Software Engineer at Ladder",
+    "type": "30-45m Talk",
     "location": "Palo Alto, CA",
     "talkTitle": "Infinitely Scalable Native Reason Apps on AWS Lambda & Zeit Now",
     "confirmed": true,
