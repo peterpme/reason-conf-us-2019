@@ -28,7 +28,7 @@ module.exports = {
       title: "Workshops",
       date: "October 7th",
       description:
-        "We're looking for exciting workshops topics ranging from beginner to advanced levels. Have something you'd love to teach someone? Apply to give one!",
+        "We're hosting a Dojo workshop on Monday. We have another workshop that's currently TBD. Expect something exciting!",
       imageUrl:
         "https://res.cloudinary.com/chicagojs/image/upload/c_fill,f_auto,g_center,h_350,w_730/v1561601314/2019-reason-conf-us/website/annie-spratt-QckxruozjRg-unsplash.jpg"
     },
@@ -36,15 +36,14 @@ module.exports = {
       title: "Schedule",
       date: "October 8th",
       description:
-        "Our line-up hasn't been announced yet but expect a full day of talks by ReasonML core contributors and enthusiasts alike including a special keynote by our very own Jordan Walke.",
+        "Our schedule is live! We're super excited for you to hear from our amazing speakers!",
       imageUrl:
         "https://res.cloudinary.com/chicagojs/image/upload/c_fill,f_auto,g_center,h_350,w_730/v1561601072/2019-reason-conf-us/website/pedro-lastra-Nyvq2juw4_o-unsplash.jpg"
     },
     speakers: {
       title: "Speakers",
       date: "October 8th",
-      description:
-        "Our line-up hasn't been announced yet but expect a full day of talks by ReasonML core contributors and enthusiasts alike including a special keynote by our very own Jordan Walke.",
+      description: "We have an amazing line-up of speakers we're excited for you to check out!",
       imageUrl:
         "https://res.cloudinary.com/chicagojs/image/upload/c_fill,h_350,w_730/v1561601074/2019-reason-conf-us/website/lance-anderson-uevmkfCH98Q-unsplash.jpg"
     },
@@ -96,7 +95,7 @@ module.exports = {
       resolve: "gatsby-plugin-google-analytics",
       options: {
         trackingId: "UA-145064669-1",
-        allowLinker: true,
+        allowLinker: true
       }
     },
     "gatsby-transformer-json",
