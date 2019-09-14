@@ -14,9 +14,9 @@ export default function SchedulePage({ data }) {
         subtitle={meta.schedule.date}
         bio={meta.schedule.description}
         graphic={<img alt="Chicago" className="Visit-HeroGraphic" src={meta.schedule.imageUrl} />}
-        ctaLabel="Apply to Speak"
-        href={meta.cfpLink}>
-        <Button mode="bare" href={meta.ticketLink} label="Purchase Tickets" />
+        ctaLabel="Purchase Tickets"
+        href={meta.ticketLink}>
+        <div />
       </Hero>
       <div style={{ marginBottom: 48 }}>
         {talks.map(talk => {

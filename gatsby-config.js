@@ -28,7 +28,7 @@ module.exports = {
       title: "Workshops",
       date: "October 7th",
       description:
-        "We're hosting a Dojo workshop on Monday. We have another workshop that's currently TBD. Expect something exciting!",
+        "We're hosting a Dojo workshop on Monday. We have another workshop that's currently TBD. Expect something exciting! Your ticket price will include the cost of the workshop.",
       imageUrl:
         "https://res.cloudinary.com/chicagojs/image/upload/c_fill,f_auto,g_center,h_350,w_730/v1561601314/2019-reason-conf-us/website/annie-spratt-QckxruozjRg-unsplash.jpg"
     },

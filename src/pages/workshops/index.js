@@ -16,9 +16,9 @@ export default function WorkshopsPage({ data }) {
         graphic={
           <img alt="Attend a workshop" className="Visit-HeroGraphic" src={meta.workshop.imageUrl} />
         }
-        ctaLabel="Give a workshop"
-        href={meta.cfpLink}>
-        <Button mode="bare" href={meta.ticketLink} label="Attend a workshop" />
+        ctaLabel="Purchase Tickets"
+        href={meta.ticketLink}>
+        <div />
       </Hero>
     </Layout>
   )

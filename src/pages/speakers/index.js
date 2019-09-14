@@ -14,9 +14,9 @@ export default function SpeakersPage({ data }) {
         subtitle={meta.speakers.date}
         bio={meta.speakers.description}
         graphic={<img alt="Chicago" className="Visit-HeroGraphic" src={meta.speakers.imageUrl} />}
-        ctaLabel="Apply to Speak"
-        href={meta.cfpLink}>
-        <Button mode="bare" href={meta.ticketLink} label="Purchase Tickets" />
+        ctaLabel="Purchase Tickets"
+        href={meta.ticketLink}>
+        <div />
       </Hero>
       <SpeakerList />
     </Layout>
