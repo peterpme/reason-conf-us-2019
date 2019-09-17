@@ -7,6 +7,7 @@ import { make as Hero } from "../components/Hero.bs"
 import { make as CodeOfConduct } from "../components/CodeOfConduct.bs"
 import { make as StyledText } from "../components/StyledText.bs"
 import SpeakerList from "../components/SpeakerList"
+import SponsorList from "../components/SponsorList"
 
 import "./indexPage.css"
 import "../components/Link.scss"
@@ -40,6 +41,11 @@ const IndexPageTemplate = ({ data, isMobile }) => {
       </StyledText>
       <div style={{ marginBottom: 30 }} />
       <SpeakerList />
+      <StyledText className="SectionHeading" fontSize="30px">
+        Sponsors
+      </StyledText>
+      <div style={{ marginBottom: 30 }} />
+      <SponsorList />
     </Layout>
   )
 }
@@ -70,15 +76,6 @@ export const query = graphql`
         ticketLink
         cfpLink
         sponsorLink
-      }
-    }
-    allSponsorsJson {
-      tiers: nodes {
-        tier
-        sponsors {
-          name
-          imageUrl
-        }
       }
     }
   }

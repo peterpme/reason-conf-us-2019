@@ -50,8 +50,7 @@ module.exports = {
     sponsors: {
       title: "Sponsors",
       date: "October 7th & 8th",
-      description:
-        "Our sponsors will be announced soon. Thank you to our incredible sponsors for making Reason Conf happen. If you're interested in sponsoring, please contact us below.",
+      description: "Thank you to our incredible sponsors for making Reason Conf happen. If you're interested in sponsoring, please contact us below.",
       imageUrl:
         "https://res.cloudinary.com/chicagojs/image/upload/c_fill,f_auto,g_center,h_350,w_730/v1561601074/2019-reason-conf-us/website/yuvraj-singh-4V07cUP8Sxc-unsplash.jpg"
     },

@@ -1,42 +1,72 @@
 [
   {
-    "tier": "Platinum",
-    "sponsors": [{
-      "name": "Draftbit",
-      "url": "https://draftbit.com",
-      "imageUrl": "https://images.unsplash.com/photo-1560131614-8167a0cfa49c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9"
-    }]
+    "id": "rec3Nd7TZj04cVBEX",
+    "name": "Ahrefs",
+    "package": "Platinum",
+    "url": "https://ahrefs.com",
+    "imageUrl": "https://dl.airtable.com/.attachments/f4da90e3882da939610e52eea775041a/e9d4b832/Ahrefs-Logo-Color-White.svg"
   },
   {
-    "tier": "Gold",
-    "sponsors": [{
-      "name": "Draftbit",
-      "url": "https://draftbit.com",
-      "imageUrl": "https://images.unsplash.com/photo-1560131614-8167a0cfa49c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9"
-    }]
+    "id": "recBXKuXPOFWM1rFO",
+    "name": "RSI",
+    "package": "Silver",
+    "url": "https://www.ruralsourcing.com/",
+    "imageUrl": ""
   },
   {
-    "tier": "Silver",
-    "sponsors": [{
-      "name": "Draftbit",
-      "url": "https://draftbit.com",
-      "imageUrl": "https://images.unsplash.com/photo-1560131614-8167a0cfa49c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9"
-    }]
+    "id": "recYwwMBhMpo5W4Fn",
+    "name": "Draftbit",
+    "package": "Gold",
+    "url": "https://draftbit.com",
+    "imageUrl": "https://dl.airtable.com/.attachments/438a1370c6779c8f390de92ead904863/8d8675d6/draftbit_brand_Wordmark-white.svg"
   },
   {
-    "tier": "Bronze",
-    "sponsors": [{
-      "name": "Draftbit",
-      "url": "https://draftbit.com",
-      "imageUrl": "https://images.unsplash.com/photo-1560131614-8167a0cfa49c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9"
-    }]
+    "id": "recaFG0hFNrCbgBRa",
+    "name": "Nerdery",
+    "package": "Silver",
+    "url": "https://www.nerdery.com/",
+    "imageUrl": ""
   },
   {
-    "tier": "Other",
-    "sponsors": [{
-      "name": "Draftbit",
-      "url": "https://draftbit.com",
-      "imageUrl": "https://images.unsplash.com/photo-1560131614-8167a0cfa49c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9"
-    }]
+    "id": "recex3OjUTdlh5DtO",
+    "name": "Jane Street",
+    "package": "Gold",
+    "url": "https://janestreet.com",
+    "imageUrl": "https://dl.airtable.com/.attachments/8429e87344f8c45b381f9e6c6eed70d9/ae37177a/janestreet-logo.png"
+  },
+  {
+    "id": "recippAo4OzgQMvw8",
+    "name": "Facebook",
+    "package": "Platinum",
+    "url": "https://facebook.com",
+    "imageUrl": "https://dl.airtable.com/.attachments/2b41949c401ef8f182736a93568b096e/e92706fe/f_logo_RGB-White_250.png"
+  },
+  {
+    "id": "recjifkMQo0TsfWpC",
+    "name": "Fly.io",
+    "package": "Gold",
+    "url": "https://fly.io",
+    "imageUrl": "https://dl.airtable.com/.attachments/25a3c279314bb5f43f73e39531fc5d9a/f921a43c/gradient-full-landscape.svg"
+  },
+  {
+    "id": "reclYTvBOnbuYUTnR",
+    "name": "TQGroup",
+    "package": "Silver",
+    "url": "https://www.tq-group.com/en/",
+    "imageUrl": ""
+  },
+  {
+    "id": "recpn3A0iABbSlSHU",
+    "name": "O(1) Labs",
+    "package": "Silver",
+    "url": "https://o1labs.org/",
+    "imageUrl": "https://dl.airtable.com/.attachments/fef82955c92c423a02591d0133f60c2b/76b00c85/o1labs.png"
+  },
+  {
+    "id": "recs27wAkVOZ8XffO",
+    "name": "SpanTree",
+    "package": "Bronze",
+    "url": "https://www.spantree.net/",
+    "imageUrl": ""
   }
 ]
