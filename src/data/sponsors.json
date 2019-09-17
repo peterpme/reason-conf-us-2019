@@ -11,7 +11,7 @@
     "name": "RSI",
     "package": "Silver",
     "url": "https://www.ruralsourcing.com/",
-    "imageUrl": ""
+    "imageUrl": "https://dl.airtable.com/.attachments/3272d4874979679aa12c1345ed362822/e8605b54/rsi.jpg"
   },
   {
     "id": "recYwwMBhMpo5W4Fn",
@@ -25,7 +25,7 @@
     "name": "Nerdery",
     "package": "Silver",
     "url": "https://www.nerdery.com/",
-    "imageUrl": ""
+    "imageUrl": "https://dl.airtable.com/.attachments/01e8a2e63ae09787cff2f13b4249e783/03173b30/nerdery-logo.png"
   },
   {
     "id": "recex3OjUTdlh5DtO",
@@ -67,6 +67,6 @@
     "name": "SpanTree",
     "package": "Bronze",
     "url": "https://www.spantree.net/",
-    "imageUrl": ""
+    "imageUrl": "https://dl.airtable.com/.attachments/470899d952844816d04efca678f44976/efd61bd9/spantree.png"
   }
 ]
