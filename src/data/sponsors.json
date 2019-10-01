@@ -53,7 +53,7 @@
     "name": "TQGroup",
     "package": "Silver",
     "url": "https://www.tq-group.com/en/",
-    "imageUrl": ""
+    "imageUrl": "https://dl.airtable.com/.attachments/8c038b554145a145f826f36425426e03/795346fd/logo-colored.svg"
   },
   {
     "id": "recpn3A0iABbSlSHU",
@@ -67,6 +67,6 @@
     "name": "SpanTree",
     "package": "Bronze",
     "url": "https://www.spantree.net/",
-    "imageUrl": "https://dl.airtable.com/.attachments/470899d952844816d04efca678f44976/efd61bd9/spantree.png"
+    "imageUrl": "https://dl.airtable.com/.attachments/879d8b38b9e5fd27487344e99837f9fe/5932aef2/spantree.svg"
   }
 ]
