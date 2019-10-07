@@ -1,0 +1,22 @@
+[
+  {
+    "id": "recq4QT9M46DQLV3o",
+    "time": "9:00am - 12:00pm",
+    "talkTitle": "Intro to Dark Lang with Paul, Sydney & Chase"
+  },
+  {
+    "id": "recq4QT3MH6DQLV3o",
+    "time": "12:00pm - 1:00pm",
+    "talkTitle": "Fixing a Parser Bug Live during lunch with Antonio Nuno Monteiro"
+  },
+  {
+    "id": "recq4QTzMH6DQLV3o",
+    "time": "1:00pm - 3:00pm",
+    "talkTitle": "GraphQL using OneGraph, Hasura and ReasonReact with Sean Grove"
+  },
+  {
+    "id": "recq4QT9M4lDQLV3o",
+    "time": "3:00 pm - 5:30pm",
+    "talkTitle": "Intro to Dark Lang with Paul, Sydney & Chase"
+  }
+]

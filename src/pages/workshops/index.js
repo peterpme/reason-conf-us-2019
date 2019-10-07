@@ -3,10 +3,10 @@ import Layout from "../../components/Layout"
 import { graphql } from "gatsby"
 import { make as Hero } from "../../components/Hero.bs"
 import { make as HeroGraphic } from "../../components/HeroGraphic.bs"
-import { make as Button } from "../../components/Button.bs"
 
 export default function WorkshopsPage({ data }) {
   const meta = (data && data.site && data.site.siteMetadata) || {}
+  const talks = (data && data.allWorkshopsJson && data.allWorkshopsJson.workshops) || []
   return (
     <Layout>
       <Hero
@@ -20,12 +20,38 @@ export default function WorkshopsPage({ data }) {
         href={meta.ticketLink}>
         <div />
       </Hero>
+      <div style={{ marginBottom: 48 }}>
+        {talks.map(talk => {
+          return (
+            <section key={talk.id} className="ScheduleRow">
+              <span style={{ width: 160 }} className="ScheduleRow-time">
+                {talk.time}
+              </span>{" "}
+              {talk.photoUrl ? (
+                <img src={talk.photoUrl} width="60" height="60" className="ScheduleRow-image" />
+              ) : (
+                <span className="ScheduleRow-image" />
+              )}
+              <div>
+                <span className="ScheduleRow-title">{talk.talkTitle ? talk.talkTitle : null}</span>
+              </div>
+            </section>
+          )
+        })}
+      </div>
     </Layout>
   )
 }
 
 export const query = graphql`
   query WorkshopPage {
+    allWorkshopsJson {
+      workshops: nodes {
+        id
+        time
+        talkTitle
+      }
+    }
     site {
       siteMetadata {
         ticketLink

@@ -25,10 +25,9 @@ module.exports = {
         "https://res.cloudinary.com/chicagojs/image/upload/c_fill,f_auto,g_center,h_350,w_730/v1561602141/2019-reason-conf-us/website/venue610.jpg"
     },
     workshop: {
-      title: "Workshops",
+      title: "Workshop",
       date: "October 7th",
-      description:
-        "We're hosting a Dojo workshop on Monday. We have another workshop that's currently TBD. Expect something exciting! Your ticket price will include the cost of the workshop.",
+      description: `Thanks to our amazing speakers and attendees we're able to offer 3 workshops. 2 Dark Lang sessions (they're the same), fixing a parsing bug and OneGraph, Hasura & ReasonReact`,
       imageUrl:
         "https://res.cloudinary.com/chicagojs/image/upload/c_fill,f_auto,g_center,h_350,w_730/v1561601314/2019-reason-conf-us/website/annie-spratt-QckxruozjRg-unsplash.jpg"
     },
@@ -50,7 +49,8 @@ module.exports = {
     sponsors: {
       title: "Sponsors",
       date: "October 7th & 8th",
-      description: "Thank you to our incredible sponsors for making Reason Conf happen. If you're interested in sponsoring, please contact us below.",
+      description:
+        "Thank you to our incredible sponsors for making Reason Conf happen. If you're interested in sponsoring, please contact us below.",
       imageUrl:
         "https://res.cloudinary.com/chicagojs/image/upload/c_fill,f_auto,g_center,h_350,w_730/v1561601074/2019-reason-conf-us/website/yuvraj-singh-4V07cUP8Sxc-unsplash.jpg"
     },
