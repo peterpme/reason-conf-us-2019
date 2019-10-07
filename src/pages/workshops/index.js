@@ -20,6 +20,9 @@ export default function WorkshopsPage({ data }) {
         href={meta.ticketLink}>
         <div />
       </Hero>
+      <span style={{ width: "100%" }} className="ScheduleRow-time">
+        The Dark Lang workshops are exactly the same. You don't need to go to both!
+      </span>
       <div style={{ marginBottom: 48 }}>
         {talks.map(talk => {
           return (
